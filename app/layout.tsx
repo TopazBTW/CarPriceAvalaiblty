@@ -1,0 +1,27 @@
+import type React from "react"
+import type { Metadata } from "next"
+import { GeistSans } from "geist/font/sans"
+import { GeistMono } from "geist/font/mono"
+import { Suspense } from "react"
+import "./globals.css"
+
+export const metadata: Metadata = {
+  title: "AutoValue Maroc - Évaluation de Voitures d'Occasion",
+  description:
+    "Obtenez une évaluation précise et gratuite de votre voiture d'occasion au Maroc. Service fiable et rapide.",
+  generator: "AutoValue Maroc",
+}
+
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode
+}>) {
+  return (
+    <html lang="fr">
+      <body className={`font-sans ${GeistSans.variable} ${GeistMono.variable} antialiased`}>
+        <Suspense fallback={null}>{children}</Suspense>
+      </body>
+    </html>
+  )
+}
