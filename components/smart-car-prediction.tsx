@@ -45,7 +45,7 @@ interface PredictionResponse {
   scraping_source: string
 }
 
-const API_BASE_URL = 'http://localhost:8001'
+const API_BASE_URL = process.env.NEXT_PUBLIC_API_BASE_URL || 'http://localhost:8000'
 
 const vehicleConditions = ['Neuf', 'Occasion']
 const ownerTypes = ['First Owner'] // Simplifié - toujours First Owner par défaut
@@ -69,6 +69,7 @@ export function SmartCarPricePrediction() {
   const [availableTransmissions, setAvailableTransmissions] = useState<string[]>([])
   const [suggestedKilometers, setSuggestedKilometers] = useState<number[]>([])
   const [priceRange, setPriceRange] = useState<[number, number]>([0, 0])
+  const [newVersions, setNewVersions] = useState<Array<{year:number,min:number,max:number,url:string}>>([])
 
   const [prediction, setPrediction] = useState<PredictionResponse | null>(null)
   const [loading, setLoading] = useState(false)
@@ -76,6 +77,7 @@ export function SmartCarPricePrediction() {
 
   // Brands loaded from backend (authoritative) with local fallback
   const [remoteBrands, setRemoteBrands] = useState<string[] | null>(null)
+  const [brandsWithPrices, setBrandsWithPrices] = useState<Array<{name:string,url:string,price?:number,image?:string}> | null>(null)
 
   // Effet quand la marque change
   useEffect(() => {
@@ -128,7 +130,8 @@ export function SmartCarPricePrediction() {
     let mounted = true
     async function loadBrands() {
       try {
-        const res = await fetch(`${API_BASE_URL}/brands`)
+        // Request new-car brands by default (Seller_Type defaults to 'Dealer')
+        const res = await fetch(`${API_BASE_URL}/brands?condition=neuf`)
         if (res.ok) {
           const data = await res.json()
           if (mounted) setRemoteBrands(data.brands || [])
@@ -143,6 +146,19 @@ export function SmartCarPricePrediction() {
     }
 
     loadBrands()
+
+    // Also try to load brand images/prices for display (best-effort)
+    ;(async () => {
+      try {
+        const r = await fetch(`${API_BASE_URL}/scrape/wandaloo/brands_with_prices`)
+        if (r.ok) {
+          const d = await r.json()
+          if (mounted) setBrandsWithPrices(d.brands || null)
+        }
+      } catch (e) {
+        // ignore
+      }
+    })()
     return () => { mounted = false }
   }, [])
 
@@ -152,20 +168,45 @@ export function SmartCarPricePrediction() {
       const years = getYearsForModel(formData.Brand, formData.Model)
       const fuels = getFuelTypesForModel(formData.Brand, formData.Model)
       const transmissions = getTransmissionsForModel(formData.Brand, formData.Model)
-      const priceRange = getPriceRangeForModel(formData.Brand, formData.Model)
-      
+      const localPriceRange = getPriceRangeForModel(formData.Brand, formData.Model)
+
       setAvailableYears(years.sort((a, b) => b - a)) // Plus récent en premier
       setAvailableFuels(fuels)
       setAvailableTransmissions(transmissions)
-      setPriceRange(priceRange)
-      
-      // Auto-sélection intelligente
+      setPriceRange(localPriceRange)
+
+      // If condition is Neuf, fetch new versions list from backend
+      if ((formData.Seller_Type === 'Dealer')) {
+        // fetch new versions
+        (async () => {
+          try {
+            const res = await fetch(`${API_BASE_URL}/brands/${encodeURIComponent(formData.Brand)}/models/${encodeURIComponent(formData.Model)}/new_versions`)
+            if (res.ok) {
+              const data = await res.json()
+              const versions = data.versions || []
+              setNewVersions(versions)
+              // Use the newest version price range as priceRange
+              if (versions.length > 0) {
+                setPriceRange([versions[0].min, versions[0].max])
+              }
+            } else {
+              setNewVersions([])
+            }
+          } catch (e) {
+            setNewVersions([])
+          }
+        })()
+      } else {
+        setNewVersions([])
+      }
+
+      // Auto-sélection intelligente (only for Occasion)
       setFormData(prev => ({
         ...prev,
         Year: years[years.length - 1] || new Date().getFullYear() - 2, // Année la plus récente
         Fuel: fuels[0] || '', // Premier carburant disponible
         Transmission: transmissions.includes('Automatique') ? 'Automatique' : transmissions[0] || '', // Préférer automatique
-        Seller_Type: 'Dealer', // Valeur par défaut
+        Seller_Type: prev.Seller_Type || 'Dealer', // keep existing
         Owner: 'First Owner' // Valeur par défaut
       }))
     }
@@ -194,7 +235,11 @@ export function SmartCarPricePrediction() {
 
     try {
       // Validation
-      const requiredFields = ['Brand', 'Model', 'Fuel', 'Transmission']
+      // For 'Neuf' (Seller_Type === 'Dealer') we don't require Fuel/Transmission/Year/KM
+      const requiredFields = ['Brand', 'Model']
+      if (formData.Seller_Type !== 'Dealer') {
+        requiredFields.push('Fuel', 'Transmission')
+      }
       for (const field of requiredFields) {
         if (!formData[field as keyof CarPredictionRequest]) {
           throw new Error(`Veuillez remplir le champ ${field}`)
@@ -235,6 +280,21 @@ export function SmartCarPricePrediction() {
   return (
     <div className="container mx-auto px-4 py-8">
       <div className="max-w-4xl mx-auto">
+        {/* Brand showcase grid (images + sample price) */}
+        {brandsWithPrices && brandsWithPrices.length > 0 && (
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
+            {brandsWithPrices.map((b) => (
+              <div key={b.name} className="p-3 border rounded-lg flex items-center gap-3">
+                <img src={b.image || '/placeholder-logo.png'} alt={b.name} className="h-12 w-12 object-contain" />
+                <div className="flex-1">
+                  <div className="font-medium text-sm">{b.name}</div>
+                  <div className="text-xs text-gray-600">{b.price ? `${formatPrice(b.price)} MAD` : 'Prix non trouvé'}</div>
+                </div>
+                <Button size="sm" variant="outline" onClick={() => window.open(b.url, '_blank')}>Voir</Button>
+              </div>
+            ))}
+          </div>
+        )}
         <div className="text-center mb-8">
           <h1 className="text-3xl font-bold text-gray-900 mb-4 flex items-center justify-center gap-2">
             <Sparkles className="h-8 w-8 text-blue-500" />
@@ -296,70 +356,97 @@ export function SmartCarPricePrediction() {
                   </Select>
                 </div>
 
-                {/* Année */}
-                <div>
-                  <label className="block text-sm font-medium mb-2">
-                    Année *
-                    {availableYears.length > 0 && (
-                      <Badge variant="secondary" className="ml-2">
-                        {availableYears[0]} - {availableYears[availableYears.length - 1]}
-                      </Badge>
-                    )}
-                  </label>
-                  <Select 
-                    value={formData.Year ? formData.Year.toString() : undefined} 
-                    onValueChange={(value) => setFormData(prev => ({...prev, Year: parseInt(value)}))}
-                    disabled={!formData.Model}
-                  >
-                    <SelectTrigger className="w-full">
-                      <SelectValue placeholder={formData.Model ? "Année disponible" : "Sélectionnez le modèle d'abord"} />
-                    </SelectTrigger>
-                    <SelectContent>
-                      {availableYears.map(year => (
-                        <SelectItem key={year} value={year.toString()}>{year}</SelectItem>
-                      ))}
-                    </SelectContent>
-                  </Select>
-                </div>
+                {/* Année et Kilométrage: hidden for Neuf (Dealer) - show new versions instead */}
+                {formData.Seller_Type !== 'Dealer' ? (
+                  <>
+                    {/* Année */}
+                    <div>
+                      <label className="block text-sm font-medium mb-2">
+                        Année *
+                        {availableYears.length > 0 && (
+                          <Badge variant="secondary" className="ml-2">
+                            {availableYears[0]} - {availableYears[availableYears.length - 1]}
+                          </Badge>
+                        )}
+                      </label>
+                      <Select 
+                        value={formData.Year ? formData.Year.toString() : undefined} 
+                        onValueChange={(value) => setFormData(prev => ({...prev, Year: parseInt(value)}))}
+                        disabled={!formData.Model}
+                      >
+                        <SelectTrigger className="w-full">
+                          <SelectValue placeholder={formData.Model ? "Année disponible" : "Sélectionnez le modèle d'abord"} />
+                        </SelectTrigger>
+                        <SelectContent>
+                          {availableYears.map(year => (
+                            <SelectItem key={year} value={year.toString()}>{year}</SelectItem>
+                          ))}
+                        </SelectContent>
+                      </Select>
+                    </div>
 
-                {/* Kilométrage avec suggestions */}
-                <div>
-                  <label className="block text-sm font-medium mb-2">
-                    Kilométrage (km) *
-                    {suggestedKilometers.length > 0 && (
-                      <Badge variant="outline" className="ml-2">
-                        Suggéré: {formatPrice(suggestedKilometers[Math.floor(suggestedKilometers.length / 2)])} km
-                      </Badge>
-                    )}
-                  </label>
-                  <div className="space-y-2">
-                    <Input
-                      type="number"
-                      value={formData.KM_Driven}
-                      onChange={(e) => setFormData(prev => ({...prev, KM_Driven: parseInt(e.target.value) || 0}))}
-                      placeholder="Entrez le kilométrage"
-                      min="0"
-                      max="500000"
-                    />
-                    {suggestedKilometers.length > 0 && (
-                      <div className="flex gap-2 flex-wrap">
-                        {suggestedKilometers.slice(0, 3).map(km => (
-                          <Button
-                            key={km}
-                            type="button"
-                            variant="outline"
-                            size="sm"
-                            onClick={() => setFormData(prev => ({...prev, KM_Driven: km}))}
-                          >
-                            {formatPrice(km)} km
-                          </Button>
+                    {/* Kilométrage avec suggestions */}
+                    <div>
+                      <label className="block text-sm font-medium mb-2">
+                        Kilométrage (km) *
+                        {suggestedKilometers.length > 0 && (
+                          <Badge variant="outline" className="ml-2">
+                            Suggéré: {formatPrice(suggestedKilometers[Math.floor(suggestedKilometers.length / 2)])} km
+                          </Badge>
+                        )}
+                      </label>
+                      <div className="space-y-2">
+                        <Input
+                          type="number"
+                          value={formData.KM_Driven}
+                          onChange={(e) => setFormData(prev => ({...prev, KM_Driven: parseInt(e.target.value) || 0}))}
+                          placeholder="Entrez le kilométrage"
+                          min="0"
+                          max="500000"
+                        />
+                        {suggestedKilometers.length > 0 && (
+                          <div className="flex gap-2 flex-wrap">
+                            {suggestedKilometers.slice(0, 3).map(km => (
+                              <Button
+                                key={km}
+                                type="button"
+                                variant="outline"
+                                size="sm"
+                                onClick={() => setFormData(prev => ({...prev, KM_Driven: km}))}
+                              >
+                                {formatPrice(km)} km
+                              </Button>
+                            ))}
+                          </div>
+                        )}
+                      </div>
+                    </div>
+                  </>
+                ) : (
+                  <div className="md:col-span-2">
+                    <label className="block text-sm font-medium mb-2">Versions neuves disponibles</label>
+                    {newVersions.length === 0 ? (
+                      <div className="p-3 rounded border bg-yellow-50">Aucune version neuve trouvée pour ce modèle.</div>
+                    ) : (
+                      <div className="space-y-3">
+                        {newVersions.map((v, idx) => (
+                          <div key={idx} className="flex items-center justify-between p-3 border rounded-lg">
+                            <div>
+                              <div className="font-medium">{formData.Brand} {formData.Model} - {v.year}</div>
+                              <div className="text-sm text-gray-600">Prix public: {formatPrice(v.min)} - {formatPrice(v.max)} MAD</div>
+                            </div>
+                            <div className="flex gap-2">
+                              <Button size="sm" variant="outline" onClick={() => window.open(v.url, '_blank')}>Voir l'offre</Button>
+                            </div>
+                          </div>
                         ))}
                       </div>
                     )}
                   </div>
-                </div>
+                )}
 
-                {/* Carburant */}
+                {/* Carburant - hidden for Neuf */}
+                {formData.Seller_Type !== 'Dealer' && (
                 <div>
                   <label className="block text-sm font-medium mb-2">
                     Carburant *
@@ -384,8 +471,10 @@ export function SmartCarPricePrediction() {
                     </SelectContent>
                   </Select>
                 </div>
+                )}
 
-                {/* Transmission */}
+                {/* Transmission - hidden for Neuf */}
+                {formData.Seller_Type !== 'Dealer' && (
                 <div>
                   <label className="block text-sm font-medium mb-2">
                     Transmission *
@@ -410,6 +499,7 @@ export function SmartCarPricePrediction() {
                     </SelectContent>
                   </Select>
                 </div>
+                )}
 
                 {/* État du véhicule */}
                 <div>

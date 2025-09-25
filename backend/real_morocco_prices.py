@@ -289,6 +289,46 @@ MOROCCO_REAL_PRICES = {
     }
 }
 
+# Added premium brands present in Morocco
+MOROCCO_REAL_PRICES.update({
+    'Audi': {
+        'A3': {
+            'new': {
+                2024: {'min': 420000, 'max': 560000},
+                2023: {'min': 400000, 'max': 540000}
+            },
+            'used': {
+                2024: {'min': 380000, 'max': 520000},
+                2022: {'min': 350000, 'max': 480000}
+            }
+        },
+        'A4': {
+            'new': {2024: {'min': 560000, 'max': 760000}},
+            'used': {2024: {'min': 520000, 'max': 700000}}
+        }
+    },
+    'Mercedes': {
+        'C-Class': {
+            'new': {2024: {'min': 650000, 'max': 920000}},
+            'used': {2024: {'min': 600000, 'max': 880000}}
+        },
+        'A-Class': {
+            'new': {2024: {'min': 420000, 'max': 580000}},
+            'used': {2024: {'min': 390000, 'max': 550000}}
+        }
+    },
+    'BMW': {
+        'Series 1': {
+            'new': {2024: {'min': 480000, 'max': 650000}},
+            'used': {2024: {'min': 440000, 'max': 600000}}
+        },
+        'Series 3': {
+            'new': {2024: {'min': 610000, 'max': 820000}},
+            'used': {2024: {'min': 570000, 'max': 780000}}
+        }
+    }
+})
+
 def get_real_morocco_price(brand: str, model: str, year: int, condition: str = "used", km_driven: int = 50000) -> dict:
     """
     Obtenir le prix réel du marché marocain basé sur les données collectées

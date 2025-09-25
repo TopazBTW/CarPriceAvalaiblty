@@ -416,6 +416,85 @@ async def fetch_moteur_listings(brand: str, model: str, year: int, limit: int = 
     logger.info(f"Successfully found {len(listings)} listings from Moroccan sites")
     return listings
 
+
+async def fetch_avito_brands(max_brands: int = 200) -> List[str]:
+    """Scrape Avito.ma to collect brand names listed on the site.
+
+    This function visits the Avito cars section and extracts anchor texts that
+    look like brand names. Returns a cleaned, unique list.
+    """
+    headers = {
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+        'Accept-Language': 'fr-FR,fr;q=0.9,en;q=0.8,ar;q=0.7'
+    }
+    base_url = 'https://www.avito.ma'
+    search_url = f"{base_url}/fr/tout_le_maroc/voitures-%C3%A0_vendre"
+    brands = []
+    timeout = aiohttp.ClientTimeout(total=20)
+
+    async with aiohttp.ClientSession(timeout=timeout, headers=headers) as session:
+        try:
+            async with session.get(search_url) as resp:
+                if resp.status != 200:
+                    return []
+                html = await resp.text()
+                soup = BeautifulSoup(html, 'html.parser')
+                anchors = soup.find_all('a', href=True)
+                for a in anchors:
+                    txt = (a.get_text() or '').strip()
+                    href = a.get('href', '')
+                    if not txt or len(txt) < 2 or len(txt) > 40:
+                        continue
+                    # Heuristic: brand links often contain '/marque' or '/marques' or '/voitures/'
+                    if '/marque' in href.lower() or '/voitures' in href.lower() or 'marque' in href.lower():
+                        name = re.sub(r'[^A-Za-z0-9 \-]', '', txt).title()
+                        if name and name not in brands:
+                            brands.append(name)
+                            if len(brands) >= max_brands:
+                                break
+        except Exception:
+            # Network or parsing error - return what we have (likely empty)
+            return brands
+    return brands
+
+
+async def fetch_moteur_brands(max_brands: int = 200) -> List[str]:
+    """Scrape Moteur.ma for brand names.
+
+    Visit moteur.ma brand/index pages and try to extract brand anchors.
+    """
+    headers = {
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+        'Accept-Language': 'fr-FR,fr;q=0.9,en;q=0.8,ar;q=0.7'
+    }
+    candidate = 'https://www.moteur.ma/fr/voitures-neuves'
+    brands = []
+    timeout = aiohttp.ClientTimeout(total=20)
+
+    async with aiohttp.ClientSession(timeout=timeout, headers=headers) as session:
+        try:
+            async with session.get(candidate) as resp:
+                if resp.status != 200:
+                    return []
+                html = await resp.text()
+                soup = BeautifulSoup(html, 'html.parser')
+                anchors = soup.find_all('a', href=True)
+                for a in anchors:
+                    txt = (a.get_text() or '').strip()
+                    href = a.get('href', '')
+                    if not txt or len(txt) < 2 or len(txt) > 40:
+                        continue
+                    # Brands often appear as links to /marque/ or /marques/
+                    if 'marque' in href.lower() or 'marques' in href.lower() or '/marque-' in href.lower():
+                        name = re.sub(r'[^A-Za-z0-9 \-]', '', txt).title()
+                        if name and name not in brands:
+                            brands.append(name)
+                            if len(brands) >= max_brands:
+                                break
+        except Exception:
+            return brands
+    return brands
+
 def compute_average_price(listings: List[Dict]) -> Optional[int]:
     """
     Compute average price from listings

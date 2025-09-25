@@ -1,0 +1,488 @@
+Attached HTML and CSS Context
+
+<div data-state="open" data-slot="dialog-overlay" class="data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 fixed inset-0 z-50 bg-black/50" data-aria-hidden="true" aria-hidden="true" style="pointer-events: auto;"></div>
+
+
+/* Inline style */
+element {
+  pointer-events: auto;
+  pointer-events: auto;
+}
+
+/* Matched Rule from user-agent */
+div {
+  display: block;
+}
+
+/* Matched Rule from user-agent */
+address, blockquote, center, div, figure, figcaption, footer, form, header, hr, legend, listing, main, p, plaintext, pre, summary, xmp, article, aside, h1, h2, h3, h4, h5, h6, hgroup, nav, section, search, table, caption, colgroup, col, thead, tbody, tfoot, tr, td, th, dir, dd, dl, dt, menu, ol, ul, li, bdi, output, [dir="ltr" i], [dir="rtl" i], [dir="auto" i] {
+  unicode-bidi: isolate;
+}
+
+/* Matched Rule from regular */
+*, ::after, ::before, ::backdrop, ::file-selector-button {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0 solid;
+  box-sizing: border-box;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  border-top-width: 0px;
+  border-right-width: 0px;
+  border-bottom-width: 0px;
+  border-left-width: 0px;
+  border-top-style: solid;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid;
+  border-top-color: initial;
+  border-right-color: initial;
+  border-bottom-color: initial;
+  border-left-color: initial;
+  border-image-source: initial;
+  border-image-slice: initial;
+  border-image-width: initial;
+  border-image-outset: initial;
+  border-image-repeat: initial;
+}
+
+/* Matched Rule from regular */
+* {
+  border-color: var(--border);
+  outline-color: var(--ring);
+  outline-color: var(--ring);
+}
+
+/* Matched Rule from regular */
+ {
+  outline-color: color-mix(in oklab, var(--ring) 50%, transparent);
+  outline-color: color-mix(in oklab, var(--ring) 50%, transparent);
+}
+
+/* Matched Rule from regular */
+.fixed {
+  position: fixed;
+  position: fixed;
+}
+
+/* Matched Rule from regular */
+.inset-0 {
+  inset: calc(var(--spacing) * 0);
+}
+
+/* Matched Rule from regular */
+.z-50 {
+  z-index: 50;
+  z-index: 50;
+}
+
+/* Matched Rule from regular */
+.bg-black\/50 {
+  background-color: color-mix(in srgb, #000 50%, transparent);
+  background-color: color-mix(in srgb, rgb(0, 0, 0), transparent);
+}
+
+/* Matched Rule from regular */
+ {
+  background-color: color-mix(in oklab, var(--color-black) 50%, transparent);
+  background-color: color-mix(in oklab, var(--color-black) 50%, transparent);
+}
+
+/* Matched Rule from regular */
+.data-\[state\=closed\]\:animate-out {
+}
+
+/* Matched Rule from regular */
+.data-\[state\=closed\]\:fade-out-0 {
+}
+
+/* Matched Rule from regular */
+.data-\[state\=open\]\:animate-in {
+}
+
+/* Matched Rule from regular */
+.data-\[state\=open\]\:fade-in-0 {
+}
+
+/* Matched Rule from regular */
+&[data-state="open"] {
+  animation: enter var(--tw-animation-duration,var(--tw-duration,.15s))var(--tw-ease,ease)var(--tw-animation-delay,0s)var(--tw-animation-iteration-count,1)var(--tw-animation-direction,normal)var(--tw-animation-fill-mode,forwards);
+}
+
+/* Matched Rule from regular */
+&[data-state="open"] {
+  --tw-enter-opacity: calc(0/100);
+  --tw-enter-opacity: 0;
+  --tw-enter-opacity: 0;
+}
+
+/* Inherited from ancestor level 1 (user-agent) */
+body {
+  display: block;
+  margin-top: 8px;
+  margin-right: 8px;
+  margin-bottom: 8px;
+  margin-left: 8px;
+}
+
+/* Inherited from ancestor level 1 (regular) */
+*, ::after, ::before, ::backdrop, ::file-selector-button {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0 solid;
+  box-sizing: border-box;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  border-top-width: 0px;
+  border-right-width: 0px;
+  border-bottom-width: 0px;
+  border-left-width: 0px;
+  border-top-style: solid;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid;
+  border-top-color: initial;
+  border-right-color: initial;
+  border-bottom-color: initial;
+  border-left-color: initial;
+  border-image-source: initial;
+  border-image-slice: initial;
+  border-image-width: initial;
+  border-image-outset: initial;
+  border-image-repeat: initial;
+}
+
+/* Inherited from ancestor level 1 (regular) */
+* {
+  border-color: var(--border);
+  outline-color: var(--ring);
+  outline-color: var(--ring);
+}
+
+/* Inherited from ancestor level 1 (regular) */
+ {
+  outline-color: color-mix(in oklab, var(--ring) 50%, transparent);
+  outline-color: color-mix(in oklab, var(--ring) 50%, transparent);
+}
+
+/* Inherited from ancestor level 1 (regular) */
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  background-color: var(--background);
+  color: var(--foreground);
+}
+
+/* Inherited from ancestor level 1 (regular) */
+.font-sans {
+  font-family: var(--font-geist-sans);
+  font-family: var(--font-geist-sans);
+}
+
+/* Inherited from ancestor level 1 (regular) */
+.antialiased {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Inherited from ancestor level 1 (regular) */
+.__variable_fb8f2c {
+  --font-geist-sans: '__GeistSans_fb8f2c', '__GeistSans_Fallback_fb8f2c';
+  --font-geist-sans: '__GeistSans_fb8f2c', '__GeistSans_Fallback_fb8f2c';
+}
+
+/* Inherited from ancestor level 1 (regular) */
+.__variable_f910ec {
+  --font-geist-mono: '__GeistMono_f910ec', ui-monospace, SFMono-Regular, Roboto Mono, Menlo, Monaco, Liberation Mono, DejaVu Sans Mono, Courier New, monospace;
+  --font-geist-mono: '__GeistMono_f910ec', ui-monospace, SFMono-Regular, Roboto Mono, Menlo, Monaco, Liberation Mono, DejaVu Sans Mono, Courier New, monospace;
+}
+
+/* Inherited from ancestor level 1 (regular) */
+body[data-scroll-locked] {
+  overflow: hidden !important;
+  overscroll-behavior: contain;
+  position: relative !important;
+  padding-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  margin-left: 0;
+  margin-top: 0;
+  margin-right: 15px !important;
+  overscroll-behavior-x: contain;
+  overscroll-behavior-y: contain;
+  padding-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  margin-left: 0px;
+  margin-top: 0px;
+  overflow-x: hidden !important;
+  overflow-y: hidden !important;
+  position: relative !important;
+  margin-right: 15px !important;
+}
+
+/* Inherited from ancestor level 1 (regular) */
+body[data-scroll-locked] {
+  --removed-body-scroll-bar-size: 15px;
+  --removed-body-scroll-bar-size: 15px;
+}
+
+/* Inherited from ancestor level 2 (user-agent) */
+html {
+  display: block;
+}
+
+/* Inherited from ancestor level 2 (user-agent) */
+:root {
+  view-transition-name: root;
+}
+
+/* Inherited from ancestor level 2 (regular) */
+:root, :host {
+  --color-red-50: oklch(97.1% 0.013 17.38);
+  --color-red-300: oklch(80.8% 0.114 19.571);
+  --color-red-400: oklch(70.4% 0.191 22.216);
+  --color-red-600: oklch(57.7% 0.245 27.325);
+  --color-black: #000;
+  --color-white: #fff;
+  --spacing: 0.25rem;
+  --container-sm: 24rem;
+  --container-md: 28rem;
+  --container-lg: 32rem;
+  --container-2xl: 42rem;
+  --container-3xl: 48rem;
+  --container-4xl: 56rem;
+  --container-5xl: 64rem;
+  --text-xs: 0.75rem;
+  --text-xs--line-height: calc(1 / 0.75);
+  --text-sm: 0.875rem;
+  --text-sm--line-height: calc(1.25 / 0.875);
+  --text-base: 1rem;
+  --text-base--line-height: calc(1.5 / 1);
+  --text-lg: 1.125rem;
+  --text-lg--line-height: calc(1.75 / 1.125);
+  --text-xl: 1.25rem;
+  --text-xl--line-height: calc(1.75 / 1.25);
+  --text-2xl: 1.5rem;
+  --text-2xl--line-height: calc(2 / 1.5);
+  --text-3xl: 1.875rem;
+  --text-3xl--line-height: calc(2.25 / 1.875);
+  --text-4xl: 2.25rem;
+  --text-4xl--line-height: calc(2.5 / 2.25);
+  --text-5xl: 3rem;
+  --text-5xl--line-height: 1;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --tracking-tight: -0.025em;
+  --tracking-widest: 0.1em;
+  --leading-relaxed: 1.625;
+  --radius-xs: 0.125rem;
+  --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+  --animate-pulse: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  --aspect-video: 16 / 9;
+  --default-transition-duration: 150ms;
+  --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  --default-font-family: var(--font-geist-sans);
+  --default-mono-font-family: var(--font-geist-mono);
+  --color-border: var(--border);
+  --color-red-50: oklch(97.1% 0.013 17.38);
+  --color-red-300: oklch(80.8% 0.114 19.571);
+  --color-red-400: oklch(70.4% 0.191 22.216);
+  --color-red-600: oklch(57.7% 0.245 27.325);
+  --color-black: #000;
+  --color-white: #fff;
+  --spacing: 0.25rem;
+  --container-sm: 24rem;
+  --container-md: 28rem;
+  --container-lg: 32rem;
+  --container-2xl: 42rem;
+  --container-3xl: 48rem;
+  --container-4xl: 56rem;
+  --container-5xl: 64rem;
+  --text-xs: 0.75rem;
+  --text-xs--line-height: calc(1 / 0.75);
+  --text-sm: 0.875rem;
+  --text-sm--line-height: calc(1.25 / 0.875);
+  --text-base: 1rem;
+  --text-base--line-height: calc(1.5 / 1);
+  --text-lg: 1.125rem;
+  --text-lg--line-height: calc(1.75 / 1.125);
+  --text-xl: 1.25rem;
+  --text-xl--line-height: calc(1.75 / 1.25);
+  --text-2xl: 1.5rem;
+  --text-2xl--line-height: calc(2 / 1.5);
+  --text-3xl: 1.875rem;
+  --text-3xl--line-height: calc(2.25 / 1.875);
+  --text-4xl: 2.25rem;
+  --text-4xl--line-height: calc(2.5 / 2.25);
+  --text-5xl: 3rem;
+  --text-5xl--line-height: 1;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --tracking-tight: -0.025em;
+  --tracking-widest: 0.1em;
+  --leading-relaxed: 1.625;
+  --radius-xs: 0.125rem;
+  --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+  --animate-pulse: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  --aspect-video: 16 / 9;
+  --default-transition-duration: 150ms;
+  --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  --default-font-family: var(--font-geist-sans);
+  --default-mono-font-family: var(--font-geist-mono);
+  --color-border: var(--border);
+}
+
+/* Inherited from ancestor level 2 (regular) */
+*, ::after, ::before, ::backdrop, ::file-selector-button {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0 solid;
+  box-sizing: border-box;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  border-top-width: 0px;
+  border-right-width: 0px;
+  border-bottom-width: 0px;
+  border-left-width: 0px;
+  border-top-style: solid;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid;
+  border-top-color: initial;
+  border-right-color: initial;
+  border-bottom-color: initial;
+  border-left-color: initial;
+  border-image-source: initial;
+  border-image-slice: initial;
+  border-image-width: initial;
+  border-image-outset: initial;
+  border-image-repeat: initial;
+}
+
+/* Inherited from ancestor level 2 (regular) */
+* {
+  border-color: var(--border);
+  outline-color: var(--ring);
+  outline-color: var(--ring);
+}
+
+/* Inherited from ancestor level 2 (regular) */
+ {
+  outline-color: color-mix(in oklab, var(--ring) 50%, transparent);
+  outline-color: color-mix(in oklab, var(--ring) 50%, transparent);
+}
+
+/* Inherited from ancestor level 2 (regular) */
+html, :host {
+  line-height: 1.5;
+  -webkit-text-size-adjust: 100%;
+  tab-size: 4;
+  font-family: var(--default-font-family, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji");
+  font-feature-settings: var(--default-font-feature-settings, normal);
+  font-variation-settings: var(--default-font-variation-settings, normal);
+  -webkit-tap-highlight-color: transparent;
+  line-height: 1.5;
+  text-size-adjust: 100%;
+  tab-size: 4;
+  font-family: var(--default-font-family, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji");
+  font-feature-settings: var(--default-font-feature-settings, normal);
+  font-variation-settings: var(--default-font-variation-settings, normal);
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Inherited from ancestor level 2 (regular) */
+:root {
+  --background: oklch(0.98 0.005 85);
+  --foreground: oklch(0.25 0.01 85);
+  --card: oklch(0.99 0.002 85);
+  --card-foreground: oklch(0.25 0.01 85);
+  --popover: oklch(0.99 0.002 85);
+  --popover-foreground: oklch(0.25 0.01 85);
+  --primary: oklch(0.35 0.02 85);
+  --primary-foreground: oklch(0.98 0.005 85);
+  --secondary: oklch(0.92 0.01 85);
+  --secondary-foreground: oklch(0.35 0.02 85);
+  --muted: oklch(0.94 0.008 85);
+  --muted-foreground: oklch(0.55 0.015 85);
+  --accent: oklch(0.88 0.015 85);
+  --accent-foreground: oklch(0.35 0.02 85);
+  --destructive: oklch(0.577 0.245 27.325);
+  --destructive-foreground: oklch(0.98 0.005 85);
+  --border: oklch(0.88 0.01 85);
+  --input: oklch(0.95 0.008 85);
+  --ring: oklch(0.65 0.02 85);
+  --chart-1: oklch(0.646 0.222 41.116);
+  --chart-2: oklch(0.6 0.118 184.704);
+  --chart-3: oklch(0.398 0.07 227.392);
+  --chart-4: oklch(0.828 0.189 84.429);
+  --chart-5: oklch(0.769 0.188 70.08);
+  --radius: 0.5rem;
+  --sidebar: oklch(0.98 0.005 85);
+  --sidebar-foreground: oklch(0.25 0.01 85);
+  --sidebar-primary: oklch(0.35 0.02 85);
+  --sidebar-primary-foreground: oklch(0.98 0.005 85);
+  --sidebar-accent: oklch(0.92 0.01 85);
+  --sidebar-accent-foreground: oklch(0.35 0.02 85);
+  --sidebar-border: oklch(0.88 0.01 85);
+  --sidebar-ring: oklch(0.65 0.02 85);
+  --background: oklch(0.98 0.005 85);
+  --foreground: oklch(0.25 0.01 85);
+  --card: oklch(0.99 0.002 85);
+  --card-foreground: oklch(0.25 0.01 85);
+  --popover: oklch(0.99 0.002 85);
+  --popover-foreground: oklch(0.25 0.01 85);
+  --primary: oklch(0.35 0.02 85);
+  --primary-foreground: oklch(0.98 0.005 85);
+  --secondary: oklch(0.92 0.01 85);
+  --secondary-foreground: oklch(0.35 0.02 85);
+  --muted: oklch(0.94 0.008 85);
+  --muted-foreground: oklch(0.55 0.015 85);
+  --accent: oklch(0.88 0.015 85);
+  --accent-foreground: oklch(0.35 0.02 85);
+  --destructive: oklch(0.577 0.245 27.325);
+  --destructive-foreground: oklch(0.98 0.005 85);
+  --border: oklch(0.88 0.01 85);
+  --input: oklch(0.95 0.008 85);
+  --ring: oklch(0.65 0.02 85);
+  --chart-1: oklch(0.646 0.222 41.116);
+  --chart-2: oklch(0.6 0.118 184.704);
+  --chart-3: oklch(0.398 0.07 227.392);
+  --chart-4: oklch(0.828 0.189 84.429);
+  --chart-5: oklch(0.769 0.188 70.08);
+  --radius: 0.5rem;
+  --sidebar: oklch(0.98 0.005 85);
+  --sidebar-foreground: oklch(0.25 0.01 85);
+  --sidebar-primary: oklch(0.35 0.02 85);
+  --sidebar-primary-foreground: oklch(0.98 0.005 85);
+  --sidebar-accent: oklch(0.92 0.01 85);
+  --sidebar-accent-foreground: oklch(0.35 0.02 85);
+  --sidebar-border: oklch(0.88 0.01 85);
+  --sidebar-ring: oklch(0.65 0.02 85);
+}

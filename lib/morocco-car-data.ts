@@ -252,6 +252,58 @@ export const moroccanCarDatabase: CarDatabase = {
   }
 };
 
+// Add premium brands to frontend fallback database
+moroccanCarDatabase['Audi'] = {
+  'A3': {
+    years: [2020, 2021, 2022, 2023, 2024],
+    fuels: ['Essence'],
+    transmissions: ['Automatique'],
+    typical_km: [20000, 50000, 90000],
+    price_range: [380000, 560000]
+  },
+  'A4': {
+    years: [2019, 2020, 2021, 2022, 2023, 2024],
+    fuels: ['Essence'],
+    transmissions: ['Automatique'],
+    typical_km: [30000, 70000, 110000],
+    price_range: [520000, 760000]
+  }
+}
+
+moroccanCarDatabase['Mercedes'] = {
+  'A-Class': {
+    years: [2020, 2021, 2022, 2023, 2024],
+    fuels: ['Essence'],
+    transmissions: ['Automatique'],
+    typical_km: [20000, 60000, 100000],
+    price_range: [390000, 580000]
+  },
+  'C-Class': {
+    years: [2019, 2020, 2021, 2022, 2023, 2024],
+    fuels: ['Essence'],
+    transmissions: ['Automatique'],
+    typical_km: [30000, 70000, 120000],
+    price_range: [600000, 920000]
+  }
+}
+
+moroccanCarDatabase['BMW'] = {
+  'Series 1': {
+    years: [2020, 2021, 2022, 2023, 2024],
+    fuels: ['Essence'],
+    transmissions: ['Automatique'],
+    typical_km: [25000, 60000, 100000],
+    price_range: [440000, 650000]
+  },
+  'Series 3': {
+    years: [2019, 2020, 2021, 2022, 2023, 2024],
+    fuels: ['Essence'],
+    transmissions: ['Automatique'],
+    typical_km: [30000, 70000, 120000],
+    price_range: [570000, 820000]
+  }
+}
+
 // Fonction pour obtenir les modèles disponibles pour une marque
 export function getModelsForBrand(brand: string): string[] {
   const brandData = moroccanCarDatabase[brand];
