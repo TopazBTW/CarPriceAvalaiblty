@@ -1,0 +1,1076 @@
+{
+  "brands": [
+    {
+      "name": "DACIA",
+      "original_name": "DACIA",
+      "category": "generaliste",
+      "image": null,
+      "url": "https://neuf.kifal.ma/search?marque=DACIA&modele=Duster"
+    },
+    {
+      "name": "RENAULT",
+      "original_name": "RENAULT",
+      "category": "generaliste",
+      "image": null,
+      "url": "https://neuf.kifal.ma/search?marque=RENAULT&modele=Zoe"
+    },
+    {
+      "name": "SKODA",
+      "original_name": "SKODA",
+      "category": "generaliste",
+      "image": null,
+      "url": "https://neuf.kifal.ma/search?marque=SKODA&modele=Octavia"
+    },
+    {
+      "name": "TOYOTA",
+      "original_name": "TOYOTA",
+      "category": "japanese",
+      "image": null,
+      "url": "https://neuf.kifal.ma/search?marque=TOYOTA&modele=Yaris%20Cross"
+    },
+    {
+      "name": "VW",
+      "original_name": "VW",
+      "category": "generaliste",
+      "image": "https://referentiel.kifal.ma/imgs/brands/VW.webp",
+      "url": "https://neuf.kifal.ma/search?marque=VW"
+    },
+    {
+      "name": "AUDI",
+      "original_name": "AUDI",
+      "category": "premium",
+      "image": null,
+      "url": "https://neuf.kifal.ma/search?marque=AUDI&modele=Q5"
+    },
+    {
+      "name": "BMW",
+      "original_name": "BMW",
+      "category": "premium",
+      "image": null,
+      "url": "https://neuf.kifal.ma/search?marque=BMW&modele=S%C3%A9rie%204"
+    },
+    {
+      "name": "PORSCHE",
+      "original_name": "PORSCHE",
+      "category": "premium",
+      "image": null,
+      "url": "https://neuf.kifal.ma/search?marque=PORSCHE&modele=Macan"
+    },
+    {
+      "name": "MERCEDES",
+      "original_name": "MERCEDES",
+      "category": "premium",
+      "image": "https://referentiel.kifal.ma/imgs/brands/MERCEDES.webp",
+      "url": "https://neuf.kifal.ma/search?marque=MERCEDES"
+    },
+    {
+      "name": "LAMBORGHINI",
+      "original_name": "LAMBORGHINI",
+      "category": "premium",
+      "image": null,
+      "url": "https://neuf.kifal.ma/search?marque=LAMBORGHINI&modele=URUS"
+    },
+    {
+      "name": "ABARTH",
+      "original_name": "ABARTH",
+      "category": "generaliste",
+      "image": "https://referentiel.kifal.ma/imgs/brands/ABARTH.webp",
+      "url": "https://neuf.kifal.ma/search?marque=ABARTH"
+    },
+    {
+      "name": "ALFA ROMEO",
+      "original_name": "ALFA ROMEO",
+      "category": "premium",
+      "image": "https://referentiel.kifal.ma/imgs/brands/ALFA ROMEO.webp",
+      "url": "https://neuf.kifal.ma/search?marque=ALFA ROMEO"
+    },
+    {
+      "name": "ALPINE",
+      "original_name": "ALPINE",
+      "category": "luxury",
+      "image": "https://referentiel.kifal.ma/imgs/brands/ALPINE.webp",
+      "url": "https://neuf.kifal.ma/search?marque=ALPINE"
+    },
+    {
+      "name": "BYD",
+      "original_name": "BYD",
+      "category": "electric",
+      "image": "https://referentiel.kifal.ma/imgs/brands/BYD.webp",
+      "url": "https://neuf.kifal.ma/search?marque=BYD"
+    },
+    {
+      "name": "CHANGAN",
+      "original_name": "CHANGAN",
+      "category": "chinese",
+      "image": "https://referentiel.kifal.ma/imgs/brands/CHANGAN.webp",
+      "url": "https://neuf.kifal.ma/search?marque=CHANGAN"
+    },
+    {
+      "name": "CHERY",
+      "original_name": "CHERY",
+      "category": "chinese",
+      "image": "https://referentiel.kifal.ma/imgs/brands/CHERY.webp",
+      "url": "https://neuf.kifal.ma/search?marque=CHERY"
+    },
+    {
+      "name": "CITROEN",
+      "original_name": "CITROEN",
+      "category": "generaliste",
+      "image": "https://referentiel.kifal.ma/imgs/brands/CITROEN.webp",
+      "url": "https://neuf.kifal.ma/search?marque=CITROEN"
+    },
+    {
+      "name": "CUPRA",
+      "original_name": "CUPRA",
+      "category": "luxury",
+      "image": "https://referentiel.kifal.ma/imgs/brands/CUPRA.webp",
+      "url": "https://neuf.kifal.ma/search?marque=CUPRA"
+    },
+    {
+      "name": "DFSK",
+      "original_name": "DFSK",
+      "category": "chinese",
+      "image": "https://referentiel.kifal.ma/imgs/brands/DFSK.webp",
+      "url": "https://neuf.kifal.ma/search?marque=DFSK"
+    },
+    {
+      "name": "DS",
+      "original_name": "DS",
+      "category": "luxury",
+      "image": "https://referentiel.kifal.ma/imgs/brands/DS.webp",
+      "url": "https://neuf.kifal.ma/search?marque=DS"
+    },
+    {
+      "name": "FIAT",
+      "original_name": "FIAT",
+      "category": "generaliste",
+      "image": "https://referentiel.kifal.ma/imgs/brands/FIAT.webp",
+      "url": "https://neuf.kifal.ma/search?marque=FIAT"
+    },
+    {
+      "name": "FORD",
+      "original_name": "FORD",
+      "category": "generaliste",
+      "image": "https://referentiel.kifal.ma/imgs/brands/FORD.webp",
+      "url": "https://neuf.kifal.ma/search?marque=FORD"
+    },
+    {
+      "name": "FOTON",
+      "original_name": "FOTON",
+      "category": "generaliste",
+      "image": "https://referentiel.kifal.ma/imgs/brands/FOTON.webp",
+      "url": "https://neuf.kifal.ma/search?marque=FOTON"
+    },
+    {
+      "name": "GAZELLE",
+      "original_name": "GAZELLE",
+      "category": "generaliste",
+      "image": "https://referentiel.kifal.ma/imgs/brands/GAZELLE.webp",
+      "url": "https://neuf.kifal.ma/search?marque=GAZELLE"
+    },
+    {
+      "name": "GEELY",
+      "original_name": "GEELY",
+      "category": "chinese",
+      "image": "https://referentiel.kifal.ma/imgs/brands/GEELY.webp",
+      "url": "https://neuf.kifal.ma/search?marque=GEELY"
+    },
+    {
+      "name": "GWM",
+      "original_name": "GWM",
+      "category": "chinese",
+      "image": "https://referentiel.kifal.ma/imgs/brands/GWM.webp",
+      "url": "https://neuf.kifal.ma/search?marque=GWM"
+    },
+    {
+      "name": "HONDA",
+      "original_name": "HONDA",
+      "category": "japanese",
+      "image": "https://referentiel.kifal.ma/imgs/brands/HONDA.webp",
+      "url": "https://neuf.kifal.ma/search?marque=HONDA"
+    },
+    {
+      "name": "HYUNDAI",
+      "original_name": "HYUNDAI",
+      "category": "korean",
+      "image": "https://referentiel.kifal.ma/imgs/brands/HYUNDAI.webp",
+      "url": "https://neuf.kifal.ma/search?marque=HYUNDAI"
+    },
+    {
+      "name": "JAECOO",
+      "original_name": "JAECOO",
+      "category": "chinese",
+      "image": "https://referentiel.kifal.ma/imgs/brands/JAECOO.webp",
+      "url": "https://neuf.kifal.ma/search?marque=JAECOO"
+    },
+    {
+      "name": "JAGUAR",
+      "original_name": "JAGUAR",
+      "category": "premium",
+      "image": "https://referentiel.kifal.ma/imgs/brands/JAGUAR.webp",
+      "url": "https://neuf.kifal.ma/search?marque=JAGUAR"
+    },
+    {
+      "name": "JEEP",
+      "original_name": "JEEP",
+      "category": "generaliste",
+      "image": "https://referentiel.kifal.ma/imgs/brands/JEEP.webp",
+      "url": "https://neuf.kifal.ma/search?marque=JEEP"
+    },
+    {
+      "name": "KIA",
+      "original_name": "KIA",
+      "category": "korean",
+      "image": "https://referentiel.kifal.ma/imgs/brands/KIA.webp",
+      "url": "https://neuf.kifal.ma/search?marque=KIA"
+    },
+    {
+      "name": "LAND-ROVER",
+      "original_name": "LAND-ROVER",
+      "category": "generaliste",
+      "image": "https://referentiel.kifal.ma/imgs/brands/LAND-ROVER.webp",
+      "url": "https://neuf.kifal.ma/search?marque=LAND-ROVER"
+    },
+    {
+      "name": "LEXUS",
+      "original_name": "LEXUS",
+      "category": "premium",
+      "image": "https://referentiel.kifal.ma/imgs/brands/LEXUS.webp",
+      "url": "https://neuf.kifal.ma/search?marque=LEXUS"
+    },
+    {
+      "name": "MAHINDRA",
+      "original_name": "MAHINDRA",
+      "category": "generaliste",
+      "image": "https://referentiel.kifal.ma/imgs/brands/MAHINDRA.webp",
+      "url": "https://neuf.kifal.ma/search?marque=MAHINDRA"
+    },
+    {
+      "name": "MASERATI",
+      "original_name": "MASERATI",
+      "category": "premium",
+      "image": "https://referentiel.kifal.ma/imgs/brands/MASERATI.webp",
+      "url": "https://neuf.kifal.ma/search?marque=MASERATI"
+    },
+    {
+      "name": "MAZDA",
+      "original_name": "MAZDA",
+      "category": "japanese",
+      "image": "https://referentiel.kifal.ma/imgs/brands/MAZDA.webp",
+      "url": "https://neuf.kifal.ma/search?marque=MAZDA"
+    },
+    {
+      "name": "MG",
+      "original_name": "MG",
+      "category": "chinese",
+      "image": "https://referentiel.kifal.ma/imgs/brands/MG.webp",
+      "url": "https://neuf.kifal.ma/search?marque=MG"
+    },
+    {
+      "name": "MINI",
+      "original_name": "MINI",
+      "category": "luxury",
+      "image": "https://referentiel.kifal.ma/imgs/brands/MINI.webp",
+      "url": "https://neuf.kifal.ma/search?marque=MINI"
+    },
+    {
+      "name": "MITSUBISHI",
+      "original_name": "MITSUBISHI",
+      "category": "japanese",
+      "image": "https://referentiel.kifal.ma/imgs/brands/MITSUBISHI.webp",
+      "url": "https://neuf.kifal.ma/search?marque=MITSUBISHI"
+    },
+    {
+      "name": "NISSAN",
+      "original_name": "NISSAN",
+      "category": "japanese",
+      "image": "https://referentiel.kifal.ma/imgs/brands/NISSAN.webp",
+      "url": "https://neuf.kifal.ma/search?marque=NISSAN"
+    },
+    {
+      "name": "OMODA",
+      "original_name": "OMODA",
+      "category": "chinese",
+      "image": "https://referentiel.kifal.ma/imgs/brands/OMODA.webp",
+      "url": "https://neuf.kifal.ma/search?marque=OMODA"
+    },
+    {
+      "name": "OPEL",
+      "original_name": "OPEL",
+      "category": "generaliste",
+      "image": "https://referentiel.kifal.ma/imgs/brands/OPEL.webp",
+      "url": "https://neuf.kifal.ma/search?marque=OPEL"
+    },
+    {
+      "name": "PEUGEOT",
+      "original_name": "PEUGEOT",
+      "category": "generaliste",
+      "image": "https://referentiel.kifal.ma/imgs/brands/PEUGEOT.webp",
+      "url": "https://neuf.kifal.ma/search?marque=PEUGEOT"
+    },
+    {
+      "name": "SEAT",
+      "original_name": "SEAT",
+      "category": "generaliste",
+      "image": "https://referentiel.kifal.ma/imgs/brands/SEAT.webp",
+      "url": "https://neuf.kifal.ma/search?marque=SEAT"
+    },
+    {
+      "name": "SERES",
+      "original_name": "SERES",
+      "category": "generaliste",
+      "image": "https://referentiel.kifal.ma/imgs/brands/SERES.webp",
+      "url": "https://neuf.kifal.ma/search?marque=SERES"
+    },
+    {
+      "name": "SUZUKI",
+      "original_name": "SUZUKI",
+      "category": "japanese",
+      "image": "https://referentiel.kifal.ma/imgs/brands/SUZUKI.webp",
+      "url": "https://neuf.kifal.ma/search?marque=SUZUKI"
+    },
+    {
+      "name": "TATA",
+      "original_name": "TATA",
+      "category": "generaliste",
+      "image": "https://referentiel.kifal.ma/imgs/brands/TATA.webp",
+      "url": "https://neuf.kifal.ma/search?marque=TATA"
+    },
+    {
+      "name": "VOLVO",
+      "original_name": "VOLVO",
+      "category": "premium",
+      "image": "https://referentiel.kifal.ma/imgs/brands/VOLVO.webp",
+      "url": "https://neuf.kifal.ma/search?marque=VOLVO"
+    },
+    {
+      "name": "ZEEKR",
+      "original_name": "ZEEKR",
+      "category": "electric",
+      "image": "https://referentiel.kifal.ma/imgs/brands/ZEEKR.webp",
+      "url": "https://neuf.kifal.ma/search?marque=ZEEKR"
+    },
+    {
+      "name": "ACURA",
+      "original_name": "ACURA",
+      "category": "premium",
+      "image": "https://referentiel.kifal.ma/imgs/brands/ACURA.webp",
+      "url": "https://neuf.kifal.ma/search?marque=ACURA"
+    },
+    {
+      "name": "AIWAYS",
+      "original_name": "AIWAYS",
+      "category": "electric",
+      "image": "https://referentiel.kifal.ma/imgs/brands/AIWAYS.webp",
+      "url": "https://neuf.kifal.ma/search?marque=AIWAYS"
+    },
+    {
+      "name": "ASTON MARTIN",
+      "original_name": "ASTON MARTIN",
+      "category": "premium",
+      "image": "https://referentiel.kifal.ma/imgs/brands/ASTON MARTIN.webp",
+      "url": "https://neuf.kifal.ma/search?marque=ASTON MARTIN"
+    },
+    {
+      "name": "BAIC",
+      "original_name": "BAIC",
+      "category": "chinese",
+      "image": "https://referentiel.kifal.ma/imgs/brands/BAIC.webp",
+      "url": "https://neuf.kifal.ma/search?marque=BAIC"
+    },
+    {
+      "name": "BENTLEY",
+      "original_name": "BENTLEY",
+      "category": "premium",
+      "image": "https://referentiel.kifal.ma/imgs/brands/BENTLEY.webp",
+      "url": "https://neuf.kifal.ma/search?marque=BENTLEY"
+    },
+    {
+      "name": "BORGWARD",
+      "original_name": "BORGWARD",
+      "category": "chinese",
+      "image": "https://referentiel.kifal.ma/imgs/brands/BORGWARD.webp",
+      "url": "https://neuf.kifal.ma/search?marque=BORGWARD"
+    },
+    {
+      "name": "CADILLAC",
+      "original_name": "CADILLAC",
+      "category": "premium",
+      "image": "https://referentiel.kifal.ma/imgs/brands/CADILLAC.webp",
+      "url": "https://neuf.kifal.ma/search?marque=CADILLAC"
+    },
+    {
+      "name": "CHEVROLET",
+      "original_name": "CHEVROLET",
+      "category": "generaliste",
+      "image": "https://referentiel.kifal.ma/imgs/brands/CHEVROLET.webp",
+      "url": "https://neuf.kifal.ma/search?marque=CHEVROLET"
+    },
+    {
+      "name": "CHRYSLER",
+      "original_name": "CHRYSLER",
+      "category": "generaliste",
+      "image": "https://referentiel.kifal.ma/imgs/brands/CHRYSLER.webp",
+      "url": "https://neuf.kifal.ma/search?marque=CHRYSLER"
+    },
+    {
+      "name": "DAEWOO",
+      "original_name": "DAEWOO",
+      "category": "generaliste",
+      "image": "https://referentiel.kifal.ma/imgs/brands/DAEWOO.webp",
+      "url": "https://neuf.kifal.ma/search?marque=DAEWOO"
+    },
+    {
+      "name": "DAIHATSU",
+      "original_name": "DAIHATSU",
+      "category": "japanese",
+      "image": "https://referentiel.kifal.ma/imgs/brands/DAIHATSU.webp",
+      "url": "https://neuf.kifal.ma/search?marque=DAIHATSU"
+    },
+    {
+      "name": "DODGE",
+      "original_name": "DODGE",
+      "category": "generaliste",
+      "image": "https://referentiel.kifal.ma/imgs/brands/DODGE.webp",
+      "url": "https://neuf.kifal.ma/search?marque=DODGE"
+    },
+    {
+      "name": "FERRARI",
+      "original_name": "FERRARI",
+      "category": "premium",
+      "image": "https://referentiel.kifal.ma/imgs/brands/FERRARI.webp",
+      "url": "https://neuf.kifal.ma/search?marque=FERRARI"
+    },
+    {
+      "name": "GENESIS",
+      "original_name": "GENESIS",
+      "category": "premium",
+      "image": "https://referentiel.kifal.ma/imgs/brands/GENESIS.webp",
+      "url": "https://neuf.kifal.ma/search?marque=GENESIS"
+    },
+    {
+      "name": "GMC",
+      "original_name": "GMC",
+      "category": "generaliste",
+      "image": "https://referentiel.kifal.ma/imgs/brands/GMC.webp",
+      "url": "https://neuf.kifal.ma/search?marque=GMC"
+    },
+    {
+      "name": "HAVAL",
+      "original_name": "HAVAL",
+      "category": "chinese",
+      "image": "https://referentiel.kifal.ma/imgs/brands/HAVAL.webp",
+      "url": "https://neuf.kifal.ma/search?marque=HAVAL"
+    },
+    {
+      "name": "HUMMER",
+      "original_name": "HUMMER",
+      "category": "generaliste",
+      "image": "https://referentiel.kifal.ma/imgs/brands/HUMMER.webp",
+      "url": "https://neuf.kifal.ma/search?marque=HUMMER"
+    },
+    {
+      "name": "INFINITI",
+      "original_name": "INFINITI",
+      "category": "premium",
+      "image": "https://referentiel.kifal.ma/imgs/brands/INFINITI.webp",
+      "url": "https://neuf.kifal.ma/search?marque=INFINITI"
+    },
+    {
+      "name": "ISUZU",
+      "original_name": "ISUZU",
+      "category": "japanese",
+      "image": "https://referentiel.kifal.ma/imgs/brands/ISUZU.webp",
+      "url": "https://neuf.kifal.ma/search?marque=ISUZU"
+    },
+    {
+      "name": "IVECO",
+      "original_name": "IVECO",
+      "category": "generaliste",
+      "image": "https://referentiel.kifal.ma/imgs/brands/IVECO.webp",
+      "url": "https://neuf.kifal.ma/search?marque=IVECO"
+    },
+    {
+      "name": "LADA",
+      "original_name": "LADA",
+      "category": "generaliste",
+      "image": "https://referentiel.kifal.ma/imgs/brands/LADA.webp",
+      "url": "https://neuf.kifal.ma/search?marque=LADA"
+    },
+    {
+      "name": "LANCIA",
+      "original_name": "LANCIA",
+      "category": "luxury",
+      "image": "https://referentiel.kifal.ma/imgs/brands/LANCIA.webp",
+      "url": "https://neuf.kifal.ma/search?marque=LANCIA"
+    },
+    {
+      "name": "LAND ROVER",
+      "original_name": "LAND ROVER",
+      "category": "premium",
+      "image": "https://referentiel.kifal.ma/imgs/brands/LAND ROVER.webp",
+      "url": "https://neuf.kifal.ma/search?marque=LAND ROVER"
+    },
+    {
+      "name": "LINCOLN",
+      "original_name": "LINCOLN",
+      "category": "premium",
+      "image": "https://referentiel.kifal.ma/imgs/brands/LINCOLN.webp",
+      "url": "https://neuf.kifal.ma/search?marque=LINCOLN"
+    },
+    {
+      "name": "LOTUS",
+      "original_name": "LOTUS",
+      "category": "premium",
+      "image": "https://referentiel.kifal.ma/imgs/brands/LOTUS.webp",
+      "url": "https://neuf.kifal.ma/search?marque=LOTUS"
+    },
+    {
+      "name": "MAYBACH",
+      "original_name": "MAYBACH",
+      "category": "premium",
+      "image": "https://referentiel.kifal.ma/imgs/brands/MAYBACH.webp",
+      "url": "https://neuf.kifal.ma/search?marque=MAYBACH"
+    },
+    {
+      "name": "MCLAREN",
+      "original_name": "MCLAREN",
+      "category": "premium",
+      "image": "https://referentiel.kifal.ma/imgs/brands/MCLAREN.webp",
+      "url": "https://neuf.kifal.ma/search?marque=MCLAREN"
+    },
+    {
+      "name": "PROTON",
+      "original_name": "PROTON",
+      "category": "generaliste",
+      "image": "https://referentiel.kifal.ma/imgs/brands/PROTON.webp",
+      "url": "https://neuf.kifal.ma/search?marque=PROTON"
+    },
+    {
+      "name": "ROLLS-ROYCE",
+      "original_name": "ROLLS-ROYCE",
+      "category": "premium",
+      "image": "https://referentiel.kifal.ma/imgs/brands/ROLLS-ROYCE.webp",
+      "url": "https://neuf.kifal.ma/search?marque=ROLLS-ROYCE"
+    },
+    {
+      "name": "SAAB",
+      "original_name": "SAAB",
+      "category": "generaliste",
+      "image": "https://referentiel.kifal.ma/imgs/brands/SAAB.webp",
+      "url": "https://neuf.kifal.ma/search?marque=SAAB"
+    },
+    {
+      "name": "SMART",
+      "original_name": "SMART",
+      "category": "generaliste",
+      "image": "https://referentiel.kifal.ma/imgs/brands/SMART.webp",
+      "url": "https://neuf.kifal.ma/search?marque=SMART"
+    },
+    {
+      "name": "SSANGYONG",
+      "original_name": "SSANGYONG",
+      "category": "korean",
+      "image": "https://referentiel.kifal.ma/imgs/brands/SSANGYONG.webp",
+      "url": "https://neuf.kifal.ma/search?marque=SSANGYONG"
+    },
+    {
+      "name": "SUBARU",
+      "original_name": "SUBARU",
+      "category": "japanese",
+      "image": "https://referentiel.kifal.ma/imgs/brands/SUBARU.webp",
+      "url": "https://neuf.kifal.ma/search?marque=SUBARU"
+    },
+    {
+      "name": "TESLA",
+      "original_name": "TESLA",
+      "category": "electric",
+      "image": "https://referentiel.kifal.ma/imgs/brands/TESLA.webp",
+      "url": "https://neuf.kifal.ma/search?marque=TESLA"
+    }
+  ],
+  "categories": {
+    "premium": [
+      {
+        "name": "AUDI",
+        "original_name": "AUDI",
+        "category": "premium",
+        "image": null,
+        "url": "https://neuf.kifal.ma/search?marque=AUDI&modele=Q5"
+      },
+      {
+        "name": "BMW",
+        "original_name": "BMW",
+        "category": "premium",
+        "image": null,
+        "url": "https://neuf.kifal.ma/search?marque=BMW&modele=S%C3%A9rie%204"
+      },
+      {
+        "name": "PORSCHE",
+        "original_name": "PORSCHE",
+        "category": "premium",
+        "image": null,
+        "url": "https://neuf.kifal.ma/search?marque=PORSCHE&modele=Macan"
+      },
+      {
+        "name": "MERCEDES",
+        "original_name": "MERCEDES",
+        "category": "premium",
+        "image": "https://referentiel.kifal.ma/imgs/brands/MERCEDES.webp",
+        "url": "https://neuf.kifal.ma/search?marque=MERCEDES"
+      },
+      {
+        "name": "LAMBORGHINI",
+        "original_name": "LAMBORGHINI",
+        "category": "premium",
+        "image": null,
+        "url": "https://neuf.kifal.ma/search?marque=LAMBORGHINI&modele=URUS"
+      },
+      {
+        "name": "ALFA ROMEO",
+        "original_name": "ALFA ROMEO",
+        "category": "premium",
+        "image": "https://referentiel.kifal.ma/imgs/brands/ALFA ROMEO.webp",
+        "url": "https://neuf.kifal.ma/search?marque=ALFA ROMEO"
+      },
+      {
+        "name": "JAGUAR",
+        "original_name": "JAGUAR",
+        "category": "premium",
+        "image": "https://referentiel.kifal.ma/imgs/brands/JAGUAR.webp",
+        "url": "https://neuf.kifal.ma/search?marque=JAGUAR"
+      },
+      {
+        "name": "LEXUS",
+        "original_name": "LEXUS",
+        "category": "premium",
+        "image": "https://referentiel.kifal.ma/imgs/brands/LEXUS.webp",
+        "url": "https://neuf.kifal.ma/search?marque=LEXUS"
+      },
+      {
+        "name": "MASERATI",
+        "original_name": "MASERATI",
+        "category": "premium",
+        "image": "https://referentiel.kifal.ma/imgs/brands/MASERATI.webp",
+        "url": "https://neuf.kifal.ma/search?marque=MASERATI"
+      },
+      {
+        "name": "VOLVO",
+        "original_name": "VOLVO",
+        "category": "premium",
+        "image": "https://referentiel.kifal.ma/imgs/brands/VOLVO.webp",
+        "url": "https://neuf.kifal.ma/search?marque=VOLVO"
+      },
+      {
+        "name": "ACURA",
+        "original_name": "ACURA",
+        "category": "premium",
+        "image": "https://referentiel.kifal.ma/imgs/brands/ACURA.webp",
+        "url": "https://neuf.kifal.ma/search?marque=ACURA"
+      },
+      {
+        "name": "ASTON MARTIN",
+        "original_name": "ASTON MARTIN",
+        "category": "premium",
+        "image": "https://referentiel.kifal.ma/imgs/brands/ASTON MARTIN.webp",
+        "url": "https://neuf.kifal.ma/search?marque=ASTON MARTIN"
+      },
+      {
+        "name": "BENTLEY",
+        "original_name": "BENTLEY",
+        "category": "premium",
+        "image": "https://referentiel.kifal.ma/imgs/brands/BENTLEY.webp",
+        "url": "https://neuf.kifal.ma/search?marque=BENTLEY"
+      },
+      {
+        "name": "CADILLAC",
+        "original_name": "CADILLAC",
+        "category": "premium",
+        "image": "https://referentiel.kifal.ma/imgs/brands/CADILLAC.webp",
+        "url": "https://neuf.kifal.ma/search?marque=CADILLAC"
+      },
+      {
+        "name": "FERRARI",
+        "original_name": "FERRARI",
+        "category": "premium",
+        "image": "https://referentiel.kifal.ma/imgs/brands/FERRARI.webp",
+        "url": "https://neuf.kifal.ma/search?marque=FERRARI"
+      },
+      {
+        "name": "GENESIS",
+        "original_name": "GENESIS",
+        "category": "premium",
+        "image": "https://referentiel.kifal.ma/imgs/brands/GENESIS.webp",
+        "url": "https://neuf.kifal.ma/search?marque=GENESIS"
+      },
+      {
+        "name": "INFINITI",
+        "original_name": "INFINITI",
+        "category": "premium",
+        "image": "https://referentiel.kifal.ma/imgs/brands/INFINITI.webp",
+        "url": "https://neuf.kifal.ma/search?marque=INFINITI"
+      },
+      {
+        "name": "LAND ROVER",
+        "original_name": "LAND ROVER",
+        "category": "premium",
+        "image": "https://referentiel.kifal.ma/imgs/brands/LAND ROVER.webp",
+        "url": "https://neuf.kifal.ma/search?marque=LAND ROVER"
+      },
+      {
+        "name": "LINCOLN",
+        "original_name": "LINCOLN",
+        "category": "premium",
+        "image": "https://referentiel.kifal.ma/imgs/brands/LINCOLN.webp",
+        "url": "https://neuf.kifal.ma/search?marque=LINCOLN"
+      },
+      {
+        "name": "LOTUS",
+        "original_name": "LOTUS",
+        "category": "premium",
+        "image": "https://referentiel.kifal.ma/imgs/brands/LOTUS.webp",
+        "url": "https://neuf.kifal.ma/search?marque=LOTUS"
+      },
+      {
+        "name": "MAYBACH",
+        "original_name": "MAYBACH",
+        "category": "premium",
+        "image": "https://referentiel.kifal.ma/imgs/brands/MAYBACH.webp",
+        "url": "https://neuf.kifal.ma/search?marque=MAYBACH"
+      },
+      {
+        "name": "MCLAREN",
+        "original_name": "MCLAREN",
+        "category": "premium",
+        "image": "https://referentiel.kifal.ma/imgs/brands/MCLAREN.webp",
+        "url": "https://neuf.kifal.ma/search?marque=MCLAREN"
+      },
+      {
+        "name": "ROLLS-ROYCE",
+        "original_name": "ROLLS-ROYCE",
+        "category": "premium",
+        "image": "https://referentiel.kifal.ma/imgs/brands/ROLLS-ROYCE.webp",
+        "url": "https://neuf.kifal.ma/search?marque=ROLLS-ROYCE"
+      }
+    ],
+    "generaliste": [
+      {
+        "name": "DACIA",
+        "original_name": "DACIA",
+        "category": "generaliste",
+        "image": null,
+        "url": "https://neuf.kifal.ma/search?marque=DACIA&modele=Duster"
+      },
+      {
+        "name": "RENAULT",
+        "original_name": "RENAULT",
+        "category": "generaliste",
+        "image": null,
+        "url": "https://neuf.kifal.ma/search?marque=RENAULT&modele=Zoe"
+      },
+      {
+        "name": "SKODA",
+        "original_name": "SKODA",
+        "category": "generaliste",
+        "image": null,
+        "url": "https://neuf.kifal.ma/search?marque=SKODA&modele=Octavia"
+      },
+      {
+        "name": "VW",
+        "original_name": "VW",
+        "category": "generaliste",
+        "image": "https://referentiel.kifal.ma/imgs/brands/VW.webp",
+        "url": "https://neuf.kifal.ma/search?marque=VW"
+      },
+      {
+        "name": "ABARTH",
+        "original_name": "ABARTH",
+        "category": "generaliste",
+        "image": "https://referentiel.kifal.ma/imgs/brands/ABARTH.webp",
+        "url": "https://neuf.kifal.ma/search?marque=ABARTH"
+      },
+      {
+        "name": "CITROEN",
+        "original_name": "CITROEN",
+        "category": "generaliste",
+        "image": "https://referentiel.kifal.ma/imgs/brands/CITROEN.webp",
+        "url": "https://neuf.kifal.ma/search?marque=CITROEN"
+      },
+      {
+        "name": "FIAT",
+        "original_name": "FIAT",
+        "category": "generaliste",
+        "image": "https://referentiel.kifal.ma/imgs/brands/FIAT.webp",
+        "url": "https://neuf.kifal.ma/search?marque=FIAT"
+      },
+      {
+        "name": "FORD",
+        "original_name": "FORD",
+        "category": "generaliste",
+        "image": "https://referentiel.kifal.ma/imgs/brands/FORD.webp",
+        "url": "https://neuf.kifal.ma/search?marque=FORD"
+      },
+      {
+        "name": "FOTON",
+        "original_name": "FOTON",
+        "category": "generaliste",
+        "image": "https://referentiel.kifal.ma/imgs/brands/FOTON.webp",
+        "url": "https://neuf.kifal.ma/search?marque=FOTON"
+      },
+      {
+        "name": "GAZELLE",
+        "original_name": "GAZELLE",
+        "category": "generaliste",
+        "image": "https://referentiel.kifal.ma/imgs/brands/GAZELLE.webp",
+        "url": "https://neuf.kifal.ma/search?marque=GAZELLE"
+      },
+      {
+        "name": "JEEP",
+        "original_name": "JEEP",
+        "category": "generaliste",
+        "image": "https://referentiel.kifal.ma/imgs/brands/JEEP.webp",
+        "url": "https://neuf.kifal.ma/search?marque=JEEP"
+      },
+      {
+        "name": "LAND-ROVER",
+        "original_name": "LAND-ROVER",
+        "category": "generaliste",
+        "image": "https://referentiel.kifal.ma/imgs/brands/LAND-ROVER.webp",
+        "url": "https://neuf.kifal.ma/search?marque=LAND-ROVER"
+      },
+      {
+        "name": "MAHINDRA",
+        "original_name": "MAHINDRA",
+        "category": "generaliste",
+        "image": "https://referentiel.kifal.ma/imgs/brands/MAHINDRA.webp",
+        "url": "https://neuf.kifal.ma/search?marque=MAHINDRA"
+      },
+      {
+        "name": "OPEL",
+        "original_name": "OPEL",
+        "category": "generaliste",
+        "image": "https://referentiel.kifal.ma/imgs/brands/OPEL.webp",
+        "url": "https://neuf.kifal.ma/search?marque=OPEL"
+      },
+      {
+        "name": "PEUGEOT",
+        "original_name": "PEUGEOT",
+        "category": "generaliste",
+        "image": "https://referentiel.kifal.ma/imgs/brands/PEUGEOT.webp",
+        "url": "https://neuf.kifal.ma/search?marque=PEUGEOT"
+      },
+      {
+        "name": "SEAT",
+        "original_name": "SEAT",
+        "category": "generaliste",
+        "image": "https://referentiel.kifal.ma/imgs/brands/SEAT.webp",
+        "url": "https://neuf.kifal.ma/search?marque=SEAT"
+      },
+      {
+        "name": "SERES",
+        "original_name": "SERES",
+        "category": "generaliste",
+        "image": "https://referentiel.kifal.ma/imgs/brands/SERES.webp",
+        "url": "https://neuf.kifal.ma/search?marque=SERES"
+      },
+      {
+        "name": "TATA",
+        "original_name": "TATA",
+        "category": "generaliste",
+        "image": "https://referentiel.kifal.ma/imgs/brands/TATA.webp",
+        "url": "https://neuf.kifal.ma/search?marque=TATA"
+      },
+      {
+        "name": "CHEVROLET",
+        "original_name": "CHEVROLET",
+        "category": "generaliste",
+        "image": "https://referentiel.kifal.ma/imgs/brands/CHEVROLET.webp",
+        "url": "https://neuf.kifal.ma/search?marque=CHEVROLET"
+      },
+      {
+        "name": "CHRYSLER",
+        "original_name": "CHRYSLER",
+        "category": "generaliste",
+        "image": "https://referentiel.kifal.ma/imgs/brands/CHRYSLER.webp",
+        "url": "https://neuf.kifal.ma/search?marque=CHRYSLER"
+      },
+      {
+        "name": "DAEWOO",
+        "original_name": "DAEWOO",
+        "category": "generaliste",
+        "image": "https://referentiel.kifal.ma/imgs/brands/DAEWOO.webp",
+        "url": "https://neuf.kifal.ma/search?marque=DAEWOO"
+      },
+      {
+        "name": "DODGE",
+        "original_name": "DODGE",
+        "category": "generaliste",
+        "image": "https://referentiel.kifal.ma/imgs/brands/DODGE.webp",
+        "url": "https://neuf.kifal.ma/search?marque=DODGE"
+      },
+      {
+        "name": "GMC",
+        "original_name": "GMC",
+        "category": "generaliste",
+        "image": "https://referentiel.kifal.ma/imgs/brands/GMC.webp",
+        "url": "https://neuf.kifal.ma/search?marque=GMC"
+      },
+      {
+        "name": "HUMMER",
+        "original_name": "HUMMER",
+        "category": "generaliste",
+        "image": "https://referentiel.kifal.ma/imgs/brands/HUMMER.webp",
+        "url": "https://neuf.kifal.ma/search?marque=HUMMER"
+      },
+      {
+        "name": "IVECO",
+        "original_name": "IVECO",
+        "category": "generaliste",
+        "image": "https://referentiel.kifal.ma/imgs/brands/IVECO.webp",
+        "url": "https://neuf.kifal.ma/search?marque=IVECO"
+      },
+      {
+        "name": "LADA",
+        "original_name": "LADA",
+        "category": "generaliste",
+        "image": "https://referentiel.kifal.ma/imgs/brands/LADA.webp",
+        "url": "https://neuf.kifal.ma/search?marque=LADA"
+      },
+      {
+        "name": "PROTON",
+        "original_name": "PROTON",
+        "category": "generaliste",
+        "image": "https://referentiel.kifal.ma/imgs/brands/PROTON.webp",
+        "url": "https://neuf.kifal.ma/search?marque=PROTON"
+      },
+      {
+        "name": "SAAB",
+        "original_name": "SAAB",
+        "category": "generaliste",
+        "image": "https://referentiel.kifal.ma/imgs/brands/SAAB.webp",
+        "url": "https://neuf.kifal.ma/search?marque=SAAB"
+      },
+      {
+        "name": "SMART",
+        "original_name": "SMART",
+        "category": "generaliste",
+        "image": "https://referentiel.kifal.ma/imgs/brands/SMART.webp",
+        "url": "https://neuf.kifal.ma/search?marque=SMART"
+      }
+    ],
+    "chinese": [
+      {
+        "name": "CHANGAN",
+        "original_name": "CHANGAN",
+        "category": "chinese",
+        "image": "https://referentiel.kifal.ma/imgs/brands/CHANGAN.webp",
+        "url": "https://neuf.kifal.ma/search?marque=CHANGAN"
+      },
+      {
+        "name": "CHERY",
+        "original_name": "CHERY",
+        "category": "chinese",
+        "image": "https://referentiel.kifal.ma/imgs/brands/CHERY.webp",
+        "url": "https://neuf.kifal.ma/search?marque=CHERY"
+      },
+      {
+        "name": "DFSK",
+        "original_name": "DFSK",
+        "category": "chinese",
+        "image": "https://referentiel.kifal.ma/imgs/brands/DFSK.webp",
+        "url": "https://neuf.kifal.ma/search?marque=DFSK"
+      },
+      {
+        "name": "GEELY",
+        "original_name": "GEELY",
+        "category": "chinese",
+        "image": "https://referentiel.kifal.ma/imgs/brands/GEELY.webp",
+        "url": "https://neuf.kifal.ma/search?marque=GEELY"
+      },
+      {
+        "name": "GWM",
+        "original_name": "GWM",
+        "category": "chinese",
+        "image": "https://referentiel.kifal.ma/imgs/brands/GWM.webp",
+        "url": "https://neuf.kifal.ma/search?marque=GWM"
+      },
+      {
+        "name": "JAECOO",
+        "original_name": "JAECOO",
+        "category": "chinese",
+        "image": "https://referentiel.kifal.ma/imgs/brands/JAECOO.webp",
+        "url": "https://neuf.kifal.ma/search?marque=JAECOO"
+      },
+      {
+        "name": "MG",
+        "original_name": "MG",
+        "category": "chinese",
+        "image": "https://referentiel.kifal.ma/imgs/brands/MG.webp",
+        "url": "https://neuf.kifal.ma/search?marque=MG"
+      },
+      {
+        "name": "OMODA",
+        "original_name": "OMODA",
+        "category": "chinese",
+        "image": "https://referentiel.kifal.ma/imgs/brands/OMODA.webp",
+        "url": "https://neuf.kifal.ma/search?marque=OMODA"
+      },
+      {
+        "name": "BAIC",
+        "original_name": "BAIC",
+        "category": "chinese",
+        "image": "https://referentiel.kifal.ma/imgs/brands/BAIC.webp",
+        "url": "https://neuf.kifal.ma/search?marque=BAIC"
+      },
+      {
+        "name": "BORGWARD",
+        "original_name": "BORGWARD",
+        "category": "chinese",
+        "image": "https://referentiel.kifal.ma/imgs/brands/BORGWARD.webp",
+        "url": "https://neuf.kifal.ma/search?marque=BORGWARD"
+      },
+      {
+        "name": "HAVAL",
+        "original_name": "HAVAL",
+        "category": "chinese",
+        "image": "https://referentiel.kifal.ma/imgs/brands/HAVAL.webp",
+        "url": "https://neuf.kifal.ma/search?marque=HAVAL"
+      }
+    ],
+    "electric": [
+      {
+        "name": "BYD",
+        "original_name": "BYD",
+        "category": "electric",
+        "image": "https://referentiel.kifal.ma/imgs/brands/BYD.webp",
+        "url": "https://neuf.kifal.ma/search?marque=BYD"
+      },
+      {
+        "name": "ZEEKR",
+        "original_name": "ZEEKR",
+        "category": "electric",
+        "image": "https://referentiel.kifal.ma/imgs/brands/ZEEKR.webp",
+        "url": "https://neuf.kifal.ma/search?marque=ZEEKR"
+      },
+      {
+        "name": "AIWAYS",
+        "original_name": "AIWAYS",
+        "category": "electric",
+        "image": "https://referentiel.kifal.ma/imgs/brands/AIWAYS.webp",
+        "url": "https://neuf.kifal.ma/search?marque=AIWAYS"
+      },
+      {
+        "name": "TESLA",
+        "original_name": "TESLA",
+        "category": "electric",
+        "image": "https://referentiel.kifal.ma/imgs/brands/TESLA.webp",
+        "url": "https://neuf.kifal.ma/search?marque=TESLA"
+      }
+    ]
+  },
+  "metadata": {
+    "total_brands": 84,
+    "processed_at": "2025-09-30 01:17:09",
+    "cleaned_at": "2025-09-30 01:30:00"
+  }
+}
