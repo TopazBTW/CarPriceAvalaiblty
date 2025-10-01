@@ -3,7 +3,6 @@
 import { Header } from "@/components/header"
 import { HeroSection } from "@/components/hero-section"
 import { FeaturesSection } from "@/components/features-section"
-import { SmartCarPricePrediction } from "@/components/smart-car-prediction"
 import { CitiesSection } from "@/components/cities-section"
 import { PopularCarsSection } from "@/components/popular-cars-section"
 import { FAQSection } from "@/components/faq-section"
@@ -15,7 +14,6 @@ export default function HomePage() {
       <Header />
       <main>
         <HeroSection />
-        <SmartCarPricePrediction />
         <FeaturesSection />
         <CitiesSection />
         <PopularCarsSection />

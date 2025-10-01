@@ -1,4 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card"
+import { TrendingUp } from "lucide-react"
 
 export function PopularCarsSection() {
   const popularCars = [
@@ -23,7 +24,10 @@ export function PopularCarsSection() {
     <section className="py-16 bg-muted/30">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold mb-4">Voitures d'Occasion Populaires</h2>
+          <div className="flex items-center justify-center gap-2 mb-4">
+            <TrendingUp className="h-8 w-8 text-primary" />
+            <h2 className="text-3xl font-bold">Voitures d'Occasion Populaires</h2>
+          </div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">

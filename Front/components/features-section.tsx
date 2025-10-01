@@ -1,4 +1,4 @@
-import { Shield, Clock, TrendingUp } from "lucide-react"
+import { Gauge, ShieldCheck, Database } from "lucide-react"
 
 export function FeaturesSection() {
   return (
@@ -15,7 +15,7 @@ export function FeaturesSection() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
           <div className="text-center">
             <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-              <Clock className="h-8 w-8 text-primary" />
+              <Gauge className="h-8 w-8 text-primary" />
             </div>
             <h3 className="text-xl font-semibold mb-2">Rapidité</h3>
             <p className="text-muted-foreground text-sm">
@@ -25,7 +25,7 @@ export function FeaturesSection() {
 
           <div className="text-center">
             <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-              <Shield className="h-8 w-8 text-primary" />
+              <ShieldCheck className="h-8 w-8 text-primary" />
             </div>
             <h3 className="text-xl font-semibold mb-2">Précision</h3>
             <p className="text-muted-foreground text-sm">
@@ -35,7 +35,7 @@ export function FeaturesSection() {
 
           <div className="text-center">
             <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-              <TrendingUp className="h-8 w-8 text-primary" />
+              <Database className="h-8 w-8 text-primary" />
             </div>
             <h3 className="text-xl font-semibold mb-2">Couverture</h3>
             <p className="text-muted-foreground text-sm">

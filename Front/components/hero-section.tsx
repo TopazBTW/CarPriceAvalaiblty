@@ -6,6 +6,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Input } from "@/components/ui/input"
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { useState } from "react"
+import { Calculator } from "lucide-react"
 
 export function HeroSection() {
   const [ownershipType, setOwnershipType] = useState("premiere")
@@ -117,6 +118,7 @@ export function HeroSection() {
           </div>
 
           <Button className="w-full bg-primary hover:bg-primary/90 text-primary-foreground py-3 text-lg font-medium">
+            <Calculator className="mr-2 h-5 w-5" />
             Obtenir l'Évaluation
           </Button>
         </Card>

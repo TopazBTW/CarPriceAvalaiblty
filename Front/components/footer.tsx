@@ -1,4 +1,4 @@
-import { Facebook, Twitter, Instagram, Youtube } from "lucide-react"
+import { Facebook, Twitter, Instagram, Youtube, Mail, Phone, MapPin } from "lucide-react"
 
 export function Footer() {
   return (
@@ -15,11 +15,33 @@ export function Footer() {
             <p className="text-primary-foreground/80 text-sm mb-4">
               Votre partenaire de confiance pour l'évaluation de voitures d'occasion au Maroc.
             </p>
+            <div className="space-y-2 mb-4 text-sm text-primary-foreground/80">
+              <div className="flex items-center gap-2">
+                <Phone className="h-4 w-4" />
+                <span>+212 5XX-XXXXXX</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <Mail className="h-4 w-4" />
+                <span>contact@autovalue.ma</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <MapPin className="h-4 w-4" />
+                <span>Casablanca, Maroc</span>
+              </div>
+            </div>
             <div className="flex space-x-4">
-              <Facebook className="h-5 w-5 hover:text-primary-foreground/60 cursor-pointer" />
-              <Twitter className="h-5 w-5 hover:text-primary-foreground/60 cursor-pointer" />
-              <Instagram className="h-5 w-5 hover:text-primary-foreground/60 cursor-pointer" />
-              <Youtube className="h-5 w-5 hover:text-primary-foreground/60 cursor-pointer" />
+              <a href="#" className="hover:text-primary-foreground/60 transition-colors">
+                <Facebook className="h-5 w-5" />
+              </a>
+              <a href="#" className="hover:text-primary-foreground/60 transition-colors">
+                <Twitter className="h-5 w-5" />
+              </a>
+              <a href="#" className="hover:text-primary-foreground/60 transition-colors">
+                <Instagram className="h-5 w-5" />
+              </a>
+              <a href="#" className="hover:text-primary-foreground/60 transition-colors">
+                <Youtube className="h-5 w-5" />
+              </a>
             </div>
           </div>
 
@@ -103,7 +125,7 @@ export function Footer() {
         </div>
 
         <div className="border-t border-primary-foreground/20 mt-8 pt-8 text-center">
-          <p className="text-sm text-primary-foreground/60">© 2024 AutoValue Maroc. Tous droits réservés.</p>
+          <p className="text-sm text-primary-foreground/60">© 2025 AutoValue Maroc. Tous droits réservés.</p>
         </div>
       </div>
     </footer>
