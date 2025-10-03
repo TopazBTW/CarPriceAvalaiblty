@@ -63,6 +63,43 @@ class KifalDataProcessor:
         cleaned = cleaned.replace('é', 'e').replace('è', 'e').replace('à', 'a')
         
         return cleaned.title()
+
+    def is_location_string(self, s: str) -> bool:
+        """Heuristic to decide if a string is an address/location rather than a model name"""
+        if not s or len(s) < 3:
+            return False
+        s_upper = s.upper()
+        location_indicators = ['BOULEVARD', 'RUE', 'ROUTE', 'RTE', 'CASABLANCA', 'RABAT', 'BUSINESS CENTER', ',', 'AVENUE', 'PLACE', 'IMM', 'Z.I', 'ZONE']
+        # If contains typical address words or many commas, treat as location
+        if any(tok in s_upper for tok in location_indicators):
+            return True
+        # Very long strings (likely concatenated address) are suspicious
+        if len(s) > 60 and ' ' in s:
+            return True
+        return False
+
+    def extract_model_from_variation(self, variation: Dict[str, Any]) -> str:
+        """Try to derive a reasonable model name from a variation entry"""
+        # Prefer explicit model field if present and not a location
+        v_model = variation.get('model') or variation.get('title') or ''
+        if v_model and not self.is_location_string(str(v_model)):
+            return self.clean_model_name(str(v_model))
+
+        # Try to parse from raw_text (often contains model tokens)
+        raw = variation.get('raw_text') or variation.get('description') or ''
+        if raw:
+            # Heuristic: take first 3 words that are not numbers and not address-like
+            tokens = re.findall(r"[A-Za-zÀ-ÿ0-9'-]+", raw)
+            if tokens:
+                # remove tokens that look like years or engine sizes
+                tokens = [t for t in tokens if not re.match(r'^[0-9]{4}$', t) and not re.match(r'^\d+(\.\d+)?L$', t, flags=re.IGNORECASE)]
+                if tokens:
+                    candidate = ' '.join(tokens[:3])
+                    if not self.is_location_string(candidate):
+                        return self.clean_model_name(candidate)
+
+        # Fallback
+        return 'Unknown'
     
     def extract_car_details(self, model_data: Dict[str, Any]) -> Dict[str, Any]:
         """Extract detailed car information from model data"""
@@ -144,36 +181,69 @@ class KifalDataProcessor:
                 self.clean_data['models'][clean_brand_name] = {}
             
             for model_name, model_variations in brand_models.items():
-                clean_model_name = self.clean_model_name(model_name)
-                
-                if clean_model_name not in self.clean_data['models'][clean_brand_name]:
-                    self.clean_data['models'][clean_brand_name][clean_model_name] = []
-                
-                for variation in model_variations:
-                    # Extract car details
-                    details = self.extract_car_details(variation)
+                # If the model_name looks like a location/address, extract model per variation
+                if self.is_location_string(model_name):
+                    for variation in model_variations:
+                        derived_model = self.extract_model_from_variation(variation)
+                        clean_model_name = self.clean_model_name(derived_model)
+
+                        if clean_model_name not in self.clean_data['models'][clean_brand_name]:
+                            self.clean_data['models'][clean_brand_name][clean_model_name] = []
+
+                        # Extract car details
+                        details = self.extract_car_details(variation)
+
+                        car_entry = {
+                            'id': car_id,
+                            'brand': clean_brand_name,
+                            'model': clean_model_name,
+                            'price': variation.get('price'),
+                            'price_range': self.categorize_price_range(variation.get('price')),
+                            'year': details['year'],
+                            'engine': details['engine'],
+                            'fuel_type': details['fuel_type'],
+                            'transmission': details['transmission'],
+                            'url': variation.get('url'),
+                            'image': variation.get('image'),
+                            'source': 'kifal.ma',
+                            'scraped_at': raw_data.get('metadata', {}).get('scraped_at')
+                        }
+
+                        self.clean_data['cars'].append(car_entry)
+                        self.clean_data['models'][clean_brand_name][clean_model_name].append(car_entry)
+
+                        car_id += 1
+                else:
+                    clean_model_name = self.clean_model_name(model_name)
                     
-                    # Create clean car entry
-                    car_entry = {
-                        'id': car_id,
-                        'brand': clean_brand_name,
-                        'model': clean_model_name,
-                        'price': variation.get('price'),
-                        'price_range': self.categorize_price_range(variation.get('price')),
-                        'year': details['year'],
-                        'engine': details['engine'],
-                        'fuel_type': details['fuel_type'],
-                        'transmission': details['transmission'],
-                        'url': variation.get('url'),
-                        'image': variation.get('image'),
-                        'source': 'kifal.ma',
-                        'scraped_at': raw_data.get('metadata', {}).get('scraped_at')
-                    }
+                    if clean_model_name not in self.clean_data['models'][clean_brand_name]:
+                        self.clean_data['models'][clean_brand_name][clean_model_name] = []
                     
-                    self.clean_data['cars'].append(car_entry)
-                    self.clean_data['models'][clean_brand_name][clean_model_name].append(car_entry)
-                    
-                    car_id += 1
+                    for variation in model_variations:
+                        # Extract car details
+                        details = self.extract_car_details(variation)
+                        
+                        # Create clean car entry
+                        car_entry = {
+                            'id': car_id,
+                            'brand': clean_brand_name,
+                            'model': clean_model_name,
+                            'price': variation.get('price'),
+                            'price_range': self.categorize_price_range(variation.get('price')),
+                            'year': details['year'],
+                            'engine': details['engine'],
+                            'fuel_type': details['fuel_type'],
+                            'transmission': details['transmission'],
+                            'url': variation.get('url'),
+                            'image': variation.get('image'),
+                            'source': 'kifal.ma',
+                            'scraped_at': raw_data.get('metadata', {}).get('scraped_at')
+                        }
+                        
+                        self.clean_data['cars'].append(car_entry)
+                        self.clean_data['models'][clean_brand_name][clean_model_name].append(car_entry)
+                        
+                        car_id += 1
         
         # Update metadata
         self.clean_data['metadata'] = {

@@ -38,31 +38,36 @@ car_data: Dict[str, Any] = {}
 brands_data: Dict[str, Any] = {}
 
 def load_car_data():
-    """Load clean car data from Kifal.ma scraping"""
+    """Load complete car data from generated dataset"""
     global car_data, brands_data
     
     try:
-        # Load main car data
+        # Load main car data (new structure)
         cars_file = Path("data/json/morocco_cars_clean.json")
         if cars_file.exists():
             with open(cars_file, 'r', encoding='utf-8') as f:
-                car_data = json.load(f)
-                logger.info(f"✅ Loaded {len(car_data.get('cars', []))} cars from Kifal.ma data")
+                data = json.load(f)
+                car_data = data
+                brands_data = data.get('brands', {})
+                
+                # Count total cars from models
+                total_cars = 0
+                for brand_models in data.get('models', {}).values():
+                    for model_cars in brand_models.values():
+                        total_cars += len(model_cars)
+                
+                logger.info(f"✅ Loaded {total_cars} cars from complete dataset")
+                logger.info(f"✅ Loaded {len(brands_data)} brands")
         
-        # Load brands data
-        brands_file = Path("data/json/morocco_brands_clean.json")
-        if brands_file.exists():
-            with open(brands_file, 'r', encoding='utf-8') as f:
-                brands_data = json.load(f)
-                logger.info(f"✅ Loaded {len(brands_data.get('brands', []))} brands")
-        
-        if not car_data or not brands_data:
-            logger.warning("⚠️ No clean data found - run kifal_scraper.py and process_kifal_data.py first")
+        if not car_data:
+            logger.warning("⚠️ No data found - generating sample data")
+            car_data = {"brands": {}, "models": {}, "metadata": {}}
+            brands_data = {}
             
     except Exception as e:
         logger.error(f"❌ Error loading data: {e}")
-        car_data = {"brands": {}, "models": {}, "cars": [], "metadata": {}}
-        brands_data = {"brands": [], "categories": {}}
+        car_data = {"brands": {}, "models": {}, "metadata": {}}
+        brands_data = {}
 
 # Pydantic models
 class CarPredictionRequest(BaseModel):

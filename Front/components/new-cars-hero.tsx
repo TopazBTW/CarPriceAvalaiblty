@@ -113,7 +113,11 @@ export function NewCarsHero() {
                   <Label htmlFor="model">Modèle</Label>
                   <Select
                     value={selectedModel}
-                    onValueChange={(v) => setSelectedModel(v || undefined)}
+                    onValueChange={(v) => {
+                      // Don't set special placeholder values
+                      if (v === "no-brand" || v === "no-models") return
+                      setSelectedModel(v || undefined)
+                    }}
                   >
                     <SelectTrigger id="model" aria-disabled={!selectedBrand}>
                       <SelectValue placeholder={
@@ -121,9 +125,9 @@ export function NewCarsHero() {
                       } />
                     </SelectTrigger>
                     <SelectContent>
-                      {!selectedBrand && <SelectItem value="">-- Aucun --</SelectItem>}
+                      {!selectedBrand && <SelectItem value="no-brand">-- Aucun --</SelectItem>}
                       {models.length === 0 && selectedBrand && !loadingModels && (
-                        <SelectItem value="">Aucun modèle trouvé</SelectItem>
+                        <SelectItem value="no-models" disabled>Aucun modèle trouvé</SelectItem>
                       )}
                       {models.map((model) => (
                         <SelectItem key={model} value={model}>
