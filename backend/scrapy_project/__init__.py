@@ -1,0 +1,1 @@
+# Scrapy project for Morocco used cars scraping
