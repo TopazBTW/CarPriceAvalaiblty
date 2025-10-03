@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { Search, Camera, Car } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Label } from "@/components/ui/label"
@@ -11,28 +11,62 @@ import { Card } from "@/components/ui/card"
 export function NewCarsHero() {
   const [searchType, setSearchType] = useState("brand")
 
-  const brands = [
-    "Dacia",
-    "Renault",
-    "Peugeot",
-    "Citroën",
-    "Volkswagen",
-    "Toyota",
-    "Hyundai",
-    "Kia",
-    "Nissan",
-    "Ford",
-    "Fiat",
-    "Seat",
-    "Skoda",
-    "Audi",
-    "BMW",
-    "Mercedes-Benz",
-    "Mazda",
-    "Suzuki",
-    "Mitsubishi",
-    "Opel",
-  ]
+  const [brands, setBrands] = useState<string[]>([])
+  const [models, setModels] = useState<string[]>([])
+  const [selectedBrand, setSelectedBrand] = useState<string | undefined>(undefined)
+  const [selectedModel, setSelectedModel] = useState<string | undefined>(undefined)
+  const [loadingBrands, setLoadingBrands] = useState(false)
+  const [loadingModels, setLoadingModels] = useState(false)
+
+  useEffect(() => {
+    // Load brands from backend on mount
+    const loadBrands = async () => {
+      try {
+        setLoadingBrands(true)
+        const res = await fetch('http://localhost:8000/brands')
+        if (!res.ok) throw new Error('Failed to load brands')
+        const data = await res.json()
+        // backend returns { brands: [...] }
+        const names: string[] = (data.brands || []).map((b: any) => b.name || b)
+        setBrands(names)
+      } catch (e) {
+        console.error('Error fetching brands', e)
+      } finally {
+        setLoadingBrands(false)
+      }
+    }
+
+    loadBrands()
+  }, [])
+
+  useEffect(() => {
+    // When brand changes, fetch models for that brand
+    if (!selectedBrand) {
+      setModels([])
+      setSelectedModel(undefined)
+      return
+    }
+
+    const loadModels = async () => {
+      try {
+        setLoadingModels(true)
+        const encoded = encodeURIComponent(selectedBrand)
+        const res = await fetch(`http://localhost:8000/brands/${encoded}/models`)
+        if (!res.ok) throw new Error('Failed to load models')
+        const data = await res.json()
+        // backend returns { models: [ { name: '...' }, ... ] }
+        const names: string[] = (data.models || []).map((m: any) => m.name || m)
+        setModels(names)
+      } catch (e) {
+        console.error('Error fetching models', e)
+        setModels([])
+      } finally {
+        setLoadingModels(false)
+      }
+    }
+
+    loadModels()
+  }, [selectedBrand])
 
   return (
     <section className="py-16 bg-gradient-to-b from-background to-muted/30">
@@ -61,13 +95,13 @@ export function NewCarsHero() {
               <div className="grid md:grid-cols-2 gap-4">
                 <div className="space-y-2">
                   <Label htmlFor="brand">Marque</Label>
-                  <Select>
+                  <Select value={selectedBrand} onValueChange={(v) => setSelectedBrand(v || undefined)}>
                     <SelectTrigger id="brand">
-                      <SelectValue placeholder="Sélectionner une marque" />
+                      <SelectValue placeholder={loadingBrands ? 'Chargement...' : 'Sélectionner une marque'} />
                     </SelectTrigger>
                     <SelectContent>
                       {brands.map((brand) => (
-                        <SelectItem key={brand} value={brand.toLowerCase()}>
+                        <SelectItem key={brand} value={brand}>
                           {brand}
                         </SelectItem>
                       ))}
@@ -77,19 +111,50 @@ export function NewCarsHero() {
 
                 <div className="space-y-2">
                   <Label htmlFor="model">Modèle</Label>
-                  <Select>
-                    <SelectTrigger id="model">
-                      <SelectValue placeholder="Sélectionner un modèle" />
+                  <Select
+                    value={selectedModel}
+                    onValueChange={(v) => setSelectedModel(v || undefined)}
+                  >
+                    <SelectTrigger id="model" aria-disabled={!selectedBrand}>
+                      <SelectValue placeholder={
+                        !selectedBrand ? 'Choisissez d’abord une marque' : loadingModels ? 'Chargement...' : 'Sélectionner un modèle'
+                      } />
                     </SelectTrigger>
                     <SelectContent>
-                      <SelectItem value="all">Tous les modèles</SelectItem>
+                      {!selectedBrand && <SelectItem value="">-- Aucun --</SelectItem>}
+                      {models.length === 0 && selectedBrand && !loadingModels && (
+                        <SelectItem value="">Aucun modèle trouvé</SelectItem>
+                      )}
+                      {models.map((model) => (
+                        <SelectItem key={model} value={model}>
+                          {model}
+                        </SelectItem>
+                      ))}
                     </SelectContent>
                   </Select>
                 </div>
               </div>
 
               <div className="flex flex-col sm:flex-row gap-3 pt-4">
-                <Button className="flex-1 bg-primary hover:bg-primary/90 text-primary-foreground py-3 text-lg font-medium">
+                <Button
+                  className="flex-1 bg-primary hover:bg-primary/90 text-primary-foreground py-3 text-lg font-medium"
+                  onClick={async () => {
+                    try {
+                      const params = new URLSearchParams()
+                      if (selectedBrand) params.append('brand', selectedBrand)
+                      if (selectedModel) params.append('q', selectedModel)
+                      params.append('limit', '50')
+
+                      const res = await fetch(`http://localhost:8000/search?${params.toString()}`)
+                      if (!res.ok) throw new Error('Search failed')
+                      const data = await res.json()
+                      console.log('Search results', data)
+                      // TODO: navigate to results page or display results in UI
+                    } catch (e) {
+                      console.error('Search error', e)
+                    }
+                  }}
+                >
                   <Search className="mr-2 h-5 w-5" />
                   Rechercher
                 </Button>

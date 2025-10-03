@@ -7,7 +7,8 @@ import os
 import sys
 
 # Change to backend directory
-backend_dir = r"c:\Users\berse\Desktop\Car\morocco-car-valuation (2)\backend"
+# Use current script directory as backend dir (works in workspace)
+backend_dir = os.path.dirname(os.path.abspath(__file__))
 os.chdir(backend_dir)
 
 # Add to Python path
