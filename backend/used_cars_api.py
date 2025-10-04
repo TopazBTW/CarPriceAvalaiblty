@@ -14,6 +14,7 @@ from typing import Optional, List, Dict
 from fastapi import FastAPI, HTTPException, BackgroundTasks
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
+from models.ml_model import MLModel
 
 app = FastAPI(title="Morocco Used Cars Scraper API", version="1.0.0")
 
@@ -48,9 +49,47 @@ class UsedCar(BaseModel):
     source: str
     images: Optional[List[str]] = []
 
+class PredictionRequest(BaseModel):
+    brand: str
+    model: str
+    year: int
+    km_driven: int
+    fuel_type: str
+    transmission: str
+    seller_type: Optional[str] = "Individual"
+    owner: Optional[str] = "First Owner"
+
 # Global storage for scraped results
 scraped_results = []
 scraping_status = {"status": "idle", "progress": 0, "message": ""}
+
+# Global ML model and data storage
+ml_model = None
+brands_data = None
+cars_data = None
+
+# Load data on startup
+def load_data():
+    global brands_data, cars_data, ml_model
+    try:
+        # Load brands data
+        with open("data/json/morocco_brands_clean.json", "r", encoding="utf-8") as f:
+            brands_data = json.load(f)
+        
+        # Load cars data (includes models)
+        with open("data/json/morocco_cars_clean.json", "r", encoding="utf-8") as f:
+            cars_data = json.load(f)
+            
+        # Initialize ML model
+        ml_model = MLModel()
+        print("✅ Data and ML model loaded successfully")
+    except Exception as e:
+        print(f"❌ Error loading data: {e}")
+        brands_data = {"brands": []}
+        cars_data = {"brands": {}, "models": {}}
+
+# Load data on import
+load_data()
 
 @app.get("/")
 async def root():
@@ -58,11 +97,136 @@ async def root():
         "message": "Morocco Used Cars Scraper API",
         "version": "1.0.0",
         "endpoints": {
-            "search": "/search-cars",
+            "brands": "/brands",
+            "models": "/brands/{brand}/models", 
+            "predict": "/predict",
+            "search": "/search",
+            "search-cars": "/search-cars",
             "status": "/scraping-status",
             "results": "/scraped-results"
         }
     }
+
+@app.get("/brands")
+async def get_brands():
+    """Get all available car brands"""
+    if not brands_data:
+        raise HTTPException(status_code=500, detail="Brands data not loaded")
+    
+    return {
+        "brands": [brand["name"] for brand in brands_data.get("brands", [])]
+    }
+
+@app.get("/brands/{brand}/models")
+async def get_models_for_brand(brand: str):
+    """Get all models for a specific brand"""
+    if not cars_data:
+        raise HTTPException(status_code=500, detail="Cars data not loaded")
+    
+    brand_upper = brand.upper()
+    brand_models = cars_data.get("models", {}).get(brand_upper, {})
+    
+    models = list(brand_models.keys())
+    
+    return {
+        "models": [{"name": model} for model in models]
+    }
+
+@app.post("/predict")
+async def predict_car_price(request: PredictionRequest):
+    """Predict car price using ML model"""
+    if not ml_model:
+        raise HTTPException(status_code=500, detail="ML model not loaded")
+    
+    try:
+        # Prepare data for prediction
+        car_data = {
+            "Brand": request.brand,
+            "Model": request.model,
+            "Year": request.year,
+            "KM_Driven": request.km_driven,
+            "Fuel": request.fuel_type,
+            "Transmission": request.transmission,
+            "Seller_Type": request.seller_type,
+            "Owner": request.owner
+        }
+        
+        # Make prediction
+        result = ml_model.predict(car_data)
+        
+        return {
+            "predicted_price": result["price"],
+            "confidence": result["confidence"],
+            "currency": "MAD",
+            "model_info": {
+                "rf_prediction": result.get("rf_prediction"),
+                "gb_prediction": result.get("gb_prediction")
+            }
+        }
+        
+    except Exception as e:
+        raise HTTPException(status_code=400, detail=f"Prediction error: {str(e)}")
+
+@app.get("/search")
+async def search_cars_simple(brand: Optional[str] = None, model: Optional[str] = None, 
+                           min_price: Optional[int] = None, max_price: Optional[int] = None):
+    """Simple car search endpoint"""
+    if not cars_data:
+        raise HTTPException(status_code=500, detail="Cars data not loaded")
+    
+    results = []
+    
+    try:
+        # Search through the cars data
+        models_data = cars_data.get("models", {})
+        
+        for brand_name, brand_models in models_data.items():
+            # Filter by brand if specified
+            if brand and brand.upper() != brand_name.upper():
+                continue
+                
+            for model_name, cars in brand_models.items():
+                # Filter by model if specified
+                if model and model.lower() not in model_name.lower():
+                    continue
+                    
+                for car in cars[:5]:  # Limit to 5 cars per model
+                    car_price = car.get("price", 0)
+                    
+                    # Filter by price range
+                    if min_price and car_price < min_price:
+                        continue
+                    if max_price and car_price > max_price:
+                        continue
+                        
+                    results.append({
+                        "id": car.get("id"),
+                        "brand": car.get("brand"),
+                        "model": car.get("model"),
+                        "price": car_price,
+                        "year": car.get("year"),
+                        "fuel_type": car.get("fuel_type"),
+                        "transmission": car.get("transmission"),
+                        "url": car.get("url"),
+                        "image": car.get("image")
+                    })
+                    
+        # Limit total results
+        results = results[:20]
+        
+        return {
+            "cars": results,
+            "total": len(results),
+            "search_criteria": {
+                "brand": brand,
+                "model": model,
+                "min_price": min_price,
+                "max_price": max_price
+            }
+        }
+        
+    except Exception as e:
+        raise HTTPException(status_code=400, detail=f"Search error: {str(e)}")
 
 @app.post("/search-cars")
 async def search_cars(request: SearchRequest, background_tasks: BackgroundTasks):
