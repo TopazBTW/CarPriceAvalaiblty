@@ -23,17 +23,23 @@ export function NewCarsHero() {
   const [searchResults, setSearchResults] = useState<any[]>([])
   const [searchLoading, setSearchLoading] = useState(false)
   const [searchError, setSearchError] = useState("")
+  
+  // Filtres additionnels
+  const [selectedFuel, setSelectedFuel] = useState<string | undefined>(undefined)
+  const [selectedTransmission, setSelectedTransmission] = useState<string | undefined>(undefined)
+  const [minPrice, setMinPrice] = useState<string>("")
+  const [maxPrice, setMaxPrice] = useState<string>("")
 
   useEffect(() => {
     // Load brands from backend on mount
     const loadBrands = async () => {
       try {
         setLoadingBrands(true)
-        const res = await fetch('http://localhost:8000/brands')
+        const res = await fetch('http://localhost:8000/new-cars/brands')
         if (!res.ok) throw new Error('Failed to load brands')
         const data = await res.json()
-        // backend returns { brands: [...] }
-        const names: string[] = (data.brands || []).map((b: any) => b.name || b)
+        // backend returns { brands: ["BMW", "Audi", ...] }
+        const names: string[] = data.brands || []
         setBrands(names)
       } catch (e) {
         console.error('Error fetching brands', e)
@@ -57,11 +63,11 @@ export function NewCarsHero() {
       try {
         setLoadingModels(true)
         const encoded = encodeURIComponent(selectedBrand)
-        const res = await fetch(`http://localhost:8000/brands/${encoded}/models`)
+        const res = await fetch(`http://localhost:8000/new-cars/brands/${encoded}/models`)
         if (!res.ok) throw new Error('Failed to load models')
         const data = await res.json()
-        // backend returns { models: [ { name: '...' }, ... ] }
-        const names: string[] = (data.models || []).map((m: any) => m.name || m)
+        // backend returns { models: ["Corolla", "Camry", ...] }
+        const names: string[] = data.models || []
         setModels(names)
       } catch (e) {
         console.error('Error fetching models', e)
@@ -92,8 +98,9 @@ export function NewCarsHero() {
           <h2 className="text-2xl font-semibold mb-6 text-center">Rechercher une Voiture Neuve</h2>
 
           <Tabs value={searchType} onValueChange={setSearchType} className="w-full">
-            <TabsList className="grid w-full grid-cols-2 mb-6">
+            <TabsList className="grid w-full grid-cols-3 mb-6">
               <TabsTrigger value="brand">Par marque/modèle</TabsTrigger>
+              <TabsTrigger value="filters">Filtres avancés</TabsTrigger>
               <TabsTrigger value="bodytype">Par type de carrosserie</TabsTrigger>
             </TabsList>
 
@@ -158,9 +165,13 @@ export function NewCarsHero() {
                       const params = new URLSearchParams()
                       if (selectedBrand) params.append('brand', selectedBrand)
                       if (selectedModel) params.append('model', selectedModel)
+                      if (selectedFuel) params.append('fuel', selectedFuel)
+                      if (selectedTransmission) params.append('transmission', selectedTransmission)
+                      if (minPrice) params.append('min_price', minPrice)
+                      if (maxPrice) params.append('max_price', maxPrice)
                       params.append('limit', '20')
 
-                      const res = await fetch(`http://localhost:8000/search?${params.toString()}`)
+                      const res = await fetch(`http://localhost:8000/new-cars/search?${params.toString()}`)
                       if (!res.ok) throw new Error('Search failed')
                       const data = await res.json()
                       
@@ -188,6 +199,127 @@ export function NewCarsHero() {
                 <Button variant="outline" className="flex-1 py-3 text-lg font-medium bg-transparent">
                   <Camera className="mr-2 h-5 w-5" />
                   Par Image
+                </Button>
+              </div>
+            </TabsContent>
+
+            <TabsContent value="filters" className="space-y-4">
+              <div className="grid md:grid-cols-2 gap-4">
+                <div className="space-y-2">
+                  <Label htmlFor="fuel">Carburant</Label>
+                  <Select value={selectedFuel} onValueChange={setSelectedFuel}>
+                    <SelectTrigger id="fuel">
+                      <SelectValue placeholder="Tous les carburants" />
+                    </SelectTrigger>
+                    <SelectContent>
+                      <SelectItem value="Gasoline">Essence</SelectItem>
+                      <SelectItem value="Diesel">Diesel</SelectItem>
+                      <SelectItem value="Electric">Électrique</SelectItem>
+                      <SelectItem value="Hybrid">Hybride</SelectItem>
+                    </SelectContent>
+                  </Select>
+                </div>
+
+                <div className="space-y-2">
+                  <Label htmlFor="transmission">Transmission</Label>
+                  <Select value={selectedTransmission} onValueChange={setSelectedTransmission}>
+                    <SelectTrigger id="transmission">
+                      <SelectValue placeholder="Toutes les transmissions" />
+                    </SelectTrigger>
+                    <SelectContent>
+                      <SelectItem value="Manual">Manuelle</SelectItem>
+                      <SelectItem value="Automatic">Automatique</SelectItem>
+                      <SelectItem value="4x4">4x4</SelectItem>
+                    </SelectContent>
+                  </Select>
+                </div>
+              </div>
+
+              <div className="grid md:grid-cols-2 gap-4">
+                <div className="space-y-2">
+                  <Label htmlFor="minPrice">Prix minimum (MAD)</Label>
+                  <input
+                    id="minPrice"
+                    type="number"
+                    placeholder="Ex: 100000"
+                    className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                    value={minPrice}
+                    onChange={(e) => setMinPrice(e.target.value)}
+                  />
+                </div>
+
+                <div className="space-y-2">
+                  <Label htmlFor="maxPrice">Prix maximum (MAD)</Label>
+                  <input
+                    id="maxPrice"
+                    type="number"
+                    placeholder="Ex: 500000"
+                    className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                    value={maxPrice}
+                    onChange={(e) => setMaxPrice(e.target.value)}
+                  />
+                </div>
+              </div>
+
+              <div className="flex flex-col sm:flex-row gap-3 pt-4">
+                <Button
+                  className="flex-1 bg-primary hover:bg-primary/90 text-primary-foreground py-3 text-lg font-medium"
+                  disabled={searchLoading}
+                  onClick={async () => {
+                    setSearchLoading(true)
+                    setSearchError("")
+                    setSearchResults([])
+                    
+                    try {
+                      const params = new URLSearchParams()
+                      if (selectedBrand) params.append('brand', selectedBrand)
+                      if (selectedModel) params.append('model', selectedModel)
+                      if (selectedFuel) params.append('fuel', selectedFuel)
+                      if (selectedTransmission) params.append('transmission', selectedTransmission)
+                      if (minPrice) params.append('min_price', minPrice)
+                      if (maxPrice) params.append('max_price', maxPrice)
+                      params.append('limit', '20')
+
+                      const res = await fetch(`http://localhost:8000/new-cars/search?${params.toString()}`)
+                      if (!res.ok) throw new Error('Search failed')
+                      const data = await res.json()
+                      
+                      console.log('Search results', data)
+                      setSearchResults(data.cars || [])
+                      
+                      if (!data.cars || data.cars.length === 0) {
+                        setSearchError('Aucune voiture trouvée pour ces critères')
+                      }
+                    } catch (e) {
+                      console.error('Search error', e)
+                      setSearchError('Erreur lors de la recherche. Veuillez réessayer.')
+                    } finally {
+                      setSearchLoading(false)
+                    }
+                  }}
+                >
+                  {searchLoading ? (
+                    <Loader2 className="mr-2 h-5 w-5 animate-spin" />
+                  ) : (
+                    <Search className="mr-2 h-5 w-5" />
+                  )}
+                  {searchLoading ? 'Recherche...' : 'Rechercher'}
+                </Button>
+                <Button 
+                  variant="outline" 
+                  className="flex-1 py-3 text-lg font-medium bg-transparent"
+                  onClick={() => {
+                    setSelectedBrand(undefined)
+                    setSelectedModel(undefined)
+                    setSelectedFuel(undefined)
+                    setSelectedTransmission(undefined)
+                    setMinPrice("")
+                    setMaxPrice("")
+                    setSearchResults([])
+                    setSearchError("")
+                  }}
+                >
+                  Réinitialiser
                 </Button>
               </div>
             </TabsContent>
@@ -261,6 +393,9 @@ export function NewCarsHero() {
                       <h4 className="font-semibold text-lg mb-2">
                         {car.brand} {car.model}
                       </h4>
+                      {car.trim && (
+                        <p className="text-sm font-medium text-blue-600 mb-2">{car.trim}</p>
+                      )}
                       <div className="space-y-1 text-sm text-gray-600 mb-3">
                         {car.year && <p>Année: {car.year}</p>}
                         {car.fuel_type && <p>Carburant: {car.fuel_type}</p>}

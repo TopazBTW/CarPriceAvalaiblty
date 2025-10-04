@@ -15,6 +15,7 @@ from fastapi import FastAPI, HTTPException, BackgroundTasks
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from models.ml_model import MLModel
+import pandas as pd
 
 app = FastAPI(title="Morocco Used Cars Scraper API", version="1.0.0")
 
@@ -67,10 +68,11 @@ scraping_status = {"status": "idle", "progress": 0, "message": ""}
 ml_model = None
 brands_data = None
 cars_data = None
+new_cars_data = None
 
 # Load data on startup
 def load_data():
-    global brands_data, cars_data, ml_model
+    global brands_data, cars_data, ml_model, new_cars_data
     try:
         # Load brands data
         with open("data/json/morocco_brands_clean.json", "r", encoding="utf-8") as f:
@@ -82,6 +84,15 @@ def load_data():
             
         # Initialize ML model
         ml_model = MLModel()
+        
+        # Load new cars CSV data
+        csv_path = "data/csv/morocco_new_cars.csv"
+        if os.path.exists(csv_path):
+            new_cars_data = pd.read_csv(csv_path)
+            print(f"✅ New cars CSV loaded: {len(new_cars_data)} cars")
+        else:
+            print(f"⚠️  CSV file not found: {csv_path}")
+            
         print("✅ Data and ML model loaded successfully")
     except Exception as e:
         print(f"❌ Error loading data: {e}")
@@ -101,6 +112,9 @@ async def root():
             "models": "/brands/{brand}/models", 
             "predict": "/predict",
             "search": "/search",
+            "new_cars_brands": "/new-cars/brands",
+            "new_cars_models": "/new-cars/brands/{brand}/models",
+            "new_cars_search": "/new-cars/search",
             "search-cars": "/search-cars",
             "status": "/scraping-status",
             "results": "/scraped-results"
@@ -166,6 +180,94 @@ async def predict_car_price(request: PredictionRequest):
         
     except Exception as e:
         raise HTTPException(status_code=400, detail=f"Prediction error: {str(e)}")
+
+@app.get("/new-cars/brands")
+async def get_new_car_brands():
+    """Get all available brands for new cars from CSV"""
+    if new_cars_data is None:
+        raise HTTPException(status_code=500, detail="New cars data not loaded")
+    
+    brands = sorted(new_cars_data['Brand'].unique().tolist())
+    return {"brands": brands}
+
+@app.get("/new-cars/brands/{brand}/models")
+async def get_new_car_models(brand: str):
+    """Get all models for a specific brand from CSV"""
+    if new_cars_data is None:
+        raise HTTPException(status_code=500, detail="New cars data not loaded")
+    
+    brand_cars = new_cars_data[new_cars_data['Brand'].str.upper() == brand.upper()]
+    models = sorted(brand_cars['Model'].unique().tolist())
+    
+    return {"models": models}
+
+@app.get("/new-cars/search")
+async def search_new_cars(brand: Optional[str] = None, model: Optional[str] = None, 
+                         fuel: Optional[str] = None, transmission: Optional[str] = None,
+                         min_price: Optional[int] = None, max_price: Optional[int] = None,
+                         limit: Optional[int] = 20):
+    """Search new cars from CSV data"""
+    if new_cars_data is None:
+        raise HTTPException(status_code=500, detail="New cars data not loaded")
+    
+    try:
+        # Start with all data
+        filtered_data = new_cars_data.copy()
+        
+        # Apply filters
+        if brand:
+            filtered_data = filtered_data[filtered_data['Brand'].str.upper() == brand.upper()]
+        
+        if model:
+            filtered_data = filtered_data[filtered_data['Model'].str.contains(model, case=False, na=False)]
+            
+        if fuel:
+            filtered_data = filtered_data[filtered_data['Fuel'].str.upper() == fuel.upper()]
+            
+        if transmission:
+            filtered_data = filtered_data[filtered_data['Transmission'].str.upper() == transmission.upper()]
+            
+        if min_price:
+            filtered_data = filtered_data[filtered_data['Selling_Price'] >= min_price]
+            
+        if max_price:
+            filtered_data = filtered_data[filtered_data['Selling_Price'] <= max_price]
+        
+        # Limit results
+        if limit:
+            filtered_data = filtered_data.head(limit)
+        
+        # Convert to list of dictionaries
+        cars = []
+        for _, row in filtered_data.iterrows():
+            cars.append({
+                "id": f"{row['Brand']}_{row['Model']}_{row['Trim']}".replace(" ", "_"),
+                "brand": row['Brand'],
+                "model": row['Model'],
+                "price": int(row['Selling_Price']),
+                "fuel_type": row['Fuel'],
+                "transmission": row['Transmission'],
+                "trim": row['Trim'],
+                "year": 2024,  # Assuming new cars are 2024
+                "image": f"https://via.placeholder.com/400x300/0066cc/ffffff?text={row['Brand']}+{row['Model']}",
+                "url": f"#/car/{row['Brand']}_{row['Model']}_{row['Trim']}".replace(" ", "_")
+            })
+        
+        return {
+            "cars": cars,
+            "total": len(cars),
+            "search_criteria": {
+                "brand": brand,
+                "model": model,
+                "fuel": fuel,
+                "transmission": transmission,
+                "min_price": min_price,
+                "max_price": max_price
+            }
+        }
+        
+    except Exception as e:
+        raise HTTPException(status_code=400, detail=f"Search error: {str(e)}")
 
 @app.get("/search")
 async def search_cars_simple(brand: Optional[str] = None, model: Optional[str] = None, 
