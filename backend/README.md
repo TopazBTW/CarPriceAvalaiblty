@@ -1,117 +1,231 @@
-# Car Price Prediction Backend
+# Morocco Car Price Prediction API 🚗# Car Price Prediction Backend
 
-A FastAPI backend for predicting car prices in Morocco with web scraping integration.
 
-## Features
 
-- **ML Model**: Train and predict car prices using ensemble methods (RandomForest + GradientBoosting)
-- **Web Scraping**: Fetch real market data from Avito.ma and Moteur.ma
-- **Caching**: 15-minute TTL cache for scraping results
-- **CORS Support**: Ready for frontend integration
-- **Robust Error Handling**: Comprehensive logging and error management
+Backend API for car price prediction using machine learning based on Morocco car market data.A FastAPI backend for predicting car prices in Morocco with web scraping integration.
 
-## Installation
 
-1. Create a virtual environment:
-```bash
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-```
 
-2. Install dependencies:
-```bash
-pip install -r requirements.txt
-```
+## 📁 Project Structure## Features
 
-## Usage
 
-### Start the server:
-```bash
-python main.py
-```
 
-The API will be available at `http://localhost:8000`
+```- **ML Model**: Train and predict car prices using ensemble methods (RandomForest + GradientBoosting)
 
-### API Documentation:
-Visit `http://localhost:8000/docs` for interactive API documentation.
+backend/- **Web Scraping**: Fetch real market data from Avito.ma and Moteur.ma
 
-## API Endpoints
+├── config/                 # Configuration files- **Caching**: 15-minute TTL cache for scraping results
 
-### 1. Health Check
-```
-GET /health
+│   ├── config.py          # App configuration- **CORS Support**: Ready for frontend integration
+
+│   ├── requirements.txt   # Python dependencies- **Robust Error Handling**: Comprehensive logging and error management
+
+│   └── __init__.py
+
+│## Installation
+
+├── data/                   # Data storage
+
+│   ├── csv/               # CSV datasets1. Create a virtual environment:
+
+│   │   └── morocco_used_cars.csv (10,000 cars)```bash
+
+│   └── json/              # JSON datapython -m venv venv
+
+│source venv/bin/activate  # On Windows: venv\Scripts\activate
+
+├── models/                 # ML models```
+
+│   ├── ml_model.py        # Model training & prediction
+
+│   ├── car_price_model.joblib  # Trained model2. Install dependencies:
+
+│   └── __init__.py```bash
+
+│pip install -r requirements.txt
+
+├── scrapers/               # Data collection```
+
+│   ├── kifal_scraper.py   # Car scraping utilities
+
+│   └── __init__.py## Usage
+
+│
+
+├── utils/                  # Utility functions### Start the server:
+
+│   ├── process_kifal_data.py```bash
+
+│   └── __init__.pypython main.py
+
+│```
+
+├── deployment/             # Docker & deployment
+
+│   ├── DockerfileThe API will be available at `http://localhost:8000`
+
+│   ├── docker-compose.yml
+
+│   └── start.bat### API Documentation:
+
+│Visit `http://localhost:8000/docs` for interactive API documentation.
+
+├── tests/                  # Unit tests
+
+│   └── __init__.py## API Endpoints
+
+│
+
+├── used_cars_api.py        # Main FastAPI application### 1. Health Check
+
+├── test_api.py             # API testing```
+
+├── generate_market_data.py # Dataset generatorGET /health
+
+└── README.md```
+
 ```
 
 ### 2. Upload Training Data
-```
+
+## 🚀 Quick Start```
+
 POST /upload-csv
-```
+
+### Installation```
+
 Upload a CSV file with car data to train the ML model.
 
-**Required CSV columns:**
-- Brand, Model, Year, KM_Driven, Fuel, Seller_Type, Transmission, Owner, Selling_Price
+```bash
+
+# Install dependencies**Required CSV columns:**
+
+pip install -r config/requirements.txt- Brand, Model, Year, KM_Driven, Fuel, Seller_Type, Transmission, Owner, Selling_Price
+
+```
 
 ### 3. Predict Car Price
-```
-POST /predict
-```
 
-**Request body:**
+### Run API Server```
+
+POST /predict
+
+```bash```
+
+# Start FastAPI server
+
+python used_cars_api.py**Request body:**
+
 ```json
-{
-  "Brand": "Toyota",
-  "Model": "Yaris",
+
+# Or using uvicorn{
+
+uvicorn used_cars_api:app --reload  "Brand": "Toyota",
+
+```  "Model": "Yaris",
+
   "Year": 2018,
-  "KM_Driven": 80000,
+
+API will be available at: `http://localhost:8000`  "KM_Driven": 80000,
+
   "Fuel": "Petrol",
-  "Seller_Type": "Individual",
+
+## 📊 Dataset  "Seller_Type": "Individual",
+
   "Transmission": "Manual",
-  "Owner": "First Owner"
-}
-```
+
+- **Size**: 10,000 cars  "Owner": "First Owner"
+
+- **Source**: Morocco market data (2025)}
+
+- **Brands**: Dacia, Renault, Peugeot, Toyota, Hyundai, VW, etc.```
+
+- **Features**: Brand, Model, Year, KM, Fuel, Transmission, Condition, Location
 
 **Response:**
-```json
+
+## 🔥 API Endpoints```json
+
 {
-  "predicted_price": 135000,
-  "currency": "MAD",
+
+### `GET /`  "predicted_price": 135000,
+
+Health check endpoint  "currency": "MAD",
+
   "market_avg_price": 140000,
-  "listings": [
-    {
-      "title": "Toyota Yaris 2018, 85.000km",
+
+### `GET /cars`  "listings": [
+
+Get all cars with optional filtering    {
+
+- Query params: brand, year_min, year_max, price_min, price_max      "title": "Toyota Yaris 2018, 85.000km",
+
       "price": 138000,
-      "url": "https://www.avito.ma/fr/voitures/123456"
-    }
+
+### `GET /cars/{car_id}`      "url": "https://www.avito.ma/fr/voitures/123456"
+
+Get specific car by ID    }
+
   ],
-  "model_confidence": 0.87,
-  "scraping_source": "avito.ma"
-}
-```
 
-## Scraping Sources
+### `POST /predict`  "model_confidence": 0.87,
 
-- **Avito.ma**: Primary source for car listings
-- **Moteur.ma**: Fallback source if Avito fails
+Predict car price  "scraping_source": "avito.ma"
 
-## Performance Features
+```json}
 
-- **Caching**: Results cached for 15 minutes
-- **Limit**: Max 15 listings per search
+{```
+
+  "brand": "Dacia",
+
+  "model": "Logan",## Scraping Sources
+
+  "year": 2020,
+
+  "km_driven": 80000,- **Avito.ma**: Primary source for car listings
+
+  "fuel_type": "Gasoline",- **Moteur.ma**: Fallback source if Avito fails
+
+  "transmission": "Manual",
+
+  "condition": "Good",## Performance Features
+
+  "location": "Casablanca"
+
+}- **Caching**: Results cached for 15 minutes
+
+```- **Limit**: Max 15 listings per search
+
 - **Fuzzy Matching**: Handles model name variations
-- **Price Filtering**: Removes unrealistic prices (10K-2M MAD)
+
+### `GET /stats`- **Price Filtering**: Removes unrealistic prices (10K-2M MAD)
+
+Get dataset statistics
 
 ## Error Handling
 
+## 🛠 Technologies
+
 - Network timeouts (30 seconds)
-- Missing model scenarios
-- Invalid price ranges
-- Comprehensive logging
 
-## Development
+- **FastAPI**: Modern web framework- Missing model scenarios
 
-### Test scraping functions:
+- **Pandas**: Data manipulation- Invalid price ranges
+
+- **Scikit-learn**: Machine learning- Comprehensive logging
+
+- **Uvicorn**: ASGI server
+
+- **Pydantic**: Data validation## Development
+
+
+
+## 📝 License### Test scraping functions:
+
 ```bash
-python scrapers.py
+
+MIT Licensepython scrapers.py
+
 ```
 
 ### Model training tips:
