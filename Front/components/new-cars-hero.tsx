@@ -1,12 +1,13 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import { Search, Camera, Car } from "lucide-react"
+import { Search, Camera, Car, Loader2 } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Label } from "@/components/ui/label"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Card } from "@/components/ui/card"
+import Image from "next/image"
 
 export function NewCarsHero() {
   const [searchType, setSearchType] = useState("brand")
@@ -17,6 +18,11 @@ export function NewCarsHero() {
   const [selectedModel, setSelectedModel] = useState<string | undefined>(undefined)
   const [loadingBrands, setLoadingBrands] = useState(false)
   const [loadingModels, setLoadingModels] = useState(false)
+  
+  // États pour les résultats de recherche
+  const [searchResults, setSearchResults] = useState<any[]>([])
+  const [searchLoading, setSearchLoading] = useState(false)
+  const [searchError, setSearchError] = useState("")
 
   useEffect(() => {
     // Load brands from backend on mount
@@ -142,25 +148,42 @@ export function NewCarsHero() {
               <div className="flex flex-col sm:flex-row gap-3 pt-4">
                 <Button
                   className="flex-1 bg-primary hover:bg-primary/90 text-primary-foreground py-3 text-lg font-medium"
+                  disabled={searchLoading}
                   onClick={async () => {
+                    setSearchLoading(true)
+                    setSearchError("")
+                    setSearchResults([])
+                    
                     try {
                       const params = new URLSearchParams()
                       if (selectedBrand) params.append('brand', selectedBrand)
-                      if (selectedModel) params.append('q', selectedModel)
-                      params.append('limit', '50')
+                      if (selectedModel) params.append('model', selectedModel)
+                      params.append('limit', '20')
 
                       const res = await fetch(`http://localhost:8000/search?${params.toString()}`)
                       if (!res.ok) throw new Error('Search failed')
                       const data = await res.json()
+                      
                       console.log('Search results', data)
-                      // TODO: navigate to results page or display results in UI
+                      setSearchResults(data.cars || [])
+                      
+                      if (!data.cars || data.cars.length === 0) {
+                        setSearchError('Aucune voiture trouvée pour ces critères')
+                      }
                     } catch (e) {
                       console.error('Search error', e)
+                      setSearchError('Erreur lors de la recherche. Veuillez réessayer.')
+                    } finally {
+                      setSearchLoading(false)
                     }
                   }}
                 >
-                  <Search className="mr-2 h-5 w-5" />
-                  Rechercher
+                  {searchLoading ? (
+                    <Loader2 className="mr-2 h-5 w-5 animate-spin" />
+                  ) : (
+                    <Search className="mr-2 h-5 w-5" />
+                  )}
+                  {searchLoading ? 'Recherche...' : 'Rechercher'}
                 </Button>
                 <Button variant="outline" className="flex-1 py-3 text-lg font-medium bg-transparent">
                   <Camera className="mr-2 h-5 w-5" />
@@ -201,6 +224,70 @@ export function NewCarsHero() {
               </div>
             </TabsContent>
           </Tabs>
+          
+          {/* Affichage des erreurs */}
+          {searchError && (
+            <div className="mt-6 p-4 bg-red-50 border border-red-200 rounded-md">
+              <p className="text-red-800 text-sm">{searchError}</p>
+            </div>
+          )}
+          
+          {/* Affichage des résultats de recherche */}
+          {searchResults.length > 0 && (
+            <div className="mt-8">
+              <h3 className="text-xl font-semibold mb-4">Résultats de recherche ({searchResults.length} voitures trouvées)</h3>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {searchResults.map((car, index) => (
+                  <Card key={car.id || index} className="overflow-hidden hover:shadow-lg transition-shadow">
+                    <div className="aspect-video relative bg-gray-100">
+                      {car.image ? (
+                        <Image
+                          src={car.image}
+                          alt={`${car.brand} ${car.model}`}
+                          fill
+                          className="object-cover"
+                          onError={(e) => {
+                            const target = e.target as HTMLImageElement
+                            target.style.display = 'none'
+                          }}
+                        />
+                      ) : (
+                        <div className="flex items-center justify-center h-full">
+                          <Car className="h-12 w-12 text-gray-400" />
+                        </div>
+                      )}
+                    </div>
+                    <div className="p-4">
+                      <h4 className="font-semibold text-lg mb-2">
+                        {car.brand} {car.model}
+                      </h4>
+                      <div className="space-y-1 text-sm text-gray-600 mb-3">
+                        {car.year && <p>Année: {car.year}</p>}
+                        {car.fuel_type && <p>Carburant: {car.fuel_type}</p>}
+                        {car.transmission && <p>Transmission: {car.transmission}</p>}
+                      </div>
+                      <div className="flex items-center justify-between">
+                        <div>
+                          <p className="text-2xl font-bold text-primary">
+                            {car.price ? `${car.price.toLocaleString()} MAD` : 'Prix sur demande'}
+                          </p>
+                        </div>
+                        {car.url && (
+                          <Button
+                            variant="outline"
+                            size="sm"
+                            onClick={() => window.open(car.url, '_blank')}
+                          >
+                            Voir détails
+                          </Button>
+                        )}
+                      </div>
+                    </div>
+                  </Card>
+                ))}
+              </div>
+            </div>
+          )}
         </Card>
       </div>
     </section>

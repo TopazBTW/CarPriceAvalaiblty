@@ -1,0 +1,742 @@
+Brand,Model,Fuel,Transmission,Selling_Price
+Dacia,Sandero,Gasoline,Manual,131176
+Dacia,Sandero,Gasoline,Manual,139112
+Dacia,Sandero,Gasoline,Manual,144575
+Dacia,Sandero,Gasoline,Manual,139553
+Dacia,Sandero,Gasoline,Manual,137406
+Dacia,Sandero,Gasoline,Manual,146961
+Dacia,Sandero,Gasoline,Manual,150694
+Dacia,Sandero,Gasoline,Manual,148079
+Dacia,Sandero,Gasoline,Manual,162472
+Dacia,Logan,Gasoline,Manual,140825
+Dacia,Logan,Gasoline,Manual,154707
+Dacia,Logan,Gasoline,Manual,151032
+Dacia,Logan,Gasoline,Manual,137943
+Dacia,Logan,Gasoline,Manual,166812
+Dacia,Logan,Gasoline,Manual,157247
+Dacia,Logan,Gasoline,Manual,174857
+Dacia,Logan,Gasoline,Manual,168691
+Dacia,Duster,Gasoline,Manual,179167
+Dacia,Duster,Gasoline,Manual,178545
+Dacia,Duster,Gasoline,Manual,190187
+Dacia,Duster,Gasoline,Manual,191096
+Dacia,Duster,Diesel,Manual,187440
+Dacia,Duster,Diesel,Manual,192286
+Dacia,Duster,Diesel,Manual,197556
+Dacia,Duster,Diesel,Manual,192570
+Dacia,Duster,Diesel,4x4,213857
+Dacia,Duster,Diesel,4x4,214941
+Dacia,Duster,Diesel,4x4,239451
+Dacia,Duster,Diesel,4x4,215036
+Dacia,Lodgy,Gasoline,Manual,183345
+Dacia,Lodgy,Gasoline,Manual,174474
+Dacia,Lodgy,Gasoline,Manual,166191
+Dacia,Lodgy,Diesel,Manual,175391
+Dacia,Lodgy,Diesel,Manual,186825
+Dacia,Lodgy,Diesel,Manual,194241
+Dacia,Dokker,Gasoline,Manual,147065
+Dacia,Dokker,Gasoline,Manual,154482
+Dacia,Dokker,Gasoline,Manual,146750
+Dacia,Dokker,Gasoline,Manual,155155
+Dacia,Dokker,Diesel,Manual,166276
+Dacia,Dokker,Diesel,Manual,160395
+Dacia,Dokker,Diesel,Manual,165043
+Renault,Clio,Gasoline,Manual,167159
+Renault,Clio,Gasoline,Manual,171886
+Renault,Clio,Gasoline,Manual,165586
+Renault,Clio,Gasoline,Manual,168700
+Renault,Clio,Gasoline,Manual,167969
+Renault,Clio,Gasoline,Automatic,186494
+Renault,Clio,Gasoline,Automatic,189347
+Renault,Clio,Gasoline,Automatic,187687
+Renault,Clio,Gasoline,Automatic,214563
+Renault,Clio,Gasoline,Automatic,196604
+Renault,Megane,Gasoline,Manual,237379
+Renault,Megane,Gasoline,Manual,230751
+Renault,Megane,Gasoline,Manual,226994
+Renault,Megane,Gasoline,Manual,234309
+Renault,Megane,Gasoline,Manual,234692
+Renault,Megane,Diesel,Automatic,250489
+Renault,Megane,Diesel,Automatic,250825
+Renault,Megane,Diesel,Automatic,284282
+Renault,Captur,Gasoline,Manual,240105
+Renault,Captur,Gasoline,Manual,260180
+Renault,Captur,Gasoline,Manual,249513
+Renault,Captur,Gasoline,Manual,248562
+Renault,Captur,Diesel,Automatic,304718
+Renault,Captur,Diesel,Automatic,276062
+Renault,Captur,Diesel,Automatic,279741
+Renault,Captur,Diesel,Automatic,268537
+Renault,Captur,Diesel,Automatic,294387
+Renault,Kadjar,Diesel,Automatic,323614
+Renault,Kadjar,Diesel,Automatic,322217
+Renault,Kadjar,Diesel,Automatic,328272
+Renault,Kadjar,Diesel,Automatic,317062
+Renault,Kadjar,Diesel,Automatic,349701
+Renault,Kadjar,Diesel,Automatic,374270
+Renault,Kadjar,Diesel,Automatic,380423
+Renault,Kadjar,Diesel,Automatic,389655
+Renault,Koleos,Diesel,Automatic,413972
+Renault,Koleos,Diesel,Automatic,411857
+Renault,Koleos,Diesel,Automatic,390291
+Renault,Koleos,Diesel,Automatic,393415
+Renault,Koleos,Diesel,Automatic,427642
+Renault,Koleos,Diesel,Automatic,433031
+Renault,Koleos,Diesel,Automatic,446680
+Peugeot,208,Gasoline,Manual,176128
+Peugeot,208,Gasoline,Manual,179500
+Peugeot,208,Gasoline,Manual,181420
+Peugeot,208,Gasoline,Manual,181743
+Peugeot,208,Gasoline,Automatic,200647
+Peugeot,208,Gasoline,Automatic,202474
+Peugeot,208,Gasoline,Automatic,224610
+Peugeot,308,Gasoline,Manual,252663
+Peugeot,308,Gasoline,Manual,244287
+Peugeot,308,Gasoline,Manual,243541
+Peugeot,308,Diesel,Automatic,304076
+Peugeot,308,Diesel,Automatic,275318
+Peugeot,308,Diesel,Automatic,285258
+Peugeot,308,Diesel,Automatic,308571
+Peugeot,308,Diesel,Automatic,275400
+Peugeot,2008,Gasoline,Manual,257287
+Peugeot,2008,Gasoline,Manual,247040
+Peugeot,2008,Gasoline,Manual,254343
+Peugeot,2008,Gasoline,Manual,254213
+Peugeot,2008,Diesel,Automatic,288391
+Peugeot,2008,Diesel,Automatic,301971
+Peugeot,2008,Diesel,Automatic,309411
+Peugeot,2008,Diesel,Automatic,296197
+Peugeot,2008,Diesel,Automatic,312700
+Peugeot,3008,Gasoline,Automatic,398577
+Peugeot,3008,Gasoline,Automatic,406545
+Peugeot,3008,Gasoline,Automatic,381860
+Peugeot,3008,Diesel,Automatic,424327
+Peugeot,3008,Diesel,Automatic,431397
+Peugeot,3008,Diesel,Automatic,433702
+Peugeot,3008,Diesel,Automatic,424370
+Peugeot,3008,Diesel,Automatic,407643
+Peugeot,3008,Hybrid,Automatic,453730
+Peugeot,3008,Hybrid,Automatic,439473
+Peugeot,3008,Hybrid,Automatic,453892
+Peugeot,3008,Hybrid,Automatic,446415
+Peugeot,3008,Hybrid,Automatic,440192
+Peugeot,5008,Diesel,Automatic,463984
+Peugeot,5008,Diesel,Automatic,467110
+Peugeot,5008,Diesel,Automatic,479244
+Peugeot,5008,Diesel,Automatic,520641
+Peugeot,5008,Diesel,Automatic,499358
+Peugeot,5008,Diesel,Automatic,506760
+Peugeot,5008,Diesel,Automatic,498499
+Peugeot,5008,Diesel,Automatic,507200
+Toyota,Yaris,Gasoline,Manual,193317
+Toyota,Yaris,Gasoline,Manual,195880
+Toyota,Yaris,Gasoline,Manual,195822
+Toyota,Yaris,Gasoline,Manual,204767
+Toyota,Yaris,Gasoline,Manual,195981
+Toyota,Yaris,Hybrid,Automatic,206276
+Toyota,Yaris,Hybrid,Automatic,205641
+Toyota,Yaris,Hybrid,Automatic,196216
+Toyota,Yaris,Hybrid,Automatic,196328
+Toyota,Corolla,Gasoline,Manual,289892
+Toyota,Corolla,Gasoline,Manual,289641
+Toyota,Corolla,Gasoline,Manual,285763
+Toyota,Corolla,Gasoline,Manual,279185
+Toyota,Corolla,Hybrid,Automatic,302320
+Toyota,Corolla,Hybrid,Automatic,290173
+Toyota,Corolla,Hybrid,Automatic,312042
+Toyota,Corolla,Hybrid,Automatic,289323
+Toyota,Corolla,Hybrid,Automatic,320725
+Toyota,RAV4,Gasoline,Automatic,476520
+Toyota,RAV4,Gasoline,Automatic,466053
+Toyota,RAV4,Gasoline,Automatic,497799
+Toyota,RAV4,Hybrid,Automatic,544299
+Toyota,RAV4,Hybrid,Automatic,502936
+Toyota,RAV4,Hybrid,Automatic,547049
+Toyota,RAV4,Hybrid,Automatic,569524
+Toyota,RAV4,Hybrid,Automatic,521568
+Toyota,Hilux,Diesel,Manual,498185
+Toyota,Hilux,Diesel,Manual,488171
+Toyota,Hilux,Diesel,Manual,495442
+Toyota,Hilux,Diesel,Manual,542164
+Toyota,Hilux,Diesel,Automatic,603152
+Toyota,Hilux,Diesel,Automatic,582942
+Toyota,Hilux,Diesel,Automatic,577196
+Toyota,Hilux,Diesel,Automatic,619569
+Toyota,Land Cruiser,Diesel,Automatic,1113565
+Toyota,Land Cruiser,Diesel,Automatic,1080113
+Toyota,Land Cruiser,Diesel,Automatic,1042083
+Toyota,Land Cruiser,Diesel,Automatic,997083
+Toyota,Land Cruiser,Diesel,Automatic,1011406
+Toyota,Land Cruiser,Diesel,Automatic,1154589
+Toyota,Land Cruiser,Diesel,Automatic,1179724
+Toyota,Land Cruiser,Diesel,Automatic,1245166
+Toyota,Land Cruiser,Diesel,Automatic,1216333
+Toyota,Land Cruiser,Diesel,Automatic,1193744
+Hyundai,i10,Gasoline,Manual,125785
+Hyundai,i10,Gasoline,Manual,117588
+Hyundai,i10,Gasoline,Manual,120032
+Hyundai,i10,Gasoline,Manual,122520
+Hyundai,i10,Gasoline,Manual,144110
+Hyundai,i10,Gasoline,Manual,134054
+Hyundai,i10,Gasoline,Manual,142605
+Hyundai,i10,Gasoline,Manual,141066
+Hyundai,i20,Gasoline,Manual,170487
+Hyundai,i20,Gasoline,Manual,157287
+Hyundai,i20,Gasoline,Manual,167721
+Hyundai,i20,Gasoline,Automatic,189770
+Hyundai,i20,Gasoline,Automatic,181385
+Hyundai,i20,Gasoline,Automatic,187204
+Hyundai,Accent,Gasoline,Manual,185934
+Hyundai,Accent,Gasoline,Manual,186469
+Hyundai,Accent,Gasoline,Manual,196497
+Hyundai,Accent,Gasoline,Manual,188456
+Hyundai,Accent,Gasoline,Manual,198402
+Hyundai,Accent,Gasoline,Automatic,225597
+Hyundai,Accent,Gasoline,Automatic,230406
+Hyundai,Accent,Gasoline,Automatic,215305
+Hyundai,Accent,Gasoline,Automatic,214361
+Hyundai,Tucson,Gasoline,Automatic,391613
+Hyundai,Tucson,Gasoline,Automatic,370173
+Hyundai,Tucson,Gasoline,Automatic,397595
+Hyundai,Tucson,Gasoline,Automatic,380471
+Hyundai,Tucson,Gasoline,Automatic,398893
+Hyundai,Tucson,Diesel,Automatic,407347
+Hyundai,Tucson,Diesel,Automatic,401765
+Hyundai,Tucson,Diesel,Automatic,421920
+Hyundai,Tucson,Hybrid,Automatic,428754
+Hyundai,Tucson,Hybrid,Automatic,471180
+Hyundai,Tucson,Hybrid,Automatic,449627
+Hyundai,Tucson,Hybrid,Automatic,443213
+Hyundai,Tucson,Hybrid,Automatic,476370
+Hyundai,Santa Fe,Diesel,Automatic,549045
+Hyundai,Santa Fe,Diesel,Automatic,568504
+Hyundai,Santa Fe,Diesel,Automatic,578260
+Hyundai,Santa Fe,Diesel,Automatic,573006
+Hyundai,Santa Fe,Diesel,Automatic,566329
+Hyundai,Santa Fe,Diesel,Automatic,595075
+Hyundai,Santa Fe,Diesel,Automatic,608327
+Hyundai,Santa Fe,Diesel,Automatic,586149
+Hyundai,Santa Fe,Diesel,Automatic,631633
+Hyundai,Santa Fe,Diesel,Automatic,614616
+Volkswagen,Polo,Gasoline,Manual,190018
+Volkswagen,Polo,Gasoline,Manual,191300
+Volkswagen,Polo,Gasoline,Manual,187416
+Volkswagen,Polo,Diesel,Manual,218042
+Volkswagen,Polo,Diesel,Manual,214201
+Volkswagen,Polo,Diesel,Manual,231941
+Volkswagen,Golf,Gasoline,Automatic,278214
+Volkswagen,Golf,Gasoline,Automatic,293994
+Volkswagen,Golf,Gasoline,Automatic,256963
+Volkswagen,Golf,Diesel,Automatic,299569
+Volkswagen,Golf,Diesel,Automatic,303554
+Volkswagen,Golf,Diesel,Automatic,333710
+Volkswagen,Tiguan,Gasoline,Automatic,451055
+Volkswagen,Tiguan,Gasoline,Automatic,480432
+Volkswagen,Tiguan,Gasoline,Automatic,472705
+Volkswagen,Tiguan,Gasoline,Automatic,484053
+Volkswagen,Tiguan,Gasoline,Automatic,470405
+Volkswagen,Tiguan,Diesel,Automatic,513391
+Volkswagen,Tiguan,Diesel,Automatic,483860
+Volkswagen,Tiguan,Diesel,Automatic,523125
+Volkswagen,Tiguan,Diesel,Automatic,559135
+Volkswagen,Passat,Diesel,Automatic,422776
+Volkswagen,Passat,Diesel,Automatic,433382
+Volkswagen,Passat,Diesel,Automatic,422086
+Volkswagen,Passat,Diesel,Automatic,403260
+Volkswagen,Passat,Diesel,Automatic,447898
+Volkswagen,Passat,Diesel,Automatic,460814
+Volkswagen,Passat,Diesel,Automatic,467024
+Volkswagen,Touareg,Diesel,Automatic,857983
+Volkswagen,Touareg,Diesel,Automatic,850676
+Volkswagen,Touareg,Diesel,Automatic,849941
+Volkswagen,Touareg,Diesel,Automatic,942505
+Volkswagen,Touareg,Diesel,Automatic,905905
+Volkswagen,Touareg,Diesel,Automatic,972009
+Ford,Fiesta,Gasoline,Manual,165475
+Ford,Fiesta,Gasoline,Manual,169846
+Ford,Fiesta,Gasoline,Manual,179168
+Ford,Fiesta,Gasoline,Automatic,196795
+Ford,Fiesta,Gasoline,Automatic,200688
+Ford,Fiesta,Gasoline,Automatic,190003
+Ford,Fiesta,Gasoline,Automatic,191926
+Ford,Fiesta,Gasoline,Automatic,196152
+Ford,Focus,Gasoline,Manual,240710
+Ford,Focus,Gasoline,Manual,241084
+Ford,Focus,Gasoline,Manual,237705
+Ford,Focus,Gasoline,Manual,227308
+Ford,Focus,Diesel,Automatic,259354
+Ford,Focus,Diesel,Automatic,269059
+Ford,Focus,Diesel,Automatic,265893
+Ford,Kuga,Gasoline,Automatic,394902
+Ford,Kuga,Gasoline,Automatic,419807
+Ford,Kuga,Gasoline,Automatic,387852
+Ford,Kuga,Gasoline,Automatic,417371
+Ford,Kuga,Diesel,Automatic,417182
+Ford,Kuga,Diesel,Automatic,406431
+Ford,Kuga,Diesel,Automatic,425963
+Ford,Kuga,Hybrid,Automatic,479766
+Ford,Kuga,Hybrid,Automatic,454181
+Ford,Kuga,Hybrid,Automatic,451758
+Ford,Mustang,Gasoline,Automatic,811554
+Ford,Mustang,Gasoline,Automatic,848162
+Ford,Mustang,Gasoline,Automatic,835809
+Ford,Mustang,Gasoline,Automatic,860118
+Ford,Mustang,Gasoline,Automatic,876566
+Ford,Mustang,Gasoline,Automatic,861156
+Ford,Ranger,Diesel,Manual,493286
+Ford,Ranger,Diesel,Manual,439279
+Ford,Ranger,Diesel,Manual,475423
+Ford,Ranger,Diesel,Manual,474777
+Ford,Ranger,Diesel,Manual,478318
+Ford,Ranger,Diesel,Automatic,491600
+Ford,Ranger,Diesel,Automatic,514836
+Ford,Ranger,Diesel,Automatic,498890
+Ford,Ranger,Diesel,Automatic,557819
+Ford,Ranger,Diesel,Automatic,536727
+Nissan,Micra,Gasoline,Manual,158477
+Nissan,Micra,Gasoline,Manual,157473
+Nissan,Micra,Gasoline,Manual,165826
+Nissan,Micra,Gasoline,Manual,163537
+Nissan,Micra,Gasoline,Automatic,179336
+Nissan,Micra,Gasoline,Automatic,176162
+Nissan,Micra,Gasoline,Automatic,179477
+Nissan,Micra,Gasoline,Automatic,183629
+Nissan,Juke,Gasoline,Manual,285701
+Nissan,Juke,Gasoline,Manual,307714
+Nissan,Juke,Gasoline,Manual,313497
+Nissan,Juke,Gasoline,Manual,309102
+Nissan,Juke,Gasoline,Automatic,354858
+Nissan,Juke,Gasoline,Automatic,345388
+Nissan,Juke,Gasoline,Automatic,324721
+Nissan,Juke,Gasoline,Automatic,352895
+Nissan,Juke,Gasoline,Automatic,338383
+Nissan,Qashqai,Gasoline,Automatic,359024
+Nissan,Qashqai,Gasoline,Automatic,339128
+Nissan,Qashqai,Gasoline,Automatic,378074
+Nissan,Qashqai,Gasoline,Automatic,349370
+Nissan,Qashqai,Gasoline,Automatic,348486
+Nissan,Qashqai,Diesel,Automatic,369326
+Nissan,Qashqai,Diesel,Automatic,390125
+Nissan,Qashqai,Diesel,Automatic,410042
+Nissan,Qashqai,Diesel,Automatic,386978
+Nissan,Qashqai,Diesel,Automatic,383444
+Nissan,X-Trail,Gasoline,Automatic,476120
+Nissan,X-Trail,Gasoline,Automatic,449842
+Nissan,X-Trail,Gasoline,Automatic,464483
+Nissan,X-Trail,Gasoline,Automatic,482328
+Nissan,X-Trail,Gasoline,Automatic,480442
+Nissan,X-Trail,Diesel,Automatic,508057
+Nissan,X-Trail,Diesel,Automatic,512162
+Nissan,X-Trail,Diesel,Automatic,557912
+Nissan,X-Trail,Diesel,Automatic,515304
+Nissan,X-Trail,Diesel,Automatic,548552
+Nissan,Patrol,Diesel,Automatic,866305
+Nissan,Patrol,Diesel,Automatic,881017
+Nissan,Patrol,Diesel,Automatic,889171
+Nissan,Patrol,Diesel,Automatic,927804
+Nissan,Patrol,Diesel,Automatic,912682
+Nissan,Patrol,Diesel,Automatic,989739
+Nissan,Patrol,Diesel,Automatic,963940
+Nissan,Patrol,Diesel,Automatic,985115
+Citroen,C3,Gasoline,Manual,180404
+Citroen,C3,Gasoline,Manual,180276
+Citroen,C3,Gasoline,Manual,167852
+Citroen,C3,Gasoline,Manual,168720
+Citroen,C3,Gasoline,Manual,174500
+Citroen,C3,Diesel,Manual,200590
+Citroen,C3,Diesel,Manual,208145
+Citroen,C3,Diesel,Manual,208639
+Citroen,C4,Gasoline,Manual,243003
+Citroen,C4,Gasoline,Manual,259142
+Citroen,C4,Gasoline,Manual,261385
+Citroen,C4,Gasoline,Manual,248678
+Citroen,C4,Diesel,Automatic,290275
+Citroen,C4,Diesel,Automatic,282223
+Citroen,C4,Diesel,Automatic,277546
+Citroen,C4,Diesel,Automatic,289849
+Citroen,C5 Aircross,Gasoline,Automatic,359363
+Citroen,C5 Aircross,Gasoline,Automatic,370301
+Citroen,C5 Aircross,Gasoline,Automatic,370365
+Citroen,C5 Aircross,Gasoline,Automatic,387792
+Citroen,C5 Aircross,Gasoline,Automatic,382221
+Citroen,C5 Aircross,Diesel,Automatic,433910
+Citroen,C5 Aircross,Diesel,Automatic,433514
+Citroen,C5 Aircross,Diesel,Automatic,432057
+Citroen,C5 Aircross,Diesel,Automatic,409739
+Citroen,C5 Aircross,Hybrid,Automatic,423567
+Citroen,C5 Aircross,Hybrid,Automatic,451318
+Citroen,C5 Aircross,Hybrid,Automatic,447516
+Citroen,C5 Aircross,Hybrid,Automatic,431968
+Citroen,C5 Aircross,Hybrid,Automatic,421191
+Citroen,Berlingo,Diesel,Manual,212355
+Citroen,Berlingo,Diesel,Manual,196752
+Citroen,Berlingo,Diesel,Manual,200577
+Citroen,Berlingo,Diesel,Manual,213333
+Citroen,Berlingo,Diesel,Automatic,232184
+Citroen,Berlingo,Diesel,Automatic,234818
+Citroen,Berlingo,Diesel,Automatic,244405
+Citroen,Jumper,Diesel,Manual,320672
+Citroen,Jumper,Diesel,Manual,347014
+Citroen,Jumper,Diesel,Manual,342743
+Citroen,Jumper,Diesel,Manual,315341
+Citroen,Jumper,Diesel,Manual,321130
+Citroen,Jumper,Diesel,Manual,357339
+Citroen,Jumper,Diesel,Manual,382642
+Citroen,Jumper,Diesel,Manual,355032
+Citroen,Jumper,Diesel,Manual,361319
+Citroen,Jumper,Diesel,Manual,380087
+Kia,Picanto,Gasoline,Manual,105320
+Kia,Picanto,Gasoline,Manual,124261
+Kia,Picanto,Gasoline,Manual,119153
+Kia,Picanto,Gasoline,Manual,107067
+Kia,Picanto,Gasoline,Manual,121276
+Kia,Picanto,Gasoline,Automatic,127816
+Kia,Picanto,Gasoline,Automatic,143802
+Kia,Picanto,Gasoline,Automatic,134990
+Kia,Picanto,Gasoline,Automatic,136250
+Kia,Picanto,Gasoline,Automatic,127625
+Kia,Rio,Gasoline,Manual,164927
+Kia,Rio,Gasoline,Manual,170703
+Kia,Rio,Gasoline,Manual,173573
+Kia,Rio,Gasoline,Manual,162750
+Kia,Rio,Gasoline,Automatic,187667
+Kia,Rio,Gasoline,Automatic,177260
+Kia,Rio,Gasoline,Automatic,194156
+Kia,Rio,Gasoline,Automatic,181594
+Kia,Sportage,Gasoline,Automatic,361450
+Kia,Sportage,Gasoline,Automatic,390804
+Kia,Sportage,Gasoline,Automatic,380813
+Kia,Sportage,Gasoline,Automatic,391239
+Kia,Sportage,Diesel,Automatic,397044
+Kia,Sportage,Diesel,Automatic,394788
+Kia,Sportage,Diesel,Automatic,412209
+Kia,Sportage,Hybrid,Automatic,472531
+Kia,Sportage,Hybrid,Automatic,438093
+Kia,Sportage,Hybrid,Automatic,427561
+Kia,Sorento,Diesel,Automatic,517760
+Kia,Sorento,Diesel,Automatic,496866
+Kia,Sorento,Diesel,Automatic,529904
+Kia,Sorento,Diesel,Automatic,514732
+Kia,Sorento,Diesel,Automatic,517994
+Kia,Sorento,Diesel,Automatic,577201
+Kia,Sorento,Diesel,Automatic,581910
+Kia,Sorento,Diesel,Automatic,544793
+Kia,Sorento,Diesel,Automatic,592398
+Kia,Stinger,Gasoline,Automatic,621572
+Kia,Stinger,Gasoline,Automatic,643175
+Kia,Stinger,Gasoline,Automatic,668053
+Kia,Stinger,Gasoline,Automatic,626922
+Kia,Stinger,Gasoline,Automatic,704885
+Kia,Stinger,Gasoline,Automatic,722570
+Kia,Stinger,Gasoline,Automatic,689023
+Kia,Stinger,Gasoline,Automatic,701426
+Mazda,Mazda2,Gasoline,Manual,172122
+Mazda,Mazda2,Gasoline,Manual,177846
+Mazda,Mazda2,Gasoline,Manual,183611
+Mazda,Mazda2,Gasoline,Manual,184331
+Mazda,Mazda2,Gasoline,Automatic,194714
+Mazda,Mazda2,Gasoline,Automatic,193499
+Mazda,Mazda2,Gasoline,Automatic,202664
+Mazda,Mazda2,Gasoline,Automatic,196542
+Mazda,Mazda2,Gasoline,Automatic,204235
+Mazda,Mazda3,Gasoline,Manual,245213
+Mazda,Mazda3,Gasoline,Manual,255413
+Mazda,Mazda3,Gasoline,Manual,244261
+Mazda,Mazda3,Gasoline,Manual,237618
+Mazda,Mazda3,Gasoline,Automatic,285824
+Mazda,Mazda3,Gasoline,Automatic,269748
+Mazda,Mazda3,Gasoline,Automatic,281302
+Mazda,Mazda3,Gasoline,Automatic,278638
+Mazda,Mazda3,Gasoline,Automatic,286822
+Mazda,CX-3,Gasoline,Automatic,285104
+Mazda,CX-3,Gasoline,Automatic,267850
+Mazda,CX-3,Gasoline,Automatic,267387
+Mazda,CX-3,Gasoline,Automatic,321290
+Mazda,CX-3,Gasoline,Automatic,308899
+Mazda,CX-3,Gasoline,Automatic,310604
+Mazda,CX-3,Gasoline,Automatic,308070
+Mazda,CX-5,Gasoline,Automatic,391313
+Mazda,CX-5,Gasoline,Automatic,419022
+Mazda,CX-5,Gasoline,Automatic,393068
+Mazda,CX-5,Gasoline,Automatic,437073
+Mazda,CX-5,Gasoline,Automatic,466814
+Mazda,CX-5,Gasoline,Automatic,442819
+Mazda,CX-9,Gasoline,Automatic,526811
+Mazda,CX-9,Gasoline,Automatic,573627
+Mazda,CX-9,Gasoline,Automatic,553278
+Mazda,CX-9,Gasoline,Automatic,625872
+Mazda,CX-9,Gasoline,Automatic,625188
+Mazda,CX-9,Gasoline,Automatic,607057
+Suzuki,Swift,Gasoline,Manual,150710
+Suzuki,Swift,Gasoline,Manual,148912
+Suzuki,Swift,Gasoline,Manual,160868
+Suzuki,Swift,Gasoline,Automatic,171193
+Suzuki,Swift,Gasoline,Automatic,170207
+Suzuki,Swift,Gasoline,Automatic,172028
+Suzuki,Swift,Gasoline,Automatic,182920
+Suzuki,Baleno,Gasoline,Manual,161972
+Suzuki,Baleno,Gasoline,Manual,157940
+Suzuki,Baleno,Gasoline,Manual,169805
+Suzuki,Baleno,Gasoline,Manual,158277
+Suzuki,Baleno,Gasoline,Manual,155890
+Suzuki,Baleno,Gasoline,Automatic,186808
+Suzuki,Baleno,Gasoline,Automatic,181512
+Suzuki,Baleno,Gasoline,Automatic,190777
+Suzuki,Baleno,Gasoline,Automatic,179617
+Suzuki,Baleno,Gasoline,Automatic,185247
+Suzuki,Vitara,Gasoline,Manual,257619
+Suzuki,Vitara,Gasoline,Manual,262349
+Suzuki,Vitara,Gasoline,Manual,268887
+Suzuki,Vitara,Gasoline,Automatic,275168
+Suzuki,Vitara,Gasoline,Automatic,275959
+Suzuki,Vitara,Gasoline,Automatic,297360
+Suzuki,Vitara,Gasoline,Automatic,295664
+Suzuki,Vitara,Gasoline,Automatic,284122
+Suzuki,S-Cross,Gasoline,Automatic,303399
+Suzuki,S-Cross,Gasoline,Automatic,299502
+Suzuki,S-Cross,Gasoline,Automatic,306881
+Suzuki,S-Cross,Gasoline,Automatic,298629
+Suzuki,S-Cross,Gasoline,Automatic,290827
+Suzuki,S-Cross,Gasoline,Automatic,338911
+Suzuki,S-Cross,Gasoline,Automatic,325046
+Suzuki,S-Cross,Gasoline,Automatic,338161
+Suzuki,S-Cross,Gasoline,Automatic,337960
+Skoda,Fabia,Gasoline,Manual,176227
+Skoda,Fabia,Gasoline,Manual,176978
+Skoda,Fabia,Gasoline,Manual,176409
+Skoda,Fabia,Gasoline,Manual,174077
+Skoda,Fabia,Gasoline,Manual,168674
+Skoda,Fabia,Gasoline,Automatic,192969
+Skoda,Fabia,Gasoline,Automatic,203308
+Skoda,Fabia,Gasoline,Automatic,207873
+Skoda,Fabia,Gasoline,Automatic,201552
+Skoda,Octavia,Gasoline,Automatic,268464
+Skoda,Octavia,Gasoline,Automatic,266247
+Skoda,Octavia,Gasoline,Automatic,274756
+Skoda,Octavia,Gasoline,Automatic,259646
+Skoda,Octavia,Diesel,Automatic,315979
+Skoda,Octavia,Diesel,Automatic,292551
+Skoda,Octavia,Diesel,Automatic,296351
+Skoda,Octavia,Diesel,Automatic,315373
+Skoda,Octavia,Diesel,Automatic,313589
+Skoda,Karoq,Gasoline,Automatic,382029
+Skoda,Karoq,Gasoline,Automatic,389968
+Skoda,Karoq,Gasoline,Automatic,385591
+Skoda,Karoq,Gasoline,Automatic,381325
+Skoda,Karoq,Diesel,Automatic,393810
+Skoda,Karoq,Diesel,Automatic,403595
+Skoda,Karoq,Diesel,Automatic,412258
+Skoda,Karoq,Diesel,Automatic,403330
+Skoda,Karoq,Diesel,Automatic,431356
+Skoda,Kodiaq,Diesel,Automatic,465459
+Skoda,Kodiaq,Diesel,Automatic,477118
+Skoda,Kodiaq,Diesel,Automatic,494748
+Skoda,Kodiaq,Diesel,Automatic,494117
+Skoda,Kodiaq,Diesel,Automatic,480178
+Skoda,Kodiaq,Diesel,Automatic,544841
+Skoda,Kodiaq,Diesel,Automatic,518654
+Skoda,Kodiaq,Diesel,Automatic,541125
+Seat,Ibiza,Gasoline,Manual,181179
+Seat,Ibiza,Gasoline,Manual,170313
+Seat,Ibiza,Gasoline,Manual,180570
+Seat,Ibiza,Gasoline,Manual,185564
+Seat,Ibiza,Gasoline,Automatic,206174
+Seat,Ibiza,Gasoline,Automatic,203591
+Seat,Ibiza,Gasoline,Automatic,202970
+Seat,Ibiza,Gasoline,Automatic,190715
+Seat,Ibiza,Gasoline,Automatic,203386
+Seat,Leon,Gasoline,Automatic,279066
+Seat,Leon,Gasoline,Automatic,266531
+Seat,Leon,Gasoline,Automatic,249970
+Seat,Leon,Gasoline,Automatic,251220
+Seat,Leon,Gasoline,Automatic,312374
+Seat,Leon,Gasoline,Automatic,295969
+Seat,Leon,Gasoline,Automatic,297595
+Seat,Leon,Gasoline,Automatic,308220
+Seat,Arona,Gasoline,Manual,267920
+Seat,Arona,Gasoline,Manual,259408
+Seat,Arona,Gasoline,Manual,283006
+Seat,Arona,Gasoline,Manual,255486
+Seat,Arona,Gasoline,Automatic,313784
+Seat,Arona,Gasoline,Automatic,306798
+Seat,Arona,Gasoline,Automatic,302477
+Seat,Arona,Gasoline,Automatic,294658
+Seat,Arona,Gasoline,Automatic,310634
+Seat,Ateca,Gasoline,Automatic,373456
+Seat,Ateca,Gasoline,Automatic,381494
+Seat,Ateca,Gasoline,Automatic,372867
+Seat,Ateca,Diesel,Automatic,416395
+Seat,Ateca,Diesel,Automatic,404881
+Seat,Ateca,Diesel,Automatic,421294
+Seat,Ateca,Diesel,Automatic,426508
+Seat,Ateca,Diesel,Automatic,417923
+Fiat,500,Gasoline,Manual,172808
+Fiat,500,Gasoline,Manual,162193
+Fiat,500,Gasoline,Manual,166267
+Fiat,500,Gasoline,Automatic,192165
+Fiat,500,Gasoline,Automatic,180853
+Fiat,500,Gasoline,Automatic,186651
+Fiat,Tipo,Gasoline,Manual,176612
+Fiat,Tipo,Gasoline,Manual,185987
+Fiat,Tipo,Gasoline,Manual,192738
+Fiat,Tipo,Diesel,Manual,216993
+Fiat,Tipo,Diesel,Manual,190789
+Fiat,Tipo,Diesel,Manual,209092
+Fiat,500X,Gasoline,Manual,273499
+Fiat,500X,Gasoline,Manual,248442
+Fiat,500X,Gasoline,Manual,273020
+Fiat,500X,Gasoline,Automatic,309953
+Fiat,500X,Gasoline,Automatic,289250
+Fiat,500X,Gasoline,Automatic,302244
+Fiat,500X,Gasoline,Automatic,288439
+Fiat,500X,Gasoline,Automatic,283752
+Jeep,Renegade,Gasoline,Automatic,332193
+Jeep,Renegade,Gasoline,Automatic,309217
+Jeep,Renegade,Gasoline,Automatic,315663
+Jeep,Renegade,Gasoline,Automatic,328703
+Jeep,Renegade,Gasoline,Automatic,370667
+Jeep,Renegade,Gasoline,Automatic,347054
+Jeep,Renegade,Gasoline,Automatic,375659
+Jeep,Compass,Gasoline,Automatic,400128
+Jeep,Compass,Gasoline,Automatic,421643
+Jeep,Compass,Gasoline,Automatic,427357
+Jeep,Compass,Gasoline,Automatic,391189
+Jeep,Compass,Diesel,Automatic,463840
+Jeep,Compass,Diesel,Automatic,448109
+Jeep,Compass,Diesel,Automatic,426007
+Jeep,Cherokee,Gasoline,Automatic,543749
+Jeep,Cherokee,Gasoline,Automatic,542432
+Jeep,Cherokee,Gasoline,Automatic,580396
+Jeep,Cherokee,Gasoline,Automatic,545916
+Jeep,Cherokee,Diesel,Automatic,636182
+Jeep,Cherokee,Diesel,Automatic,629090
+Jeep,Cherokee,Diesel,Automatic,646145
+Jeep,Cherokee,Diesel,Automatic,600108
+Jeep,Cherokee,Diesel,Automatic,638038
+Jeep,Grand Cherokee,Diesel,Automatic,752674
+Jeep,Grand Cherokee,Diesel,Automatic,691348
+Jeep,Grand Cherokee,Diesel,Automatic,735920
+Jeep,Grand Cherokee,Diesel,Automatic,719459
+Jeep,Grand Cherokee,Diesel,Automatic,699026
+Jeep,Grand Cherokee,Diesel,Automatic,819958
+Jeep,Grand Cherokee,Diesel,Automatic,812470
+Jeep,Grand Cherokee,Diesel,Automatic,776024
+Jeep,Grand Cherokee,Diesel,Automatic,779720
+Mercedes,Classe A,Gasoline,Automatic,476587
+Mercedes,Classe A,Gasoline,Automatic,445064
+Mercedes,Classe A,Gasoline,Automatic,435409
+Mercedes,Classe A,Gasoline,Automatic,521023
+Mercedes,Classe A,Gasoline,Automatic,491392
+Mercedes,Classe A,Gasoline,Automatic,491121
+Mercedes,Classe A,Gasoline,Automatic,482684
+Mercedes,Classe A,Gasoline,Automatic,511412
+Mercedes,Classe C,Diesel,Automatic,634518
+Mercedes,Classe C,Diesel,Automatic,661986
+Mercedes,Classe C,Diesel,Automatic,644226
+Mercedes,Classe C,Diesel,Automatic,687163
+Mercedes,Classe C,Diesel,Automatic,717242
+Mercedes,Classe C,Diesel,Automatic,682980
+Mercedes,Classe E,Diesel,Automatic,853285
+Mercedes,Classe E,Diesel,Automatic,779832
+Mercedes,Classe E,Diesel,Automatic,868914
+Mercedes,Classe E,Diesel,Automatic,852478
+Mercedes,Classe E,Diesel,Automatic,838385
+Mercedes,Classe E,Diesel,Automatic,972193
+Mercedes,Classe E,Diesel,Automatic,947659
+Mercedes,Classe E,Diesel,Automatic,935547
+Mercedes,Classe E,Diesel,Automatic,946615
+Mercedes,Classe E,Diesel,Automatic,963085
+Mercedes,GLA,Gasoline,Automatic,476120
+Mercedes,GLA,Gasoline,Automatic,519834
+Mercedes,GLA,Gasoline,Automatic,475173
+Mercedes,GLA,Gasoline,Automatic,497900
+Mercedes,GLA,Gasoline,Automatic,546281
+Mercedes,GLA,Gasoline,Automatic,537617
+Mercedes,GLA,Gasoline,Automatic,565412
+Mercedes,GLC,Diesel,Automatic,692211
+Mercedes,GLC,Diesel,Automatic,687826
+Mercedes,GLC,Diesel,Automatic,698179
+Mercedes,GLC,Diesel,Automatic,748253
+Mercedes,GLC,Diesel,Automatic,820012
+Mercedes,GLC,Diesel,Automatic,778965
+Mercedes,GLC,Diesel,Automatic,764413
+BMW,Série 1,Gasoline,Automatic,509349
+BMW,Série 1,Gasoline,Automatic,486178
+BMW,Série 1,Gasoline,Automatic,503932
+BMW,Série 1,Gasoline,Automatic,562491
+BMW,Série 1,Gasoline,Automatic,554637
+BMW,Série 1,Gasoline,Automatic,548475
+BMW,Série 1,Gasoline,Automatic,555982
+BMW,Série 2,Gasoline,Automatic,516287
+BMW,Série 2,Gasoline,Automatic,537222
+BMW,Série 2,Gasoline,Automatic,523640
+BMW,Série 2,Gasoline,Automatic,540868
+BMW,Série 2,Gasoline,Automatic,495706
+BMW,Série 2,Gasoline,Automatic,607240
+BMW,Série 2,Gasoline,Automatic,631122
+BMW,Série 2,Gasoline,Automatic,636637
+BMW,Série 2,Gasoline,Automatic,622125
+BMW,Série 2,Gasoline,Automatic,626106
+BMW,Série 3,Diesel,Automatic,701520
+BMW,Série 3,Diesel,Automatic,637890
+BMW,Série 3,Diesel,Automatic,660757
+BMW,Série 3,Diesel,Automatic,737454
+BMW,Série 3,Diesel,Automatic,706864
+BMW,Série 3,Diesel,Automatic,725401
+BMW,Série 3,Diesel,Automatic,741696
+BMW,Série 4,Gasoline,Automatic,724373
+BMW,Série 4,Gasoline,Automatic,784553
+BMW,Série 4,Gasoline,Automatic,733656
+BMW,Série 4,Gasoline,Automatic,740708
+BMW,Série 4,Gasoline,Automatic,776273
+BMW,Série 4,Gasoline,Automatic,823738
+BMW,Série 4,Gasoline,Automatic,888862
+BMW,Série 4,Gasoline,Automatic,835751
+BMW,X1,Gasoline,Automatic,575106
+BMW,X1,Gasoline,Automatic,549301
+BMW,X1,Gasoline,Automatic,558769
+BMW,X1,Gasoline,Automatic,590395
+BMW,X1,Gasoline,Automatic,584798
+BMW,X1,Gasoline,Automatic,643660
+BMW,X1,Gasoline,Automatic,631733
+BMW,X1,Gasoline,Automatic,660005
+BMW,X1,Gasoline,Automatic,641887
+BMW,X1,Gasoline,Automatic,608948
+BMW,X3,Diesel,Automatic,817578
+BMW,X3,Diesel,Automatic,780441
+BMW,X3,Diesel,Automatic,781276
+BMW,X3,Diesel,Automatic,795160
+BMW,X3,Diesel,Automatic,810235
+BMW,X3,Diesel,Automatic,831966
+BMW,X3,Diesel,Automatic,863338
+BMW,X3,Diesel,Automatic,907194
+BMW,X3,Diesel,Automatic,913092
+Audi,A3,Gasoline,Automatic,493191
+Audi,A3,Gasoline,Automatic,509717
+Audi,A3,Gasoline,Automatic,511882
+Audi,A3,Gasoline,Automatic,493469
+Audi,A3,Gasoline,Automatic,501088
+Audi,A3,Gasoline,Automatic,538387
+Audi,A3,Gasoline,Automatic,538761
+Audi,A3,Gasoline,Automatic,543547
+Audi,A4,Diesel,Automatic,647131
+Audi,A4,Diesel,Automatic,673338
+Audi,A4,Diesel,Automatic,677234
+Audi,A4,Diesel,Automatic,668371
+Audi,A4,Diesel,Automatic,753674
+Audi,A4,Diesel,Automatic,732637
+Audi,A4,Diesel,Automatic,731863
+Audi,Q3,Gasoline,Automatic,576937
+Audi,Q3,Gasoline,Automatic,558548
+Audi,Q3,Gasoline,Automatic,620574
+Audi,Q3,Gasoline,Automatic,646571
+Audi,Q3,Gasoline,Automatic,667256
+Audi,Q3,Gasoline,Automatic,672718
+Audi,Q5,Diesel,Automatic,772004
+Audi,Q5,Diesel,Automatic,772869
+Audi,Q5,Diesel,Automatic,773350
+Audi,Q5,Diesel,Automatic,855995
+Audi,Q5,Diesel,Automatic,872660
+Audi,Q5,Diesel,Automatic,953132
+Audi,Q5,Diesel,Automatic,880823
+Audi,Q5,Diesel,Automatic,899799

@@ -1,0 +1,153 @@
+﻿Brand,Model,Fuel,Transmission,Selling_Price
+Audi,A6,Diesel,Automatic,865000
+Audi,A6,Diesel,Automatic,965000
+Audi,A6,Diesel,Automatic,1085000
+Audi,Q7,Diesel,Automatic,1185000
+Audi,Q7,Diesel,Automatic,1385000
+Audi,Q7,Diesel,Automatic,1585000
+BMW,Série 5,Diesel,Automatic,765000
+BMW,Série 5,Diesel,Automatic,865000
+BMW,Série 5,Diesel,Automatic,965000
+BMW,Série 5,Gasoline,Automatic,1185000
+BMW,X5,Diesel,Automatic,985000
+BMW,X5,Diesel,Automatic,1185000
+BMW,X5,Gasoline,Automatic,1385000
+BMW,X5,Gasoline,Automatic,1685000
+Chery,Tiggo 4 Pro,Gasoline,Manual,185000
+Chery,Tiggo 4 Pro,Gasoline,Manual,195000
+Chery,Tiggo 4 Pro,Gasoline,Automatic,215000
+Chery,Tiggo 4 Pro,Gasoline,Automatic,235000
+Chery,Tiggo 7 Pro,Gasoline,Automatic,265000
+Chery,Tiggo 7 Pro,Gasoline,Automatic,285000
+Chery,Tiggo 7 Pro,Gasoline,Automatic,305000
+Chery,Tiggo 7 Pro,Gasoline,Automatic,325000
+Chery,Tiggo 8 Pro,Gasoline,Automatic,335000
+Chery,Tiggo 8 Pro,Gasoline,Automatic,365000
+Chery,Tiggo 8 Pro,Gasoline,Automatic,395000
+Chery,Tiggo 8 Pro,Gasoline,Automatic,425000
+Haval,H6,Gasoline,Automatic,345000
+Haval,H6,Gasoline,Automatic,375000
+Haval,H6,Gasoline,Automatic,405000
+Haval,H6,Gasoline,Automatic,435000
+Haval,Jolion,Gasoline,Automatic,275000
+Haval,Jolion,Gasoline,Automatic,295000
+Haval,Jolion,Gasoline,Automatic,315000
+Haval,Jolion,Gasoline,Automatic,335000
+Honda,CR-V,Gasoline,Automatic,465000
+Honda,CR-V,Gasoline,Automatic,515000
+Honda,CR-V,Hybrid,Automatic,565000
+Honda,City,Gasoline,Manual,185000
+Honda,City,Gasoline,Automatic,205000
+Honda,City,Gasoline,Automatic,225000
+Honda,Civic,Gasoline,Automatic,295000
+Honda,Civic,Gasoline,Automatic,335000
+Honda,Civic,Gasoline,Automatic,375000
+Honda,HR-V,Gasoline,Automatic,335000
+Honda,HR-V,Gasoline,Automatic,375000
+Honda,HR-V,Gasoline,Automatic,415000
+Hyundai,Elantra,Gasoline,Automatic,265000
+Hyundai,Elantra,Gasoline,Automatic,295000
+Hyundai,Elantra,Gasoline,Automatic,325000
+Hyundai,Elantra,Gasoline,Automatic,355000
+Hyundai,Kona,Gasoline,Automatic,295000
+Hyundai,Kona,Gasoline,Automatic,335000
+Hyundai,Kona,Gasoline,Automatic,375000
+Hyundai,Kona,Hybrid,Automatic,415000
+Kia,Carnival,Diesel,Automatic,525000
+Kia,Carnival,Diesel,Automatic,585000
+Kia,Carnival,Diesel,Automatic,645000
+Kia,Seltos,Gasoline,Automatic,295000
+Kia,Seltos,Gasoline,Automatic,325000
+Kia,Seltos,Gasoline,Automatic,355000
+Kia,Seltos,Gasoline,Automatic,385000
+Land Rover,Defender,Diesel,Automatic,925000
+Land Rover,Defender,Diesel,Automatic,1050000
+Land Rover,Defender,Diesel,Automatic,1185000
+Land Rover,Defender,Diesel,Automatic,1350000
+Land Rover,Discovery,Diesel,Automatic,865000
+Land Rover,Discovery,Diesel,Automatic,965000
+Land Rover,Discovery,Diesel,Automatic,1085000
+Land Rover,Range Rover Evoque,Gasoline,Automatic,725000
+Land Rover,Range Rover Evoque,Gasoline,Automatic,825000
+Land Rover,Range Rover Evoque,Gasoline,Automatic,925000
+Land Rover,Range Rover Sport,Diesel,Automatic,1285000
+Land Rover,Range Rover Sport,Diesel,Automatic,1485000
+Land Rover,Range Rover Sport,Diesel,Automatic,1685000
+Land Rover,Range Rover Sport,Gasoline,Automatic,1985000
+Lexus,ES,Hybrid,Automatic,665000
+Lexus,ES,Hybrid,Automatic,725000
+Lexus,ES,Hybrid,Automatic,785000
+Lexus,NX,Hybrid,Automatic,665000
+Lexus,NX,Hybrid,Automatic,725000
+Lexus,NX,Hybrid,Automatic,785000
+Lexus,RX,Hybrid,Automatic,885000
+Lexus,RX,Hybrid,Automatic,965000
+Lexus,RX,Hybrid,Automatic,1050000
+Lexus,UX,Hybrid,Automatic,515000
+Lexus,UX,Hybrid,Automatic,565000
+Lexus,UX,Hybrid,Automatic,605000
+MG,MG 5,Gasoline,Manual,195000
+MG,MG 5,Gasoline,Manual,215000
+MG,MG 5,Gasoline,Automatic,235000
+MG,MG 5,Gasoline,Automatic,255000
+MG,MG HS,Gasoline,Automatic,325000
+MG,MG HS,Gasoline,Automatic,355000
+MG,MG HS,Gasoline,Automatic,385000
+MG,MG ZS,Gasoline,Manual,245000
+MG,MG ZS,Gasoline,Manual,265000
+MG,MG ZS,Gasoline,Automatic,285000
+MG,MG ZS,Gasoline,Automatic,305000
+Mercedes,CLA,Gasoline,Automatic,525000
+Mercedes,CLA,Gasoline,Automatic,585000
+Mercedes,CLA,Gasoline,Automatic,645000
+Mercedes,CLA,Gasoline,Automatic,765000
+Mercedes,Classe S,Diesel,Automatic,1485000
+Mercedes,Classe S,Gasoline,Automatic,1785000
+Mercedes,Classe S,Gasoline,Automatic,2185000
+Mercedes,Classe S,Gasoline,Automatic,2985000
+Mercedes,GLE,Diesel,Automatic,1085000
+Mercedes,GLE,Diesel,Automatic,1285000
+Mercedes,GLE,Diesel,Automatic,1485000
+Mercedes,GLE,Gasoline,Automatic,1885000
+Mitsubishi,ASX,Gasoline,Manual,285000
+Mitsubishi,ASX,Gasoline,Automatic,315000
+Mitsubishi,ASX,Gasoline,Automatic,345000
+Mitsubishi,Attrage,Gasoline,Manual,165000
+Mitsubishi,Attrage,Gasoline,Manual,175000
+Mitsubishi,Attrage,Gasoline,Automatic,195000
+Mitsubishi,L200,Diesel,Manual,425000
+Mitsubishi,L200,Diesel,Manual,465000
+Mitsubishi,L200,Diesel,Automatic,525000
+Mitsubishi,L200,Diesel,Automatic,565000
+Mitsubishi,Outlander,Gasoline,Automatic,385000
+Mitsubishi,Outlander,Gasoline,Automatic,425000
+Mitsubishi,Outlander,Gasoline,Automatic,465000
+Nissan,Kicks,Gasoline,Automatic,265000
+Nissan,Kicks,Gasoline,Automatic,295000
+Nissan,Kicks,Gasoline,Automatic,325000
+Nissan,Navara,Diesel,Manual,445000
+Nissan,Navara,Diesel,Manual,495000
+Nissan,Navara,Diesel,Automatic,565000
+Porsche,Cayenne,Gasoline,Automatic,1385000
+Porsche,Cayenne,Gasoline,Automatic,1685000
+Porsche,Cayenne,Gasoline,Automatic,1985000
+Porsche,Cayenne,Gasoline,Automatic,2485000
+Porsche,Macan,Gasoline,Automatic,885000
+Porsche,Macan,Gasoline,Automatic,1050000
+Porsche,Macan,Gasoline,Automatic,1250000
+Porsche,Macan,Gasoline,Automatic,1485000
+Toyota,Camry,Gasoline,Automatic,485000
+Toyota,Camry,Gasoline,Automatic,525000
+Toyota,Camry,Hybrid,Automatic,565000
+Toyota,Fortuner,Diesel,Automatic,565000
+Toyota,Fortuner,Diesel,Automatic,625000
+Toyota,Fortuner,Diesel,Automatic,685000
+Toyota,Prado,Diesel,Automatic,825000
+Toyota,Prado,Diesel,Automatic,925000
+Toyota,Prado,Diesel,Automatic,1025000
+Volkswagen,Caddy,Diesel,Manual,285000
+Volkswagen,Caddy,Diesel,Automatic,325000
+Volkswagen,Caddy,Diesel,Automatic,365000
+Volkswagen,T-Roc,Gasoline,Automatic,365000
+Volkswagen,T-Roc,Gasoline,Automatic,415000
+Volkswagen,T-Roc,Gasoline,Automatic,465000

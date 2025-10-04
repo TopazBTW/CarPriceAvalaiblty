@@ -1,0 +1,144 @@
+﻿Brand,Model,Fuel,Transmission,Selling_Price,Trim
+Dacia,Dokker,Gasoline,Manual,145000,Access
+Dacia,Dokker,Gasoline,Manual,150000,Confort
+Dacia,Dokker,Gasoline,Manual,155000,Essentiel
+Dacia,Dokker,Diesel,Manual,160000,Confort
+Dacia,Dokker,Diesel,Manual,165000,Essentiel
+Dacia,Dokker,Diesel,Manual,170000,Stepway
+Dacia,Duster,Gasoline,Manual,175000,Essentiel
+Dacia,Duster,Gasoline,Manual,182000,Essentiel Plus
+Dacia,Duster,Gasoline,Manual,189000,Confort
+Dacia,Duster,Gasoline,Manual,195000,Confort Plus
+Dacia,Duster,Gasoline,Manual,202000,Confort GPS
+Dacia,Duster,Gasoline,Manual,210000,Prestige
+Dacia,Duster,Diesel,Manual,215000,Essentiel
+Dacia,Duster,Diesel,Manual,220000,Confort
+Dacia,Duster,Diesel,Manual,226000,Confort Plus
+Dacia,Duster,Diesel,Manual,232000,Prestige
+Dacia,Duster,Diesel,4x4,237000,Confort 4x4
+Dacia,Duster,Diesel,4x4,242000,Prestige 4x4
+Dacia,Lodgy,Gasoline,Manual,165000,Essentiel 5 Places
+Dacia,Lodgy,Gasoline,Manual,172000,Confort 5 Places
+Dacia,Lodgy,Gasoline,Manual,178000,Essentiel 7 Places
+Dacia,Lodgy,Gasoline,Manual,185000,Confort 7 Places
+Dacia,Lodgy,Gasoline,Manual,190000,Stepway 7 Places
+Dacia,Lodgy,Diesel,Manual,195000,Stepway 7 Places
+Dacia,Logan,Gasoline,Manual,135000,Access
+Dacia,Logan,Gasoline,Manual,140000,Access Plus
+Dacia,Logan,Gasoline,Manual,145000,Confort
+Dacia,Logan,Gasoline,Manual,150000,Confort Plus
+Dacia,Logan,Gasoline,Manual,155000,Essentiel
+Dacia,Logan,Gasoline,Manual,160000,Essentiel Plus
+Dacia,Logan,Gasoline,Manual,165000,Confort GPS
+Dacia,Logan,Gasoline,Manual,170000,Stepway
+Dacia,Logan,Gasoline,Manual,175000,Stepway Plus
+Dacia,Logan,Gasoline,Manual,178000,Stepway Prestige
+Dacia,Sandero,Gasoline,Manual,125000,Access
+Dacia,Sandero,Gasoline,Manual,130000,Access Plus
+Dacia,Sandero,Gasoline,Manual,135000,Confort
+Dacia,Sandero,Gasoline,Manual,140000,Confort Plus
+Dacia,Sandero,Gasoline,Manual,145000,Confort+
+Dacia,Sandero,Gasoline,Manual,150000,Essentiel
+Dacia,Sandero,Gasoline,Manual,155000,Essentiel Plus
+Dacia,Sandero,Gasoline,Manual,160000,Confort GPS
+Dacia,Sandero,Gasoline,Manual,165000,Stepway
+Dacia,Sandero,Gasoline,Manual,170000,Stepway Plus
+Peugeot,2008,Gasoline,Manual,245000,Active
+Peugeot,2008,Gasoline,Manual,255000,Active Plus
+Peugeot,2008,Gasoline,Manual,265000,Allure
+Peugeot,2008,Gasoline,Manual,275000,Allure Plus
+Peugeot,2008,Gasoline,Manual,285000,Allure Pack
+Peugeot,2008,Gasoline,Manual,295000,GT Line
+Peugeot,2008,Diesel,Automatic,305000,Allure BlueHDi
+Peugeot,2008,Diesel,Automatic,315000,Allure Pack BlueHDi
+Peugeot,2008,Diesel,Automatic,325000,GT Line BlueHDi
+Peugeot,208,Gasoline,Manual,175000,Active
+Peugeot,208,Gasoline,Manual,180000,Active Plus
+Peugeot,208,Gasoline,Manual,185000,Active Pack
+Peugeot,208,Gasoline,Manual,190000,Allure
+Peugeot,208,Gasoline,Manual,195000,Allure Plus
+Peugeot,208,Gasoline,Automatic,202000,Active EAT8
+Peugeot,208,Gasoline,Automatic,208000,Allure EAT8
+Peugeot,208,Gasoline,Automatic,215000,Allure Pack EAT8
+Peugeot,208,Gasoline,Automatic,222000,GT Line EAT8
+Peugeot,208,Gasoline,Automatic,228000,GT EAT8
+Peugeot,208,Gasoline,Automatic,235000,GT Pack EAT8
+Peugeot,3008,Gasoline,Automatic,365000,Active Pack
+Peugeot,3008,Gasoline,Automatic,375000,Allure
+Peugeot,3008,Gasoline,Automatic,385000,Allure Plus
+Peugeot,3008,Gasoline,Automatic,395000,Allure Pack
+Peugeot,3008,Diesel,Automatic,408000,Allure BlueHDi
+Peugeot,3008,Diesel,Automatic,418000,Allure Pack BlueHDi
+Peugeot,3008,Diesel,Automatic,428000,GT Line BlueHDi
+Peugeot,3008,Diesel,Automatic,435000,GT BlueHDi
+Peugeot,3008,Hybrid,Automatic,448000,Allure Hybrid4
+Peugeot,3008,Hybrid,Automatic,458000,GT Line Hybrid4
+Peugeot,3008,Hybrid,Automatic,465000,GT Hybrid4
+Peugeot,3008,Hybrid,Automatic,478000,GT Pack Hybrid4
+Peugeot,3008,Hybrid,Automatic,485000,Hybrid4 300
+Peugeot,308,Gasoline,Manual,235000,Active
+Peugeot,308,Gasoline,Manual,245000,Active Plus
+Peugeot,308,Gasoline,Manual,255000,Allure
+Peugeot,308,Gasoline,Manual,265000,Allure Plus
+Peugeot,308,Gasoline,Manual,275000,Allure Pack
+Peugeot,308,Gasoline,Manual,285000,GT Line
+Peugeot,308,Gasoline,Manual,290000,GT Line Plus
+Peugeot,308,Diesel,Automatic,298000,Allure BlueHDi
+Peugeot,308,Diesel,Automatic,305000,Allure Pack BlueHDi
+Peugeot,308,Diesel,Automatic,312000,GT Line BlueHDi
+Peugeot,308,Diesel,Automatic,315000,GT BlueHDi
+Peugeot,5008,Diesel,Automatic,445000,Active Pack
+Peugeot,5008,Diesel,Automatic,458000,Allure
+Peugeot,5008,Diesel,Automatic,468000,Allure Plus
+Peugeot,5008,Diesel,Automatic,478000,Allure Pack
+Peugeot,5008,Diesel,Automatic,485000,GT Line
+Peugeot,5008,Diesel,Automatic,498000,GT Line Plus
+Peugeot,5008,Diesel,Automatic,508000,GT
+Peugeot,5008,Diesel,Automatic,518000,GT Pack
+Peugeot,5008,Diesel,Automatic,525000,Signature
+Renault,Captur,Gasoline,Manual,235000,Life
+Renault,Captur,Gasoline,Manual,242000,Life Plus
+Renault,Captur,Gasoline,Manual,248000,Zen
+Renault,Captur,Gasoline,Manual,255000,Zen Plus
+Renault,Captur,Gasoline,Manual,262000,Intens
+Renault,Captur,Gasoline,Manual,268000,Intens Plus
+Renault,Captur,Gasoline,Manual,275000,R.S. Line
+Renault,Captur,Diesel,Automatic,285000,Zen EDC
+Renault,Captur,Diesel,Automatic,295000,Intens EDC
+Renault,Captur,Diesel,Automatic,305000,R.S. Line EDC
+Renault,Clio,Gasoline,Manual,165000,Life
+Renault,Clio,Gasoline,Manual,172000,Life Plus
+Renault,Clio,Gasoline,Manual,178000,Zen
+Renault,Clio,Gasoline,Manual,185000,Zen Plus
+Renault,Clio,Gasoline,Manual,192000,Intens
+Renault,Clio,Gasoline,Automatic,198000,Zen CVT
+Renault,Clio,Gasoline,Automatic,205000,Intens CVT
+Renault,Clio,Gasoline,Automatic,210000,Intens Plus CVT
+Renault,Clio,Gasoline,Automatic,215000,R.S. Line CVT
+Renault,Kadjar,Diesel,Automatic,315000,Life
+Renault,Kadjar,Diesel,Automatic,325000,Life Plus
+Renault,Kadjar,Diesel,Automatic,335000,Zen
+Renault,Kadjar,Diesel,Automatic,345000,Zen Plus
+Renault,Kadjar,Diesel,Automatic,358000,Intens
+Renault,Kadjar,Diesel,Automatic,370000,Intens Plus
+Renault,Kadjar,Diesel,Automatic,382000,R.S. Line
+Renault,Kadjar,Diesel,Automatic,395000,Black Edition
+Renault,Koleos,Diesel,Automatic,385000,Life
+Renault,Koleos,Diesel,Automatic,398000,Zen
+Renault,Koleos,Diesel,Automatic,410000,Zen Plus
+Renault,Koleos,Diesel,Automatic,415000,Intens
+Renault,Koleos,Diesel,Automatic,428000,Intens Plus
+Renault,Koleos,Diesel,Automatic,438000,Initiale Paris
+Renault,Koleos,Diesel,Automatic,445000,Initiale Paris Plus
+Renault,Koleos,Diesel,Automatic,455000,Signature
+Renault,Koleos,Diesel,Automatic,465000,Signature Edition
+Renault,Megane,Gasoline,Manual,220000,Life
+Renault,Megane,Gasoline,Manual,230000,Life Plus
+Renault,Megane,Gasoline,Manual,240000,Zen
+Renault,Megane,Gasoline,Manual,245000,Zen Plus
+Renault,Megane,Gasoline,Manual,252000,Intens
+Renault,Megane,Gasoline,Manual,258000,Intens Plus
+Renault,Megane,Gasoline,Manual,265000,R.S. Line
+Renault,Megane,Diesel,Automatic,272000,Zen EDC
+Renault,Megane,Diesel,Automatic,278000,Intens EDC
+Renault,Megane,Diesel,Automatic,285000,R.S. Line EDC

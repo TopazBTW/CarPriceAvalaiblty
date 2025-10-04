@@ -1,0 +1,283 @@
+﻿Brand,Model,Fuel,Transmission,Selling_Price,Trim
+Citroen,Berlingo,Diesel,Manual,195000,Live
+Citroen,Berlingo,Diesel,Manual,205000,Feel
+Citroen,Berlingo,Diesel,Automatic,212000,Feel EAT8
+Citroen,Berlingo,Diesel,Automatic,220000,Feel Pack EAT8
+Citroen,Berlingo,Diesel,Automatic,232000,Shine EAT8
+Citroen,Berlingo,Diesel,Automatic,242000,Shine Plus EAT8
+Citroen,Berlingo,Diesel,Automatic,245000,XTR Plus EAT8
+Citroen,C3,Gasoline,Manual,165000,Live
+Citroen,C3,Gasoline,Manual,172000,Live Plus
+Citroen,C3,Gasoline,Manual,178000,Feel
+Citroen,C3,Gasoline,Manual,185000,Feel Plus
+Citroen,C3,Gasoline,Manual,190000,Shine
+Citroen,C3,Diesel,Manual,202000,Feel BlueHDi
+Citroen,C3,Diesel,Manual,210000,Shine BlueHDi
+Citroen,C3,Diesel,Manual,215000,Shine Pack BlueHDi
+Citroen,C4,Gasoline,Manual,235000,Live
+Citroen,C4,Gasoline,Manual,248000,Feel
+Citroen,C4,Gasoline,Manual,258000,Feel Plus
+Citroen,C4,Gasoline,Manual,265000,Shine
+Citroen,C4,Diesel,Automatic,278000,Feel BlueHDi
+Citroen,C4,Diesel,Automatic,288000,Shine BlueHDi
+Citroen,C4,Diesel,Automatic,295000,Shine Pack BlueHDi
+Citroen,C5 Aircross,Gasoline,Automatic,355000,Live
+Citroen,C5 Aircross,Gasoline,Automatic,372000,Feel
+Citroen,C5 Aircross,Diesel,Automatic,388000,Feel BlueHDi
+Citroen,C5 Aircross,Diesel,Automatic,395000,Feel Pack BlueHDi
+Citroen,C5 Aircross,Diesel,Automatic,412000,Shine BlueHDi
+Citroen,C5 Aircross,Diesel,Automatic,428000,Shine Plus BlueHDi
+Citroen,C5 Aircross,Diesel,Automatic,435000,Shine Pack BlueHDi
+Citroen,C5 Aircross,Hybrid,Automatic,448000,Feel Hybrid
+Citroen,C5 Aircross,Hybrid,Automatic,458000,Shine Hybrid
+Citroen,C5 Aircross,Hybrid,Automatic,465000,Shine Pack Hybrid
+Citroen,Jumper,Diesel,Manual,315000,Club
+Citroen,Jumper,Diesel,Manual,328000,Club Plus
+Citroen,Jumper,Diesel,Manual,342000,Confort
+Citroen,Jumper,Diesel,Manual,350000,Confort Pack
+Citroen,Jumper,Diesel,Manual,368000,Business
+Citroen,Jumper,Diesel,Manual,378000,Business Plus
+Citroen,Jumper,Diesel,Manual,385000,Business Premium
+Fiat,500,Gasoline,Manual,155000,Pop
+Fiat,500,Gasoline,Manual,162000,Pop Plus
+Fiat,500,Gasoline,Automatic,168000,Lounge
+Fiat,500,Gasoline,Automatic,175000,Lounge Plus
+Fiat,500,Gasoline,Automatic,182000,Dolcevita
+Fiat,500,Gasoline,Automatic,188000,Star
+Fiat,500,Gasoline,Automatic,195000,Rockstar
+Fiat,500X,Gasoline,Manual,245000,Pop
+Fiat,500X,Gasoline,Manual,262000,City Look
+Fiat,500X,Gasoline,Automatic,275000,City Look DCT
+Fiat,500X,Gasoline,Automatic,280000,Cross DCT
+Fiat,500X,Gasoline,Automatic,298000,Cross Plus DCT
+Fiat,500X,Gasoline,Automatic,308000,Sport DCT
+Fiat,500X,Gasoline,Automatic,315000,Sport Plus DCT
+Fiat,Tipo,Gasoline,Manual,165000,Easy
+Fiat,Tipo,Gasoline,Manual,175000,Easy Plus
+Fiat,Tipo,Gasoline,Manual,185000,Lounge
+Fiat,Tipo,Gasoline,Manual,195000,Lounge Plus
+Fiat,Tipo,Diesel,Manual,208000,Lounge Diesel
+Fiat,Tipo,Diesel,Manual,218000,Cross Diesel
+Fiat,Tipo,Diesel,Manual,225000,Cross Plus Diesel
+Ford,Fiesta,Gasoline,Manual,165000,Trend
+Ford,Fiesta,Gasoline,Manual,172000,Trend Plus
+Ford,Fiesta,Gasoline,Automatic,178000,Titanium
+Ford,Fiesta,Gasoline,Automatic,185000,Titanium Plus
+Ford,Fiesta,Gasoline,Automatic,195000,ST-Line
+Ford,Fiesta,Gasoline,Automatic,205000,Vignale
+Ford,Focus,Gasoline,Manual,225000,Trend
+Ford,Focus,Gasoline,Manual,238000,Titanium
+Ford,Focus,Gasoline,Manual,248000,Titanium Plus
+Ford,Focus,Gasoline,Manual,255000,ST-Line
+Ford,Focus,Diesel,Automatic,268000,Titanium TDCi
+Ford,Focus,Diesel,Automatic,278000,ST-Line TDCi
+Ford,Focus,Diesel,Automatic,285000,Vignale TDCi
+Ford,Kuga,Gasoline,Automatic,375000,Trend
+Ford,Kuga,Gasoline,Automatic,392000,Titanium
+Ford,Kuga,Diesel,Automatic,408000,Titanium TDCi
+Ford,Kuga,Diesel,Automatic,425000,ST-Line TDCi
+Ford,Kuga,Hybrid,Automatic,445000,Titanium Hybrid
+Ford,Kuga,Hybrid,Automatic,462000,ST-Line Hybrid
+Ford,Kuga,Hybrid,Automatic,478000,Vignale Hybrid
+Ford,Kuga,Hybrid,Automatic,485000,ST-Line X Hybrid
+Ford,Mustang,Gasoline,Automatic,785000,EcoBoost 2.3L
+Ford,Mustang,Gasoline,Automatic,815000,EcoBoost Premium
+Ford,Mustang,Gasoline,Automatic,842000,GT 5.0L V8
+Ford,Mustang,Gasoline,Automatic,855000,GT Premium V8
+Ford,Mustang,Gasoline,Automatic,885000,GT California Special
+Ford,Mustang,Gasoline,Automatic,905000,Mach 1
+Ford,Mustang,Gasoline,Automatic,925000,Shelby GT500
+Ford,Ranger,Diesel,Manual,435000,XL 4x2
+Ford,Ranger,Diesel,Manual,458000,XLT 4x2
+Ford,Ranger,Diesel,Manual,478000,XLT Plus 4x2
+Ford,Ranger,Diesel,Manual,495000,Limited 4x4
+Ford,Ranger,Diesel,Automatic,525000,XLT 4x4 Auto
+Ford,Ranger,Diesel,Automatic,545000,Limited 4x4 Auto
+Ford,Ranger,Diesel,Automatic,565000,Wildtrak 4x4
+Jeep,Cherokee,Gasoline,Automatic,535000,Longitude
+Jeep,Cherokee,Gasoline,Automatic,558000,Limited
+Jeep,Cherokee,Diesel,Automatic,575000,Limited Diesel
+Jeep,Cherokee,Diesel,Automatic,595000,Limited Plus Diesel
+Jeep,Cherokee,Diesel,Automatic,622000,Overland Diesel
+Jeep,Cherokee,Diesel,Automatic,642000,Trailhawk Diesel
+Jeep,Cherokee,Diesel,Automatic,655000,Trailhawk Elite Diesel
+Jeep,Compass,Gasoline,Automatic,375000,Sport
+Jeep,Compass,Gasoline,Automatic,398000,Longitude
+Jeep,Compass,Diesel,Automatic,412000,Longitude Diesel
+Jeep,Compass,Diesel,Automatic,425000,Limited Diesel
+Jeep,Compass,Diesel,Automatic,430000,Limited Plus Diesel
+Jeep,Compass,Diesel,Automatic,452000,S Diesel
+Jeep,Compass,Diesel,Automatic,468000,Trailhawk Diesel
+Jeep,Compass,Diesel,Automatic,485000,Trailhawk Plus Diesel
+Jeep,Grand Cherokee,Diesel,Automatic,685000,Laredo
+Jeep,Grand Cherokee,Diesel,Automatic,718000,Limited
+Jeep,Grand Cherokee,Diesel,Automatic,745000,Limited Plus
+Jeep,Grand Cherokee,Diesel,Automatic,765000,Overland
+Jeep,Grand Cherokee,Diesel,Automatic,775000,Overland Plus
+Jeep,Grand Cherokee,Diesel,Automatic,808000,Summit
+Jeep,Grand Cherokee,Diesel,Automatic,838000,Summit Plus
+Jeep,Grand Cherokee,Diesel,Automatic,858000,SRT
+Jeep,Grand Cherokee,Diesel,Automatic,865000,Trackhawk
+Jeep,Renegade,Gasoline,Automatic,305000,Sport
+Jeep,Renegade,Gasoline,Automatic,318000,Longitude
+Jeep,Renegade,Gasoline,Automatic,328000,Longitude Plus
+Jeep,Renegade,Gasoline,Automatic,338000,Limited
+Jeep,Renegade,Gasoline,Automatic,345000,Limited Plus
+Jeep,Renegade,Gasoline,Automatic,362000,S
+Jeep,Renegade,Gasoline,Automatic,375000,Trailhawk
+Jeep,Renegade,Gasoline,Automatic,385000,Trailhawk Plus
+Mazda,CX-3,Gasoline,Automatic,265000,Essential
+Mazda,CX-3,Gasoline,Automatic,278000,Signature
+Mazda,CX-3,Gasoline,Automatic,288000,Signature Plus
+Mazda,CX-3,Gasoline,Automatic,295000,Exclusive
+Mazda,CX-3,Gasoline,Automatic,308000,Exclusive Plus
+Mazda,CX-3,Gasoline,Automatic,318000,Exclusive Line
+Mazda,CX-3,Gasoline,Automatic,325000,Sport Edition
+Mazda,CX-5,Gasoline,Automatic,385000,Essential
+Mazda,CX-5,Gasoline,Automatic,405000,Signature
+Mazda,CX-5,Gasoline,Automatic,422000,Signature Plus
+Mazda,CX-5,Gasoline,Automatic,435000,Exclusive
+Mazda,CX-5,Gasoline,Automatic,455000,Exclusive Plus
+Mazda,CX-5,Gasoline,Automatic,472000,Exclusive Line
+Mazda,CX-5,Gasoline,Automatic,485000,Sport Edition
+Mazda,CX-9,Gasoline,Automatic,525000,Essential 7 Places
+Mazda,CX-9,Gasoline,Automatic,548000,Signature 7 Places
+Mazda,CX-9,Gasoline,Automatic,568000,Signature Plus 7 Places
+Mazda,CX-9,Gasoline,Automatic,585000,Exclusive 7 Places
+Mazda,CX-9,Gasoline,Automatic,612000,Exclusive Plus 7 Places
+Mazda,CX-9,Gasoline,Automatic,628000,Exclusive Line 7 Places
+Mazda,CX-9,Gasoline,Automatic,645000,Signature Reserve 7 Places
+Mazda,Mazda2,Gasoline,Manual,165000,Essential
+Mazda,Mazda2,Gasoline,Manual,172000,Signature
+Mazda,Mazda2,Gasoline,Automatic,178000,Essential Auto
+Mazda,Mazda2,Gasoline,Automatic,185000,Signature Auto
+Mazda,Mazda2,Gasoline,Automatic,195000,Signature Plus Auto
+Mazda,Mazda2,Gasoline,Automatic,202000,Exclusive Auto
+Mazda,Mazda2,Gasoline,Automatic,205000,Exclusive Line Auto
+Mazda,Mazda3,Gasoline,Manual,235000,Essential
+Mazda,Mazda3,Gasoline,Manual,248000,Signature
+Mazda,Mazda3,Gasoline,Automatic,258000,Signature Auto
+Mazda,Mazda3,Gasoline,Automatic,265000,Signature Plus Auto
+Mazda,Mazda3,Gasoline,Automatic,278000,Exclusive Auto
+Mazda,Mazda3,Gasoline,Automatic,288000,Exclusive Plus Auto
+Mazda,Mazda3,Gasoline,Automatic,295000,Exclusive Line Auto
+Nissan,Juke,Gasoline,Manual,285000,Visia
+Nissan,Juke,Gasoline,Manual,298000,Acenta
+Nissan,Juke,Gasoline,Automatic,308000,Acenta CVT
+Nissan,Juke,Gasoline,Automatic,320000,N-Connecta CVT
+Nissan,Juke,Gasoline,Automatic,335000,Tekna CVT
+Nissan,Juke,Gasoline,Automatic,348000,Tekna Plus CVT
+Nissan,Juke,Gasoline,Automatic,355000,N-Design CVT
+Nissan,Micra,Gasoline,Manual,155000,Visia
+Nissan,Micra,Gasoline,Manual,162000,Visia Plus
+Nissan,Micra,Gasoline,Automatic,168000,Acenta
+Nissan,Micra,Gasoline,Automatic,170000,Acenta Plus
+Nissan,Micra,Gasoline,Automatic,178000,N-Connecta
+Nissan,Micra,Gasoline,Automatic,185000,Tekna
+Nissan,Patrol,Diesel,Automatic,865000,LE V8
+Nissan,Patrol,Diesel,Automatic,905000,LE Platinum V8
+Nissan,Patrol,Diesel,Automatic,938000,Platinum Reserve V8
+Nissan,Patrol,Diesel,Automatic,960000,NISMO V8
+Nissan,Patrol,Diesel,Automatic,995000,NISMO Plus V8
+Nissan,Patrol,Diesel,Automatic,1025000,Super Safari V8
+Nissan,Patrol,Diesel,Automatic,1050000,Desert Edition V8
+Nissan,Qashqai,Gasoline,Automatic,335000,Visia
+Nissan,Qashqai,Gasoline,Automatic,352000,Acenta
+Nissan,Qashqai,Gasoline,Automatic,368000,N-Connecta
+Nissan,Qashqai,Gasoline,Automatic,380000,Tekna
+Nissan,Qashqai,Diesel,Automatic,398000,Acenta dCi
+Nissan,Qashqai,Diesel,Automatic,412000,N-Connecta dCi
+Nissan,Qashqai,Diesel,Automatic,425000,Tekna dCi
+Nissan,X-Trail,Gasoline,Automatic,445000,Visia 7 Places
+Nissan,X-Trail,Gasoline,Automatic,472000,Acenta 7 Places
+Nissan,X-Trail,Diesel,Automatic,492000,Acenta dCi 7 Places
+Nissan,X-Trail,Diesel,Automatic,510000,N-Connecta dCi 7 Places
+Nissan,X-Trail,Diesel,Automatic,538000,Tekna dCi 7 Places
+Nissan,X-Trail,Diesel,Automatic,558000,Tekna Plus dCi 7 Places
+Nissan,X-Trail,Diesel,Automatic,575000,Tekna Bose dCi 7 Places
+Seat,Arona,Gasoline,Manual,255000,Reference
+Seat,Arona,Gasoline,Manual,268000,Style
+Seat,Arona,Gasoline,Automatic,278000,Style DSG
+Seat,Arona,Gasoline,Automatic,285000,Xcellence DSG
+Seat,Arona,Gasoline,Automatic,298000,Xcellence Plus DSG
+Seat,Arona,Gasoline,Automatic,310000,FR DSG
+Seat,Arona,Gasoline,Automatic,315000,FR Sport DSG
+Seat,Ateca,Gasoline,Automatic,355000,Reference DSG
+Seat,Ateca,Gasoline,Automatic,372000,Style DSG
+Seat,Ateca,Diesel,Automatic,388000,Style TDI DSG
+Seat,Ateca,Diesel,Automatic,400000,Xcellence TDI DSG
+Seat,Ateca,Diesel,Automatic,422000,Xcellence Plus TDI DSG
+Seat,Ateca,Diesel,Automatic,438000,FR TDI DSG
+Seat,Ateca,Diesel,Automatic,445000,Cupra TDI DSG
+Seat,Ibiza,Gasoline,Manual,165000,Reference
+Seat,Ibiza,Gasoline,Manual,172000,Style
+Seat,Ibiza,Gasoline,Automatic,178000,Style DSG
+Seat,Ibiza,Gasoline,Automatic,185000,Style Plus DSG
+Seat,Ibiza,Gasoline,Automatic,190000,Xcellence DSG
+Seat,Ibiza,Gasoline,Automatic,202000,Xcellence Plus DSG
+Seat,Ibiza,Gasoline,Automatic,210000,FR DSG
+Seat,Ibiza,Gasoline,Automatic,215000,FR Sport DSG
+Seat,Leon,Gasoline,Automatic,245000,Reference DSG
+Seat,Leon,Gasoline,Automatic,258000,Style DSG
+Seat,Leon,Gasoline,Automatic,268000,Style Plus DSG
+Seat,Leon,Gasoline,Automatic,280000,Xcellence DSG
+Seat,Leon,Gasoline,Automatic,295000,Xcellence Plus DSG
+Seat,Leon,Gasoline,Automatic,308000,FR DSG
+Seat,Leon,Gasoline,Automatic,315000,Cupra DSG
+Skoda,Fabia,Gasoline,Manual,165000,Active
+Skoda,Fabia,Gasoline,Manual,172000,Active Plus
+Skoda,Fabia,Gasoline,Automatic,178000,Ambition
+Skoda,Fabia,Gasoline,Automatic,185000,Ambition Plus
+Skoda,Fabia,Gasoline,Automatic,190000,Style
+Skoda,Fabia,Gasoline,Automatic,202000,Style Plus
+Skoda,Fabia,Gasoline,Automatic,210000,Monte Carlo
+Skoda,Fabia,Gasoline,Automatic,215000,Monte Carlo Plus
+Skoda,Karoq,Gasoline,Automatic,345000,Active
+Skoda,Karoq,Gasoline,Automatic,362000,Ambition
+Skoda,Karoq,Diesel,Automatic,375000,Ambition TDI
+Skoda,Karoq,Diesel,Automatic,390000,Style TDI
+Skoda,Karoq,Diesel,Automatic,410000,Style Plus TDI
+Skoda,Karoq,Diesel,Automatic,428000,L&K TDI
+Skoda,Karoq,Diesel,Automatic,435000,Sportline TDI
+Skoda,Kodiaq,Diesel,Automatic,445000,Active TDI 7 Places
+Skoda,Kodiaq,Diesel,Automatic,468000,Ambition TDI 7 Places
+Skoda,Kodiaq,Diesel,Automatic,485000,Style TDI 7 Places
+Skoda,Kodiaq,Diesel,Automatic,500000,Style Plus TDI 7 Places
+Skoda,Kodiaq,Diesel,Automatic,525000,L&K TDI 7 Places
+Skoda,Kodiaq,Diesel,Automatic,545000,Sportline TDI 7 Places
+Skoda,Kodiaq,Diesel,Automatic,555000,RS TDI 7 Places
+Skoda,Octavia,Gasoline,Automatic,255000,Active
+Skoda,Octavia,Gasoline,Automatic,268000,Ambition
+Skoda,Octavia,Diesel,Automatic,278000,Ambition TDI
+Skoda,Octavia,Diesel,Automatic,290000,Style TDI
+Skoda,Octavia,Diesel,Automatic,305000,Style Plus TDI
+Skoda,Octavia,Diesel,Automatic,318000,L&K TDI
+Skoda,Octavia,Diesel,Automatic,325000,RS TDI
+Suzuki,Baleno,Gasoline,Manual,155000,GL
+Suzuki,Baleno,Gasoline,Manual,162000,GLX
+Suzuki,Baleno,Gasoline,Automatic,168000,GLX Auto
+Suzuki,Baleno,Gasoline,Automatic,175000,GLX Plus Auto
+Suzuki,Baleno,Gasoline,Automatic,182000,GLX Premium Auto
+Suzuki,Baleno,Gasoline,Automatic,188000,Sport Auto
+Suzuki,Baleno,Gasoline,Automatic,195000,Sport Plus Auto
+Suzuki,S-Cross,Gasoline,Automatic,275000,GL Auto
+Suzuki,S-Cross,Gasoline,Automatic,288000,GLX Auto
+Suzuki,S-Cross,Gasoline,Automatic,298000,GLX Plus Auto
+Suzuki,S-Cross,Gasoline,Automatic,310000,GLX Premium Auto
+Suzuki,S-Cross,Gasoline,Automatic,322000,AllGrip Auto
+Suzuki,S-Cross,Gasoline,Automatic,332000,AllGrip Plus Auto
+Suzuki,S-Cross,Gasoline,Automatic,345000,AllGrip Sport Auto
+Suzuki,Swift,Gasoline,Manual,145000,GL
+Suzuki,Swift,Gasoline,Manual,152000,GL Plus
+Suzuki,Swift,Gasoline,Manual,158000,GLX
+Suzuki,Swift,Gasoline,Automatic,165000,GLX Auto
+Suzuki,Swift,Gasoline,Automatic,172000,GLX Plus Auto
+Suzuki,Swift,Gasoline,Automatic,178000,Sport Auto
+Suzuki,Swift,Gasoline,Automatic,185000,Sport Plus Auto
+Suzuki,Vitara,Gasoline,Manual,245000,GL
+Suzuki,Vitara,Gasoline,Manual,258000,GLX
+Suzuki,Vitara,Gasoline,Automatic,268000,GLX Auto
+Suzuki,Vitara,Gasoline,Automatic,275000,GLX Plus Auto
+Suzuki,Vitara,Gasoline,Automatic,288000,AllGrip Auto
+Suzuki,Vitara,Gasoline,Automatic,298000,AllGrip Plus Auto
+Suzuki,Vitara,Gasoline,Automatic,305000,AllGrip Sport Auto

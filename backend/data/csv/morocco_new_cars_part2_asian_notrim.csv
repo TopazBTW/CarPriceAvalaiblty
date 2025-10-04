@@ -1,0 +1,133 @@
+﻿Brand,Model,Fuel,Transmission,Selling_Price
+Hyundai,Accent,Gasoline,Manual,185000
+Hyundai,Accent,Gasoline,Manual,192000
+Hyundai,Accent,Gasoline,Manual,198000
+Hyundai,Accent,Gasoline,Manual,205000
+Hyundai,Accent,Gasoline,Automatic,215000
+Hyundai,Accent,Gasoline,Automatic,225000
+Hyundai,Accent,Gasoline,Automatic,235000
+Hyundai,Santa Fe,Diesel,Automatic,525000
+Hyundai,Santa Fe,Diesel,Automatic,545000
+Hyundai,Santa Fe,Diesel,Automatic,560000
+Hyundai,Santa Fe,Diesel,Automatic,575000
+Hyundai,Santa Fe,Diesel,Automatic,595000
+Hyundai,Santa Fe,Diesel,Automatic,615000
+Hyundai,Santa Fe,Diesel,Automatic,630000
+Hyundai,Santa Fe,Diesel,Automatic,645000
+Hyundai,Tucson,Gasoline,Automatic,365000
+Hyundai,Tucson,Gasoline,Automatic,375000
+Hyundai,Tucson,Gasoline,Automatic,385000
+Hyundai,Tucson,Gasoline,Automatic,395000
+Hyundai,Tucson,Diesel,Automatic,408000
+Hyundai,Tucson,Diesel,Automatic,418000
+Hyundai,Tucson,Diesel,Automatic,425000
+Hyundai,Tucson,Hybrid,Automatic,445000
+Hyundai,Tucson,Hybrid,Automatic,455000
+Hyundai,Tucson,Hybrid,Automatic,465000
+Hyundai,Tucson,Hybrid,Automatic,478000
+Hyundai,Tucson,Hybrid,Automatic,485000
+Hyundai,i10,Gasoline,Manual,115000
+Hyundai,i10,Gasoline,Manual,118000
+Hyundai,i10,Gasoline,Manual,122000
+Hyundai,i10,Gasoline,Manual,125000
+Hyundai,i10,Gasoline,Manual,132000
+Hyundai,i10,Gasoline,Manual,138000
+Hyundai,i10,Gasoline,Manual,145000
+Hyundai,i20,Gasoline,Manual,155000
+Hyundai,i20,Gasoline,Manual,162000
+Hyundai,i20,Gasoline,Manual,168000
+Hyundai,i20,Gasoline,Manual,175000
+Hyundai,i20,Gasoline,Manual,182000
+Hyundai,i20,Gasoline,Automatic,188000
+Hyundai,i20,Gasoline,Automatic,195000
+Kia,Picanto,Gasoline,Manual,105000
+Kia,Picanto,Gasoline,Manual,110000
+Kia,Picanto,Gasoline,Manual,115000
+Kia,Picanto,Gasoline,Manual,120000
+Kia,Picanto,Gasoline,Automatic,125000
+Kia,Picanto,Gasoline,Automatic,132000
+Kia,Picanto,Gasoline,Automatic,138000
+Kia,Picanto,Gasoline,Automatic,145000
+Kia,Rio,Gasoline,Manual,155000
+Kia,Rio,Gasoline,Manual,162000
+Kia,Rio,Gasoline,Manual,168000
+Kia,Rio,Gasoline,Manual,175000
+Kia,Rio,Gasoline,Automatic,182000
+Kia,Rio,Gasoline,Automatic,188000
+Kia,Rio,Gasoline,Automatic,195000
+Kia,Sorento,Diesel,Automatic,485000
+Kia,Sorento,Diesel,Automatic,505000
+Kia,Sorento,Diesel,Automatic,520000
+Kia,Sorento,Diesel,Automatic,535000
+Kia,Sorento,Diesel,Automatic,540000
+Kia,Sorento,Diesel,Automatic,560000
+Kia,Sorento,Diesel,Automatic,578000
+Kia,Sorento,Diesel,Automatic,595000
+Kia,Sportage,Gasoline,Automatic,355000
+Kia,Sportage,Gasoline,Automatic,368000
+Kia,Sportage,Gasoline,Automatic,378000
+Kia,Sportage,Gasoline,Automatic,385000
+Kia,Sportage,Diesel,Automatic,398000
+Kia,Sportage,Diesel,Automatic,410000
+Kia,Sportage,Diesel,Automatic,418000
+Kia,Sportage,Diesel,Automatic,425000
+Kia,Sportage,Hybrid,Automatic,445000
+Kia,Sportage,Hybrid,Automatic,455000
+Kia,Sportage,Hybrid,Automatic,465000
+Kia,Sportage,Hybrid,Automatic,478000
+Kia,Sportage,Hybrid,Automatic,485000
+Kia,Stinger,Gasoline,Automatic,615000
+Kia,Stinger,Gasoline,Automatic,655000
+Kia,Stinger,Gasoline,Automatic,685000
+Kia,Stinger,Gasoline,Automatic,715000
+Kia,Stinger,Gasoline,Automatic,745000
+Toyota,Corolla,Gasoline,Manual,265000
+Toyota,Corolla,Gasoline,Manual,272000
+Toyota,Corolla,Gasoline,Manual,278000
+Toyota,Corolla,Gasoline,Manual,285000
+Toyota,Corolla,Gasoline,Manual,295000
+Toyota,Corolla,Gasoline,Manual,302000
+Toyota,Corolla,Gasoline,Manual,310000
+Toyota,Corolla,Hybrid,Automatic,322000
+Toyota,Corolla,Hybrid,Automatic,328000
+Toyota,Corolla,Hybrid,Automatic,335000
+Toyota,Hilux,Diesel,Manual,485000
+Toyota,Hilux,Diesel,Manual,505000
+Toyota,Hilux,Diesel,Manual,525000
+Toyota,Hilux,Diesel,Manual,545000
+Toyota,Hilux,Diesel,Automatic,560000
+Toyota,Hilux,Diesel,Automatic,575000
+Toyota,Hilux,Diesel,Automatic,595000
+Toyota,Hilux,Diesel,Automatic,610000
+Toyota,Hilux,Diesel,Automatic,625000
+Toyota,Land Cruiser,Diesel,Automatic,980000
+Toyota,Land Cruiser,Diesel,Automatic,1050000
+Toyota,Land Cruiser,Diesel,Automatic,1120000
+Toyota,Land Cruiser,Diesel,Automatic,1150000
+Toyota,Land Cruiser,Diesel,Automatic,1185000
+Toyota,Land Cruiser,Diesel,Automatic,1220000
+Toyota,Land Cruiser,Diesel,Automatic,1250000
+Toyota,RAV4,Gasoline,Automatic,465000
+Toyota,RAV4,Gasoline,Automatic,475000
+Toyota,RAV4,Gasoline,Automatic,485000
+Toyota,RAV4,Gasoline,Automatic,495000
+Toyota,RAV4,Gasoline,Automatic,510000
+Toyota,RAV4,Gasoline,Automatic,525000
+Toyota,RAV4,Hybrid,Automatic,540000
+Toyota,RAV4,Hybrid,Automatic,548000
+Toyota,RAV4,Hybrid,Automatic,555000
+Toyota,RAV4,Hybrid,Automatic,565000
+Toyota,RAV4,Hybrid,Automatic,575000
+Toyota,Yaris,Gasoline,Manual,189000
+Toyota,Yaris,Gasoline,Manual,192000
+Toyota,Yaris,Gasoline,Manual,195000
+Toyota,Yaris,Hybrid,Automatic,195000
+Toyota,Yaris,Gasoline,Manual,198000
+Toyota,Yaris,Hybrid,Automatic,199000
+Toyota,Yaris,Gasoline,Manual,202000
+Toyota,Yaris,Hybrid,Automatic,203000
+Toyota,Yaris,Gasoline,Manual,205000
+Toyota,Yaris,Hybrid,Automatic,205000
+Toyota,Yaris,Hybrid,Automatic,209000
+Toyota,Yaris,Hybrid,Automatic,212000
+Toyota,Yaris,Hybrid,Automatic,215000

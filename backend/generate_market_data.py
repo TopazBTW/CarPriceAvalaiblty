@@ -14,101 +14,101 @@ class MoroccoMarketDataGenerator:
         self.market_data = {
             'Dacia': {
                 'models': {
-                    'Logan': {'base_price': 140000, 'years': [2018, 2019, 2020, 2021, 2022, 2023, 2024], 'fuel': ['Gasoline'], 'popularity': 0.25},
-                    'Sandero': {'base_price': 130000, 'years': [2018, 2019, 2020, 2021, 2022, 2023, 2024], 'fuel': ['Gasoline'], 'popularity': 0.20},
-                    'Duster': {'base_price': 180000, 'years': [2018, 2019, 2020, 2021, 2022, 2023, 2024], 'fuel': ['Gasoline', 'Diesel'], 'popularity': 0.30},
-                    'Lodgy': {'base_price': 160000, 'years': [2018, 2019, 2020, 2021, 2022, 2023], 'fuel': ['Gasoline', 'Diesel'], 'popularity': 0.15},
-                    'Dokker': {'base_price': 145000, 'years': [2018, 2019, 2020, 2021, 2022], 'fuel': ['Gasoline', 'Diesel'], 'popularity': 0.10}
+                    'Logan': {'base_price': 185000, 'years': [2018, 2019, 2020, 2021, 2022, 2023, 2024], 'fuel': ['Gasoline'], 'popularity': 0.25},
+                    'Sandero': {'base_price': 175000, 'years': [2018, 2019, 2020, 2021, 2022, 2023, 2024], 'fuel': ['Gasoline'], 'popularity': 0.20},
+                    'Duster': {'base_price': 235000, 'years': [2018, 2019, 2020, 2021, 2022, 2023, 2024], 'fuel': ['Gasoline', 'Diesel'], 'popularity': 0.30},
+                    'Lodgy': {'base_price': 210000, 'years': [2018, 2019, 2020, 2021, 2022, 2023], 'fuel': ['Gasoline', 'Diesel'], 'popularity': 0.15},
+                    'Dokker': {'base_price': 195000, 'years': [2018, 2019, 2020, 2021, 2022], 'fuel': ['Gasoline', 'Diesel'], 'popularity': 0.10}
                 },
                 'market_share': 0.35
             },
             'Renault': {
                 'models': {
-                    'Clio': {'base_price': 150000, 'years': [2018, 2019, 2020, 2021, 2022, 2023, 2024], 'fuel': ['Gasoline', 'Diesel'], 'popularity': 0.30},
-                    'Megane': {'base_price': 200000, 'years': [2018, 2019, 2020, 2021, 2022, 2023], 'fuel': ['Gasoline', 'Diesel'], 'popularity': 0.20},
-                    'Captur': {'base_price': 220000, 'years': [2019, 2020, 2021, 2022, 2023, 2024], 'fuel': ['Gasoline', 'Diesel'], 'popularity': 0.25},
-                    'Kadjar': {'base_price': 280000, 'years': [2018, 2019, 2020, 2021, 2022], 'fuel': ['Gasoline', 'Diesel'], 'popularity': 0.15},
-                    'Talisman': {'base_price': 320000, 'years': [2018, 2019, 2020, 2021], 'fuel': ['Gasoline', 'Diesel'], 'popularity': 0.10}
+                    'Clio': {'base_price': 195000, 'years': [2018, 2019, 2020, 2021, 2022, 2023, 2024], 'fuel': ['Gasoline', 'Diesel'], 'popularity': 0.30},
+                    'Megane': {'base_price': 265000, 'years': [2018, 2019, 2020, 2021, 2022, 2023], 'fuel': ['Gasoline', 'Diesel'], 'popularity': 0.20},
+                    'Captur': {'base_price': 285000, 'years': [2019, 2020, 2021, 2022, 2023, 2024], 'fuel': ['Gasoline', 'Diesel'], 'popularity': 0.25},
+                    'Kadjar': {'base_price': 365000, 'years': [2018, 2019, 2020, 2021, 2022], 'fuel': ['Gasoline', 'Diesel'], 'popularity': 0.15},
+                    'Talisman': {'base_price': 420000, 'years': [2018, 2019, 2020, 2021], 'fuel': ['Gasoline', 'Diesel'], 'popularity': 0.10}
                 },
                 'market_share': 0.15
             },
             'Peugeot': {
                 'models': {
-                    '208': {'base_price': 160000, 'years': [2018, 2019, 2020, 2021, 2022, 2023, 2024], 'fuel': ['Gasoline', 'Diesel'], 'popularity': 0.25},
-                    '308': {'base_price': 210000, 'years': [2018, 2019, 2020, 2021, 2022, 2023], 'fuel': ['Gasoline', 'Diesel'], 'popularity': 0.20},
-                    '2008': {'base_price': 230000, 'years': [2018, 2019, 2020, 2021, 2022, 2023, 2024], 'fuel': ['Gasoline', 'Diesel'], 'popularity': 0.30},
-                    '3008': {'base_price': 320000, 'years': [2018, 2019, 2020, 2021, 2022, 2023, 2024], 'fuel': ['Gasoline', 'Diesel', 'Hybrid'], 'popularity': 0.20},
-                    '5008': {'base_price': 380000, 'years': [2018, 2019, 2020, 2021, 2022, 2023], 'fuel': ['Gasoline', 'Diesel'], 'popularity': 0.05}
+                    '208': {'base_price': 210000, 'years': [2018, 2019, 2020, 2021, 2022, 2023, 2024], 'fuel': ['Gasoline', 'Diesel'], 'popularity': 0.25},
+                    '308': {'base_price': 280000, 'years': [2018, 2019, 2020, 2021, 2022, 2023], 'fuel': ['Gasoline', 'Diesel'], 'popularity': 0.20},
+                    '2008': {'base_price': 295000, 'years': [2018, 2019, 2020, 2021, 2022, 2023, 2024], 'fuel': ['Gasoline', 'Diesel'], 'popularity': 0.30},
+                    '3008': {'base_price': 420000, 'years': [2018, 2019, 2020, 2021, 2022, 2023, 2024], 'fuel': ['Gasoline', 'Diesel', 'Hybrid'], 'popularity': 0.20},
+                    '5008': {'base_price': 490000, 'years': [2018, 2019, 2020, 2021, 2022, 2023], 'fuel': ['Gasoline', 'Diesel'], 'popularity': 0.05}
                 },
                 'market_share': 0.12
             },
             'Toyota': {
                 'models': {
-                    'Yaris': {'base_price': 170000, 'years': [2018, 2019, 2020, 2021, 2022, 2023, 2024], 'fuel': ['Gasoline', 'Hybrid'], 'popularity': 0.20},
-                    'Corolla': {'base_price': 220000, 'years': [2018, 2019, 2020, 2021, 2022, 2023, 2024], 'fuel': ['Gasoline', 'Hybrid'], 'popularity': 0.25},
-                    'RAV4': {'base_price': 380000, 'years': [2018, 2019, 2020, 2021, 2022, 2023, 2024], 'fuel': ['Gasoline', 'Hybrid'], 'popularity': 0.20},
-                    'Hilux': {'base_price': 420000, 'years': [2018, 2019, 2020, 2021, 2022, 2023, 2024], 'fuel': ['Diesel'], 'popularity': 0.25},
-                    'Land Cruiser': {'base_price': 850000, 'years': [2018, 2019, 2020, 2021, 2022, 2023], 'fuel': ['Diesel'], 'popularity': 0.10}
+                    'Yaris': {'base_price': 195000, 'years': [2018, 2019, 2020, 2021, 2022, 2023, 2024], 'fuel': ['Gasoline', 'Hybrid'], 'popularity': 0.20},
+                    'Corolla': {'base_price': 285000, 'years': [2018, 2019, 2020, 2021, 2022, 2023, 2024], 'fuel': ['Gasoline', 'Hybrid'], 'popularity': 0.25},
+                    'RAV4': {'base_price': 495000, 'years': [2018, 2019, 2020, 2021, 2022, 2023, 2024], 'fuel': ['Gasoline', 'Hybrid'], 'popularity': 0.20},
+                    'Hilux': {'base_price': 545000, 'years': [2018, 2019, 2020, 2021, 2022, 2023, 2024], 'fuel': ['Diesel'], 'popularity': 0.25},
+                    'Land Cruiser': {'base_price': 1100000, 'years': [2018, 2019, 2020, 2021, 2022, 2023], 'fuel': ['Diesel'], 'popularity': 0.10}
                 },
                 'market_share': 0.08
             },
             'Hyundai': {
                 'models': {
-                    'i10': {'base_price': 130000, 'years': [2018, 2019, 2020, 2021, 2022, 2023, 2024], 'fuel': ['Gasoline'], 'popularity': 0.20},
-                    'i20': {'base_price': 155000, 'years': [2018, 2019, 2020, 2021, 2022, 2023, 2024], 'fuel': ['Gasoline'], 'popularity': 0.25},
-                    'Accent': {'base_price': 180000, 'years': [2018, 2019, 2020, 2021, 2022, 2023], 'fuel': ['Gasoline'], 'popularity': 0.20},
-                    'Tucson': {'base_price': 320000, 'years': [2018, 2019, 2020, 2021, 2022, 2023, 2024], 'fuel': ['Gasoline', 'Diesel', 'Hybrid'], 'popularity': 0.25},
-                    'Santa Fe': {'base_price': 450000, 'years': [2018, 2019, 2020, 2021, 2022, 2023], 'fuel': ['Gasoline', 'Diesel'], 'popularity': 0.10}
+                    'i10': {'base_price': 165000, 'years': [2018, 2019, 2020, 2021, 2022, 2023, 2024], 'fuel': ['Gasoline'], 'popularity': 0.20},
+                    'i20': {'base_price': 200000, 'years': [2018, 2019, 2020, 2021, 2022, 2023, 2024], 'fuel': ['Gasoline'], 'popularity': 0.25},
+                    'Accent': {'base_price': 235000, 'years': [2018, 2019, 2020, 2021, 2022, 2023], 'fuel': ['Gasoline'], 'popularity': 0.20},
+                    'Tucson': {'base_price': 420000, 'years': [2018, 2019, 2020, 2021, 2022, 2023, 2024], 'fuel': ['Gasoline', 'Diesel', 'Hybrid'], 'popularity': 0.25},
+                    'Santa Fe': {'base_price': 585000, 'years': [2018, 2019, 2020, 2021, 2022, 2023], 'fuel': ['Gasoline', 'Diesel'], 'popularity': 0.10}
                 },
                 'market_share': 0.07
             },
             'Volkswagen': {
                 'models': {
-                    'Polo': {'base_price': 165000, 'years': [2018, 2019, 2020, 2021, 2022, 2023, 2024], 'fuel': ['Gasoline', 'Diesel'], 'popularity': 0.25},
-                    'Golf': {'base_price': 230000, 'years': [2018, 2019, 2020, 2021, 2022, 2023], 'fuel': ['Gasoline', 'Diesel'], 'popularity': 0.25},
-                    'Tiguan': {'base_price': 380000, 'years': [2018, 2019, 2020, 2021, 2022, 2023, 2024], 'fuel': ['Gasoline', 'Diesel'], 'popularity': 0.30},
-                    'Passat': {'base_price': 340000, 'years': [2018, 2019, 2020, 2021, 2022], 'fuel': ['Gasoline', 'Diesel'], 'popularity': 0.15},
-                    'Touareg': {'base_price': 720000, 'years': [2018, 2019, 2020, 2021, 2022, 2023], 'fuel': ['Gasoline', 'Diesel'], 'popularity': 0.05}
+                    'Polo': {'base_price': 215000, 'years': [2018, 2019, 2020, 2021, 2022, 2023, 2024], 'fuel': ['Gasoline', 'Diesel'], 'popularity': 0.25},
+                    'Golf': {'base_price': 295000, 'years': [2018, 2019, 2020, 2021, 2022, 2023], 'fuel': ['Gasoline', 'Diesel'], 'popularity': 0.25},
+                    'Tiguan': {'base_price': 495000, 'years': [2018, 2019, 2020, 2021, 2022, 2023, 2024], 'fuel': ['Gasoline', 'Diesel'], 'popularity': 0.30},
+                    'Passat': {'base_price': 445000, 'years': [2018, 2019, 2020, 2021, 2022], 'fuel': ['Gasoline', 'Diesel'], 'popularity': 0.15},
+                    'Touareg': {'base_price': 925000, 'years': [2018, 2019, 2020, 2021, 2022, 2023], 'fuel': ['Gasoline', 'Diesel'], 'popularity': 0.05}
                 },
                 'market_share': 0.06
             },
             'Ford': {
                 'models': {
-                    'Fiesta': {'base_price': 150000, 'years': [2018, 2019, 2020, 2021, 2022], 'fuel': ['Gasoline'], 'popularity': 0.20},
-                    'Focus': {'base_price': 200000, 'years': [2018, 2019, 2020, 2021, 2022], 'fuel': ['Gasoline', 'Diesel'], 'popularity': 0.20},
-                    'Kuga': {'base_price': 320000, 'years': [2018, 2019, 2020, 2021, 2022, 2023, 2024], 'fuel': ['Gasoline', 'Diesel', 'Hybrid'], 'popularity': 0.30},
-                    'Mustang': {'base_price': 650000, 'years': [2018, 2019, 2020, 2021, 2022, 2023], 'fuel': ['Gasoline'], 'popularity': 0.10},
-                    'Ranger': {'base_price': 380000, 'years': [2018, 2019, 2020, 2021, 2022, 2023, 2024], 'fuel': ['Diesel'], 'popularity': 0.20}
+                    'Fiesta': {'base_price': 195000, 'years': [2018, 2019, 2020, 2021, 2022], 'fuel': ['Gasoline'], 'popularity': 0.20},
+                    'Focus': {'base_price': 260000, 'years': [2018, 2019, 2020, 2021, 2022], 'fuel': ['Gasoline', 'Diesel'], 'popularity': 0.20},
+                    'Kuga': {'base_price': 420000, 'years': [2018, 2019, 2020, 2021, 2022, 2023, 2024], 'fuel': ['Gasoline', 'Diesel', 'Hybrid'], 'popularity': 0.30},
+                    'Mustang': {'base_price': 850000, 'years': [2018, 2019, 2020, 2021, 2022, 2023], 'fuel': ['Gasoline'], 'popularity': 0.10},
+                    'Ranger': {'base_price': 495000, 'years': [2018, 2019, 2020, 2021, 2022, 2023, 2024], 'fuel': ['Diesel'], 'popularity': 0.20}
                 },
                 'market_share': 0.04
             },
             'Nissan': {
                 'models': {
-                    'Micra': {'base_price': 140000, 'years': [2018, 2019, 2020, 2021, 2022], 'fuel': ['Gasoline'], 'popularity': 0.15},
-                    'Juke': {'base_price': 250000, 'years': [2018, 2019, 2020, 2021, 2022, 2023, 2024], 'fuel': ['Gasoline'], 'popularity': 0.25},
-                    'Qashqai': {'base_price': 290000, 'years': [2018, 2019, 2020, 2021, 2022, 2023, 2024], 'fuel': ['Gasoline', 'Diesel'], 'popularity': 0.35},
-                    'X-Trail': {'base_price': 380000, 'years': [2018, 2019, 2020, 2021, 2022, 2023], 'fuel': ['Gasoline', 'Diesel'], 'popularity': 0.20},
-                    'Patrol': {'base_price': 750000, 'years': [2018, 2019, 2020, 2021, 2022, 2023], 'fuel': ['Diesel'], 'popularity': 0.05}
+                    'Micra': {'base_price': 180000, 'years': [2018, 2019, 2020, 2021, 2022], 'fuel': ['Gasoline'], 'popularity': 0.15},
+                    'Juke': {'base_price': 325000, 'years': [2018, 2019, 2020, 2021, 2022, 2023, 2024], 'fuel': ['Gasoline'], 'popularity': 0.25},
+                    'Qashqai': {'base_price': 380000, 'years': [2018, 2019, 2020, 2021, 2022, 2023, 2024], 'fuel': ['Gasoline', 'Diesel'], 'popularity': 0.35},
+                    'X-Trail': {'base_price': 495000, 'years': [2018, 2019, 2020, 2021, 2022, 2023], 'fuel': ['Gasoline', 'Diesel'], 'popularity': 0.20},
+                    'Patrol': {'base_price': 975000, 'years': [2018, 2019, 2020, 2021, 2022, 2023], 'fuel': ['Diesel'], 'popularity': 0.05}
                 },
                 'market_share': 0.05
             },
             'Citroen': {
                 'models': {
-                    'C3': {'base_price': 155000, 'years': [2018, 2019, 2020, 2021, 2022, 2023, 2024], 'fuel': ['Gasoline', 'Diesel'], 'popularity': 0.30},
-                    'C4': {'base_price': 210000, 'years': [2018, 2019, 2020, 2021, 2022, 2023], 'fuel': ['Gasoline', 'Diesel'], 'popularity': 0.25},
-                    'C5 Aircross': {'base_price': 310000, 'years': [2019, 2020, 2021, 2022, 2023, 2024], 'fuel': ['Gasoline', 'Diesel', 'Hybrid'], 'popularity': 0.25},
-                    'Berlingo': {'base_price': 180000, 'years': [2018, 2019, 2020, 2021, 2022, 2023], 'fuel': ['Gasoline', 'Diesel'], 'popularity': 0.15},
-                    'Jumper': {'base_price': 280000, 'years': [2018, 2019, 2020, 2021, 2022], 'fuel': ['Diesel'], 'popularity': 0.05}
+                    'C3': {'base_price': 200000, 'years': [2018, 2019, 2020, 2021, 2022, 2023, 2024], 'fuel': ['Gasoline', 'Diesel'], 'popularity': 0.30},
+                    'C4': {'base_price': 275000, 'years': [2018, 2019, 2020, 2021, 2022, 2023], 'fuel': ['Gasoline', 'Diesel'], 'popularity': 0.25},
+                    'C5 Aircross': {'base_price': 405000, 'years': [2019, 2020, 2021, 2022, 2023, 2024], 'fuel': ['Gasoline', 'Diesel', 'Hybrid'], 'popularity': 0.25},
+                    'Berlingo': {'base_price': 235000, 'years': [2018, 2019, 2020, 2021, 2022, 2023], 'fuel': ['Gasoline', 'Diesel'], 'popularity': 0.15},
+                    'Jumper': {'base_price': 365000, 'years': [2018, 2019, 2020, 2021, 2022], 'fuel': ['Diesel'], 'popularity': 0.05}
                 },
                 'market_share': 0.04
             },
             'Kia': {
                 'models': {
-                    'Picanto': {'base_price': 125000, 'years': [2018, 2019, 2020, 2021, 2022, 2023, 2024], 'fuel': ['Gasoline'], 'popularity': 0.20},
-                    'Rio': {'base_price': 150000, 'years': [2018, 2019, 2020, 2021, 2022, 2023], 'fuel': ['Gasoline'], 'popularity': 0.20},
-                    'Sportage': {'base_price': 310000, 'years': [2018, 2019, 2020, 2021, 2022, 2023, 2024], 'fuel': ['Gasoline', 'Diesel', 'Hybrid'], 'popularity': 0.40},
-                    'Sorento': {'base_price': 420000, 'years': [2018, 2019, 2020, 2021, 2022, 2023], 'fuel': ['Gasoline', 'Diesel'], 'popularity': 0.15},
-                    'Stinger': {'base_price': 520000, 'years': [2018, 2019, 2020, 2021, 2022], 'fuel': ['Gasoline'], 'popularity': 0.05}
+                    'Picanto': {'base_price': 160000, 'years': [2018, 2019, 2020, 2021, 2022, 2023, 2024], 'fuel': ['Gasoline'], 'popularity': 0.20},
+                    'Rio': {'base_price': 195000, 'years': [2018, 2019, 2020, 2021, 2022, 2023], 'fuel': ['Gasoline'], 'popularity': 0.20},
+                    'Sportage': {'base_price': 405000, 'years': [2018, 2019, 2020, 2021, 2022, 2023, 2024], 'fuel': ['Gasoline', 'Diesel', 'Hybrid'], 'popularity': 0.40},
+                    'Sorento': {'base_price': 545000, 'years': [2018, 2019, 2020, 2021, 2022, 2023], 'fuel': ['Gasoline', 'Diesel'], 'popularity': 0.15},
+                    'Stinger': {'base_price': 675000, 'years': [2018, 2019, 2020, 2021, 2022], 'fuel': ['Gasoline'], 'popularity': 0.05}
                 },
                 'market_share': 0.04
             }
