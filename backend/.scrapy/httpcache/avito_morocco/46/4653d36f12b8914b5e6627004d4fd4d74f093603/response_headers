@@ -1,0 +1,12 @@
+Date: Sat, 04 Oct 2025 00:03:54 GMT
+Content-Type: text/html; charset=utf-8
+Cache-Control: private, no-cache, no-store, max-age=0, must-revalidate
+Server-Timing: cfCacheStatus;desc="DYNAMIC"
+Server-Timing: cfEdge;dur=7,cfOrigin;dur=823
+Vary: Accept-Encoding
+X-Powered-By: Next.js
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+Cf-Cache-Status: DYNAMIC
+Content-Encoding: gzip
+Server: cloudflare
+Cf-Ray: 98906b332b549112-MAD
